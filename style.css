@@ -1,0 +1,886 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700");
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #0f0f0f;
+  color: white;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+
+}
+
+body {
+  background-color: #100E17 !important;
+  width: 100%;
+}
+.padding-content-header {
+  padding-left: 9%;
+  padding-right: 9%;
+}
+.margin-content-casas{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.bg-purple{
+
+  background: rgb(86,48,167);
+background: -moz-linear-gradient(90deg, rgba(86,48,167,1) 0%, rgba(116,85,255,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(86,48,167,1) 0%, rgba(116,85,255,1) 100%);
+background: linear-gradient(90deg, rgba(86,48,167,1) 0%, rgba(116,85,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5630a7",endColorstr="#7455ff",GradientType=1);
+}
+.max-width{
+  max-width: 540px;
+
+}
+.color-l-yellow {
+  font-family: 'Josefin Sans', sans-serif;
+
+  color: #FECC90;
+}
+
+.color-orange {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.1em;
+
+  color: #FF7A46;
+}
+.icon-social{
+width:48px;
+height:48px;
+fill: #fff;
+
+
+transition: all 0.3s linear;
+
+}
+.owl-carousel{height:auto;}
+.owl-item {
+  display: inline !important;
+  }
+  .owl-item .item { margin-left: 1px !important; }
+
+.icon-social:hover{
+  opacity: 0.6;
+  
+}
+
+.owl-stage{display:flex}
+
+.txt-grey {
+  color: #C2C2C2;
+  font-size: 16px;
+  line-height: 151.14%;
+
+}
+
+.josefin {
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+
+
+.color-dark-grey {
+  font-family: 'Josefin Sans', sans-serif;
+
+  color: #7A7A8C;
+}
+hr.style3 {
+  margin-left: 0px;
+  justify-content: left;
+  max-width: 64px;
+  border-top: 3px solid #FF7A46;
+}
+
+hr.style1 {
+  margin-left: 0px;
+  justify-content: left;
+  max-width: 64px;
+  border-top: 3px solid #FF7A46;
+}
+
+hr.style2 {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #201C29, #201C29, #17141D);
+}
+.max-wrap{
+  max-width: 1920px;
+}
+
+.slideimg1 {
+
+  background-attachment: fixed;
+  background: url("imgs/Banner\ 1.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slide-casas {
+
+  background-attachment: fixed;
+  background: url("imgs/bn-casas.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.selected-nav{
+ color:#FECC90 !important;
+
+}
+.margin-content-venda{
+  margin-right: 9%;
+  margin-left: 1%;
+
+}
+.margin-content-venda2{
+    margin-left: 9%;
+    margin-right:1%;
+}
+
+.bg-navbar {
+  background: rgb(21, 26, 33);
+  background: -moz-linear-gradient(180deg, rgba(21, 26, 33, 1) 0%, rgba(21, 26, 33, 0) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(21, 26, 33, 1) 0%, rgba(21, 26, 33, 0) 100%);
+  background: linear-gradient(180deg, rgba(21, 26, 33, 1) 0%, rgba(21, 26, 33, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#151a21", endColorstr="#151a21", GradientType=1);
+  z-index: 1000;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+
+  font-weight: 400;
+  color: rgba(255, 255, 255, .9);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+
+  color: #FECC90;
+}
+
+
+
+.btn-gradient {
+  background-image: linear-gradient(to right,
+      rgba(255, 122, 70, 1),
+      rgba(253, 56, 124, 1));
+      letter-spacing: 1px;
+
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 60px;
+  padding: 10px;
+  color: #fff;
+  width: 194px;
+  -webkit-box-shadow: -2px 5px 22px 1px rgba(255,122,70,0.2);
+  -moz-box-shadow: -2px 5px 22px 1px rgba(255,122,70,0.2);
+  box-shadow: -2px 5px 22px 1px rgba(255,122,70,0.2);
+    font-weight: 600;
+  font-size: 0.9em;
+
+
+  transition: all 400ms ease 10ms;
+}
+
+.btn-gradient:hover {
+  -webkit-box-shadow: -2px 12px 22px 0px rgba(255,122,70,0.4);
+  -moz-box-shadow: -2px 12px 22px 0px rgba(255,122,70,0.4);
+  box-shadow: -2px 12px 22px 0px rgba(255,122,70,0.4);
+  transform: scale(1.04);
+  letter-spacing: 1px;
+  color: #fff;
+}
+.btn-gradient2 {
+  
+background-image: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 60px;
+  padding: 10px;
+  color: #FF7A46;
+  width: 194px;
+  border:solid 1px;
+  border-color: #FF7A46;
+  -webkit-box-shadow: -2px 5px 22px 1px rgba(255,122,70,0.2);
+  -moz-box-shadow: -2px 5px 22px 1px rgba(255,122,70,0.2);
+  box-shadow: -2px 5px 22px 1px rgba(255,122,70,0.2);
+    font-weight: 600;
+  font-size: 0.9em;
+  transition: all 400ms ease 10ms;
+}
+
+
+
+
+.btn-gradient2:hover {
+  background-image: linear-gradient(to right,
+      rgba(255, 122, 70, 1),
+      rgba(253, 56, 124, 1));
+
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 60px;
+  padding: 10px;
+  color: #fff;
+  width: 194px;
+  
+    font-weight: 600;
+  font-size: 0.9em;
+
+  -webkit-box-shadow: -2px 12px 22px 0px rgba(255,122,70,0.4);
+  -moz-box-shadow: -2px 12px 22px 0px rgba(255,122,70,0.4);
+  box-shadow: -2px 12px 22px 0px rgba(255,122,70,0.4);
+  transform: scale(1.04);
+  letter-spacing: 1px;
+  color: #fff;
+}
+.btn-gradient.navbar-btn {
+  margin-left: 20px;
+}
+
+.navwrap {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
+/********************************/
+/*          Cards Casas         */
+/********************************/
+
+.card-btn{
+  margin-left: 3.7em;
+  position: absolute;
+  margin-top: -90px !important;
+
+}
+
+.card-bg-renault{
+border-radius: 10px;
+border: solid #7455FF;
+border-width: 1px;
+  
+  background: url("imgs/teatro-renault-card2.png") no-repeat;
+  
+  
+ 
+}
+.card-bg-km-rj{
+  border-radius: 10px;
+  border: solid #7455FF;
+  border-width: 1px;
+  background: url("imgs/km-rj-card2.png") no-repeat;
+ 
+}
+.card-bg-km-bh{
+  border-radius: 10px;
+  border: solid #7455FF;
+  border-width: 1px;
+  
+  background: url("imgs/km-bh-card2.png") no-repeat;
+
+}
+.card-bg-unimed{
+  border-radius: 10px;
+border: solid #7455FF;
+border-width:  1px;
+  background: url("imgs/credicard-hall-card2.png") no-repeat;
+  
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+
+.hero2 {
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  z-index: 3;
+  color: #FECC90;
+  text-align: left;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .75);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.hero2 h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.hero2 h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+
+.hero {
+  width:100%;
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  z-index: 3;
+  color: #FECC90;
+  text-align: left;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .75);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.hero h3 {
+  font-size: 2.5em;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+  opacity: 0;
+  -webkit-transition: 2s all ease-in-out .1s;
+  -moz-transition: 2s all ease-in-out .1s;
+  -ms-transition: 2s all ease-in-out .1s;
+  -o-transition: 2s all ease-in-out .1s;
+  transition: 2s all ease-in-out .1s;
+}
+
+.fade-carousel .carousel-inner .item.active .hero {
+  opacity: 1;
+  -webkit-transition: 2s all ease-in-out .1s;
+  -moz-transition: 2s all ease-in-out .1s;
+  -ms-transition: 2s all ease-in-out .1s;
+  -o-transition: 2s all ease-in-out .1s;
+  transition: 2s all ease-in-out .1s;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255) \9;
+
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.fade-carousel .carousel-indicators>li {
+  margin: 0 2px;
+  background-color: #f39c12;
+  border-color: #f39c12;
+  opacity: .7;
+}
+
+.navbar {
+  padding-top: 30px;
+
+}
+
+.page-content {
+  margin-left: 9%;
+  margin-right: 9%;
+
+}
+
+.padding-content {
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+.padding-content-oque {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* NAVBAR stroke */
+.nav-item.nav-link,
+.nav-item.nav-link:after,
+.nav-item.nav-link:before {
+  transition: all .5s;
+}
+
+.nav-item.nav-link {
+  position: relative;
+
+}
+
+.nav-item.nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #FF7A46;
+  height: 3px;
+}
+
+.nav-item.nav-link:hover:after {
+  width: 80%;
+
+}
+.img-carousel-paginas {
+  object-fit: cover;
+  height: 340px;
+}
+.img-carousel {
+  object-fit: cover;
+  height: 660px;
+}
+
+.bg-dark-card {
+
+  background-color: #201C29;
+  border-radius: 10px;
+  box-shadow: 0px 19px 14px rgba(0, 0, 0, 0.4);
+}
+
+.bg-dark2 {
+  background-color: #17141D;
+  color: #fff;
+
+  border-radius: 10px;
+  box-shadow: 0px 19px 14px rgba(0, 0, 0, 0.4);
+}
+
+.card-img {
+  background-color: #201C29;
+  border-radius: 20px;
+  width: 100%;
+
+}
+
+.txt-depoimento {
+  font-size: 1.1em;
+}
+
+
+
+.bg-white {
+  padding: 35px;
+  border-radius: 20px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.avatar {
+  border: 0.1rem solid rgba(#fff, 0.3);
+  max-width: 3rem;
+
+}
+
+.card-job-txt {
+  margin-left: 89px;
+  margin-top: -6%;
+}
+
+
+.carousel-dot-position {
+  bottom: -65px;
+}
+
+
+
+/********************************/
+/*     CASAS CARDS        */
+/********************************/
+
+
+.panels {
+  display: flex;
+  /*width: 100%;
+  padding: 1.5em; */
+
+}
+.panels .panel {
+  flex-shrink: 0;
+  width: 100%;
+  height: 33.75em;
+  outline: 0.25em solid rgba(26, 97, 203, 0);
+  transition: 500ms;
+  position: relative; 
+}
+.panels .panel:not(:last-child) {
+  margin-right: 1.5em;
+}
+.panels .panel .background:after,
+.panels .panel .text > * {
+  transition: opacity 200ms, -webkit-transform 200ms;
+  transition: transform 200ms, opacity 200ms;
+  transition: transform 200ms, opacity 200ms, -webkit-transform 200ms;
+}
+.panels .panel .background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 100ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.panels .panel .background:before, .panels .panel .background:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.panels .panel .background:before {
+  opacity: 0;
+}
+.panels .panel .background:after {
+  opacity: 0.4;
+  user-select: none;
+border-radius:10px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, #100e17 70%, #04152f 100%);
+}
+.panels .panel .text {
+  cursor: default;
+  position: absolute;
+  left: 2em;
+  right: 1em;
+  bottom: 0.4em;
+}
+.panels .panel .text .location {
+  font-weight: 100;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.panels .panel .text .title {
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-bottom: 0.4em;
+}
+.panels .panel .text .author {
+  font-weight: 400;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+.panels .panel .text .link {
+  display: inline-block;
+ 
+  text-align: center;
+  opacity: 0;
+}
+
+.panels .panel.hover .background, .panels .panel:hover .background {
+  transition: 125ms;
+  top: -0.4em;
+  left: -0.4em;
+  right: -0.4em;
+  bottom: -0.4em;
+}
+.panels .panel.hover .background:after, .panels .panel:hover .background:after {
+  opacity: 1;
+}
+.panels .panel.hover .text > *, .panels .panel:hover .text > * {
+  -webkit-transform: translate3d(0, -3.5rem, 0);
+          transform: translate3d(0, -3.5rem, 0);
+}
+.panels .panel.hover .text .location, .panels .panel:hover .text .location {
+  transition-delay: 0ms;
+}
+.panels .panel.hover .text .title, .panels .panel:hover .text .title {
+  transition-delay: 60ms;
+}
+.panels .panel.hover .text .author, .panels .panel:hover .text .author {
+  transition-delay: 110ms;
+}
+.panels .panel.hover .text .link, .panels .panel:hover .text .link {
+  opacity: 1;
+  transition-delay: 150ms;
+}
+
+
+.panel:hover{
+  
+  box-shadow: 0 0 10pt 8pt #7455FF;
+transform: scale(1.03);
+  border: solid #7455FF;
+    transition: 500ms;
+    border-radius: 10px;
+}
+
+
+
+/********************************/
+/*       RESPONSIVE CODE        */
+/********************************/
+
+/* ideia pro menu mobile, fonte maior, arrumar somente pro menu hamburguer
+.navbar-nav{
+  padding: 30px;
+  font-size: 1.8em;
+
+}
+*/
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+  .card-job-txt {
+    margin-left: 89px;
+    margin-top: -6% !important;
+}
+  .img-mobile {
+    height: 210px !important;
+    object-fit: fill;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.logo{
+  width:160px;
+}
+
+  .padding-content-header {
+        padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .hero2 h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .hero h3 {
+    margin-left: 13% !important;
+    font-size: 1.6em !important;
+  }
+
+  .hero h1 {
+    margin-left: 13% !important;
+    font-size: 2.3em !important;
+  }
+  .card-job-txt {
+    margin-left: 89px;
+    margin-top: -6% !important;
+}
+  
+  .h1-sections{
+    font-size: 2em;
+  }
+  .padding-content {
+    margin-left:0% !important;
+    margin-right: 0% !important;
+  }
+  .hero{
+    top: 55%;
+    left: 45%;
+  }
+  hr.style1 {
+    margin-left: 14% !important;
+  }
+  .hero h3 {
+    font-size: 1em;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .img-mobile {
+    height: 240px;
+    object-fit: fill;
+  }
+
+
+
+  /* .navbar-nav{
+    margin-left: -10% !important;
+  
+  }*/
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+  .cta {
+    height: 270px;
+    max-height: 270px;
+  
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+
+@media only screen and (max-width: 992px) {
+  .card-job-txt {
+    margin-left: 89px;
+    margin-top: -3% !important;
+}
+
+  .hero{
+    top: 58%;
+    left: 48%;
+  }
+  hr.style1 {
+    margin-left: 21%;
+  }
+
+  .hero h3 {
+    margin-left: 20%;
+    font-size: 2em;
+  }
+
+  .hero h1 {
+    margin-left: 20%;
+    font-size: 3em;
+  }
+
+ 
+  .padding-content-mobile {
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+
+  .padding-content-oque {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .img-carousel {
+    height: 590px;
+    object-fit: cover;
+  }
+
+  .navbar-nav {
+    /* margin-left: -10% !important; */
+    padding-top: 40px;
+    font-size: 1.3em;
+    background-color: #100e17ba;
+
+    padding: 50px;
+  }
+  #navbarNavAltMarkup > div > button{
+    font-size: 14px;
+    margin-left:1px;
+
+  }
+
+  #navbarNavAltMarkup>div>button {
+    margin-top: 20px;
+  }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+.nav-item {
+    padding-right: 1.5rem!important;
+    padding-left: 1.5rem!important;}
+  .padding-content {
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 1024px and down) */
+
+@media only screen and (max-width: 1024px) {
+
+  .img-mobile {
+    height: 22em;
+    object-fit: fill;
+  }
+
+  .margin-content-venda{
+    margin-right: 9%;
+    margin-left: 9%;
+  }
+  
+  .margin-content-venda2{
+    margin-right: 9%;
+    margin-left: 9%;
+  }
+  .img-carousel {
+    height: 520px;
+    object-fit: cover;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+  .card-casas-txt{
+font-size: 1.5em;
+
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* Extra large devices (4k, 2560px and up) */
+@media only screen and (min-width: 2559px) {
+
+  .padding-content{
+    margin-left: 0%;
+    margin-right: 0%;
+
+  }
+
+  .max-wrap {
+    margin:0 auto;
+    max-width: 1920px;
+  }
+}
+
