@@ -27,6 +27,29 @@ body {
   background-color: #100E17 !important;
   width: 100%;
 }
+a:link
+{
+text-decoration:none;
+}
+a:link {
+  color: #fff;
+}
+
+/* visited link */
+a:visited {
+  color:#FF7A46;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FECC90;
+}
+
+/* selected link */
+a:active {
+  color: #FECC90;
+}
+
 .padding-content-header {
   padding-left: 9%;
   padding-right: 9%;
@@ -93,7 +116,10 @@ transition: all 0.3s linear;
 
 }
 
-
+.color-dark-grey2 {
+font-size:16px;
+  color: #7A7A8C;
+}
 
 .color-dark-grey {
   font-family: 'Josefin Sans', sans-serif;
@@ -261,9 +287,136 @@ background-image: #fff;
 }
 
 
+.evento-cta{
+  background-blend-mode: luminosity;
+  background: center;
+  background-attachment: fixed;
+  background-image: url(https://images.pexels.com/photos/2237190/pexels-photo-2237190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) !important;
+}
+
 /********************************/
-/*          Cards Casas         */
+/*     CASAS CARDS        */
 /********************************/
+
+
+.panels {
+  display: flex;
+  /*width: 100%;
+  padding: 1.5em; */
+
+}
+.panels .panel {
+  flex-shrink: 0;
+  width: 100%;
+  height: 33.75em;
+  outline: 0.25em solid rgba(26, 97, 203, 0);
+  transition: 500ms;
+  position: relative; 
+}
+.panels .panel:not(:last-child) {
+  margin-right: 1.5em;
+}
+.panels .panel .background:after,
+.panels .panel .text > * {
+  transition: opacity 200ms, -webkit-transform 200ms;
+  transition: transform 200ms, opacity 200ms;
+  transition: transform 200ms, opacity 200ms, -webkit-transform 200ms;
+}
+.panels .panel .background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 100ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.panels .panel .background:before, .panels .panel .background:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.panels .panel .background:before {
+  opacity: 0;
+}
+.panels .panel .background:after {
+  opacity: 0.4;
+  user-select: none;
+border-radius:10px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, #100e17 70%, #04152f 100%);
+}
+.panels .panel .text {
+  cursor: default;
+  position: absolute;
+  left: 2em;
+  right: 1em;
+  bottom: 0.4em;
+}
+.panels .panel .text .location {
+  font-weight: 100;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.panels .panel .text .title {
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-bottom: 0.4em;
+}
+.panels .panel .text .author {
+  font-weight: 400;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+.panels .panel .text .link {
+  display: inline-block;
+ 
+  text-align: center;
+  opacity: 0;
+}
+
+.panels .panel.hover .background, .panels .panel:hover .background {
+  transition: 125ms;
+  top: -0.4em;
+  left: -0.4em;
+  right: -0.4em;
+  bottom: -0.4em;
+}
+.panels .panel.hover .background:after, .panels .panel:hover .background:after {
+  opacity: 1;
+}
+.panels .panel.hover .text > *, .panels .panel:hover .text > * {
+  -webkit-transform: translate3d(0, -3.5rem, 0);
+          transform: translate3d(0, -3.5rem, 0);
+}
+.panels .panel.hover .text .location, .panels .panel:hover .text .location {
+  transition-delay: 0ms;
+}
+.panels .panel.hover .text .title, .panels .panel:hover .text .title {
+  transition-delay: 60ms;
+}
+.panels .panel.hover .text .author, .panels .panel:hover .text .author {
+  transition-delay: 110ms;
+}
+.panels .panel.hover .text .link, .panels .panel:hover .text .link {
+  opacity: 1;
+  transition-delay: 150ms;
+}
+
+
+.panel:hover{
+  
+  box-shadow: 0 0 10pt 8pt #7455FF;
+transform: scale(1.03);
+  border: solid #7455FF;
+    transition: 500ms;
+    border-radius: 10px;
+}
 
 .card-btn{
   margin-left: 3.7em;
@@ -520,133 +673,144 @@ border-width:  1px;
   bottom: -65px;
 }
 
+input[type="text"].data-picker::-webkit-input-placeholder {
+  color: #c2c2c2;
+}
 
 
 /********************************/
-/*     CASAS CARDS        */
+/*       FORM CONTATO       */
 /********************************/
+/*       DATA PICKER       */
 
 
-.panels {
-  display: flex;
-  /*width: 100%;
-  padding: 1.5em; */
-
-}
-.panels .panel {
-  flex-shrink: 0;
-  width: 100%;
-  height: 33.75em;
-  outline: 0.25em solid rgba(26, 97, 203, 0);
-  transition: 500ms;
-  position: relative; 
-}
-.panels .panel:not(:last-child) {
-  margin-right: 1.5em;
-}
-.panels .panel .background:after,
-.panels .panel .text > * {
-  transition: opacity 200ms, -webkit-transform 200ms;
-  transition: transform 200ms, opacity 200ms;
-  transition: transform 200ms, opacity 200ms, -webkit-transform 200ms;
-}
-.panels .panel .background {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: 100ms;
+.wrapper:before {
+  content: "\f073";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #FECC90;
+  font-size: 18px;
+  padding-right: 0.5em;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 46px;
   right: 0;
-  bottom: 0;
-}
-.panels .panel .background:before, .panels .panel .background:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.panels .panel .background:before {
-  opacity: 0;
-}
-.panels .panel .background:after {
-  opacity: 0.4;
-  user-select: none;
-border-radius:10px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, #100e17 70%, #04152f 100%);
-}
-.panels .panel .text {
-  cursor: default;
-  position: absolute;
-  left: 2em;
-  right: 1em;
-  bottom: 0.4em;
-}
-.panels .panel .text .location {
-  font-weight: 100;
-  font-size: 1em;
-  margin-bottom: 1em;
-}
-.panels .panel .text .title {
-  font-weight: 700;
-  font-size: 1.4em;
-  margin-bottom: 0.4em;
-}
-.panels .panel .text .author {
-  font-weight: 400;
-  font-size: 1.25em;
-  margin-bottom: 1em;
-}
-.panels .panel .text .link {
-  display: inline-block;
- 
-  text-align: center;
-  opacity: 0;
+  padding-right: 1.8em;
 }
 
-.panels .panel.hover .background, .panels .panel:hover .background {
-  transition: 125ms;
-  top: -0.4em;
-  left: -0.4em;
-  right: -0.4em;
-  bottom: -0.4em;
+.datepicker table tr td span.active{
+  color:#fff !important;
+  background-image: linear-gradient(to bottom,#FF7A46,#FF7A46) !important;
 }
-.panels .panel.hover .background:after, .panels .panel:hover .background:after {
-  opacity: 1;
+.datepicker table tr td.active{
+  color:#fff !important;
+  background-image: linear-gradient(to bottom,#FF7A46,#FF7A46) !important;
 }
-.panels .panel.hover .text > *, .panels .panel:hover .text > * {
-  -webkit-transform: translate3d(0, -3.5rem, 0);
-          transform: translate3d(0, -3.5rem, 0);
+.datepicker .datepicker-switch {
+  width: 200px !important;
 }
-.panels .panel.hover .text .location, .panels .panel:hover .text .location {
-  transition-delay: 0ms;
+.datepicker{
+  padding: 19px !important;
+  border-radius: 10px !important;
 }
-.panels .panel.hover .text .title, .panels .panel:hover .text .title {
-  transition-delay: 60ms;
+.datepicker-dropdown.datepicker-orient-top:after{
+  border-top: 6px solid #100e17 !important;
+
 }
-.panels .panel.hover .text .author, .panels .panel:hover .text .author {
-  transition-delay: 110ms;
+.datepicker .datepicker-switch{
+  font-size: 1.3em;
+  padding: 20px 0 20px 0;
+  color: #FECC90;
+
 }
-.panels .panel.hover .text .link, .panels .panel:hover .text .link {
-  opacity: 1;
-  transition-delay: 150ms;
+.dropdown-menu{
+  background: #201C29 !important;
+
+}
+.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top{
+  background: #201C29 !important;
+  border:solid 1px #3d364c !important;
+  -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75) !important;
+}
+.datepicker table tr td.day.focused, .datepicker table tr td.day:hover{
+  color: #Fff !important;
+  background: #FF7A46 !important;
+}
+
+.datepicker td, .datepicker th{
+  padding: 11px !important;
+
+}
+.datepicker th{
+color: #FECC90 !important;
+}
+.datepicker td {
+  color: #C2C2C2 !important;
+}
+.datepicker table tr td span.focused, .datepicker table tr td span:hover{
+  background:#3d364c !important;
+}
+.datepicker .datepicker-switch:hover, .datepicker .next:hover, .datepicker .prev:hover, .datepicker tfoot tr th:hover{
+  background:#3d364c !important;
 }
 
 
-.panel:hover{
-  
-  box-shadow: 0 0 10pt 8pt #7455FF;
-transform: scale(1.03);
-  border: solid #7455FF;
-    transition: 500ms;
-    border-radius: 10px;
+.data-picker{
+  background-color: #100e17;
+  color:#FECC90;
+  border: 1px solid #C2C2C2 !important;
+
+}
+.data-picker:focus{
+  background-color: #100e17;
+  color:#C2C2C2;
+  border: 1px solid #7455FF !important;
+
 }
 
+/*      FORM      */
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #7A7A8C ;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:#7A7A8C;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #7A7A8C;}
+
+.form-control{
+  border: 1px solid #ffffff;
+  height: calc(2.5em + .75rem + 2px);
+  border-radius: 10px !important;
+}
+textarea.form-control {
+  height: 112px;
+}
+.form-control:focus{
+  border-color: #7455FF;}
+.valid-tooltip{
+  position: initial;
+  background-color:#0f0f0f;
+  color:#b7e96a;
+}
+.invalid-tooltip{
+  position: initial;
+  background-color:#0f0f0f;
+  color:#ff8585;
+}
+.group-form{
+  position: relative;
+}
+.invalid-tooltp{
+  transition: all 300ms ease-in-out;
+}
 
 /********************************/
 /*       RESPONSIVE CODE        */

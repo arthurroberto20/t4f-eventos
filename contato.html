@@ -12,13 +12,20 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/5e5f9fbe22.js" crossorigin="anonymous"></script>
+<!-- Datepicker -->
+<link href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css' rel='stylesheet' type='text/css'>
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  
   <link rel="stylesheet" href="style.css">
+  
 
 
   <style>
@@ -43,9 +50,9 @@
         <div class="navbar-nav ml-auto stroke">
           <a class="nav-item nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="nossas-casas.html">CASAS</a>
-          <a class="nav-item nav-link selected-nav" href="#" >VENDA A GRUPOS</a>
-          <a class="nav-item nav-link" href="#">CONTATO</a>
-          <button class="btn btn-gradient  navbar-btn">FAÇA SEU EVENTO</button>
+          <a class="nav-item nav-link" href="venda-grupo.html" >VENDA A GRUPOS</a>
+          <a class="nav-item nav-link selected-nav" href="contato.html">CONTATO</a>
+          <button class="btn btn-gradient  navbar-btn" onclick="window.location.href = 'contato.html';">FAÇA SEU EVENTO</button>
         </div>
       </div>
     </nav>
@@ -79,51 +86,97 @@
     <!--.SECTION FAÇA SEU EVENTO CONOSCO-->
 
    
-    <section class="banners-ctas mb-5 pt-2 padding-content mt-5 pt-5">
+    <section class="mb-5 pt-2 padding-content mt-5 pt-5">
       <div class="conteiner d-flex justify-content-center" >
         <div class="row justify-content-center w-100 ">
 
-          <div class="gonrcol-xs-12 order-last col-sm-12 col-md-12 col-lg-6 col-xl-6 cta-height pl-3 pr-3 order-last" data-aos="fade-right">
-            <form action="" class="contact-form">
-              <div class="col-sm-6">
-                <div class="input-block">
-                  <label for="">First Name</label>
-                  <input type="text" class="form-control">
+          <div class=" mt-4 col-xs-12 order-last col-sm-12 col-md-12 col-lg-6 col-xl-6 cta-height pl-3 pr-3 order-last" data-aos="fade-right">
+     
+            <form class="needs-validation"  novalidate>
+
+                <div class="group-form mb-3">
+
+                    <label class="color-l-yellow" for="nome">Nome</label>
+
+                  <input type="text" class="form-control" id="nome" placeholder="Digite seu nome..." required>
+                <div class="valid-tooltip">
+                    Tudo certo! :)
+                  </div>
+                  <div class="invalid-tooltip">
+                        Por favor digite seu nome.
+                      </div>
                 </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="input-block">
-                  <label for="">Last Name</label>
-                  <input type="text" class="form-control">
+
+             <div class="group-form mb-3">
+
+                <label class="color-l-yellow" for="email">E-mail</label>
+
+                  <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail..." required>
+                <div class="valid-tooltip">
+                      Tudo certo! :)
+                    </div>
+                  <div class="invalid-tooltip">
+                        Por favor digite e-mail válido :/
+                      </div>
                 </div>
-              </div>
-              <div class="col-sm-12">
-                <div class="input-block">
-                  <label for="">Email</label>
-                  <input type="text" class="form-control">
+                
+                <div class="group-form mb-3">
+
+                    <label class="color-l-yellow" for="empresa">Empresa:</label>
+
+                  <input type="text" class="form-control" id="empresa" placeholder="Digite o nome da sua empresa..." required>
+                <div class="valid-tooltip">
+                      Tudo certo! :)
+                    </div>
+                  <div class="invalid-tooltip">
+                        Por favor digite o nome da sua empresa :/
+                      </div>
                 </div>
-              </div>
-              <div class="col-sm-12">
-                <div class="input-block">
-                  <label for="">Message Subject</label>
-                  <input type="text" class="form-control">
+             
+                <div class="group-form mb-3">
+                    <label class="color-l-yellow"  for="data">Mensagem:</label>
+                    <textarea class="form-control" id="empresa" placeholder="Digite sua mensagem..." rows="3"></textarea>
+                  </div>
+                <div class="form-row">
+                       <div class="group-form col-md-5 mb-3 wrapper">
+                          <label class="color-l-yellow"  for="data">Data do evento:</label>
+
+              <input type="text" name="data" id="data" data-provide="datepicker"  placeholder="Clique e selecione..." max="-12-31" min="2018-01-01" autocomplete="off" class="form-control data-picker " required>
+
+             
+              <div class="valid-tooltip">
+                    Tudo certo! :)
+                         </div>
+                         <div class="invalid-tooltip">
+                            Por favor selecione a data :/
+                          </div>
                 </div>
-              </div>
-              <div class="col-sm-12">
-                <div class="input-block textarea">
-                  <label for="">Drop your message here</label>
-                  <textarea rows="3" type="text" class="form-control"></textarea>
+                       
                 </div>
-              </div>
-              <div class="col-sm-12">
-                <button class="square-button">Send</button>
-              </div>
-            </form>
+       
+                <button type="submit" class="btn btn-gradient mb-2 mt-4">ENVIAR</button>
+                </form>
+            
           </div>
           <div class="order-first col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 cta-height pl-3 pr-3 pt-xs-5 pt-sm-5 pt-md-5 pt-lg-0 p-xl-0" data-aos="fade-left">
             <h1 class="color-l-yellow font-weight-bold">FAÇA SEU EVENTO CONOSCO!</h1>
-<p class="txt-grey mt-3 pr-xl-1">As empresas mais importantes do país reconhecem nossas casas de espetáculos como espaços versáteis, completos e tecnológicos, que oferecem toda a infraestrutura necessária para os mais diversos tipos e tamanhos de eventos, como: lançamento de produtos, festas de final de ano, premiações e congressos.</p>
+<p class="txt-grey mt-3 pr-xl-1" style="max-width: 540px;">As empresas mais importantes do país reconhecem nossas casas de espetáculos como espaços versáteis, completos e tecnológicos, que oferecem toda a infraestrutura necessária para os mais diversos tipos e tamanhos de eventos, como: lançamento de produtos, festas de final de ano, premiações e congressos.</p>
             </p>
+            <p class="txt-grey mb-5 " data-aos="fade-right">Entre em contato e descubra todas
+                as possibilidades<br>
+                para realizar um evento de sucesso.</p>
+              <p class=" mt-5 color-l-yellow " data-aos="fade-up">São Paulo: <br>
+                eventos@t4f.com.br
+      
+              </p>
+              <p class=" mt-5 color-l-yellow " data-aos="fade-up">Belo Horizonte:<br>
+                kcruz@t4f.com.br
+      
+              </p>
+              <p class=" mt-5 color-l-yellow " data-aos="fade-up">Rio de Janeiro:<br>
+                rhassid@t4f.com.br
+      
+              </p>
             
             </div>
           </div>
@@ -132,14 +185,14 @@
     </section>
 
     <!--.BANNERS-CTAS-->
-    <section class="banners-ctas mb-5 mt-5 pt-2 padding-content">
+    <section class="banners-ctas mb-5 mt-5 pt-2 padding-content mb-5 ">
         <div class="conteiner d-flex justify-content-center" >
           <div class="row justify-content-center w-100 ">
   
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 cta-height pl-3 pr-3" data-aos="fade-right">
               <div class="cta bg-white p-5 mt-xs-5 mt-5">
                 <h1 class="color-orange font-weight-bold">VENDA A GRUPOS</h1>
-                <p class="color-dark-grey">Nas compras acima de 15 ingressos (espetáculos) temos uma equipe
+                <p class="color-dark-grey2">Nas compras acima de 15 ingressos (espetáculos) temos uma equipe
                   altamente capacitada para atender seu grupo de empresas, agências,
                   escolas, associacoes.</p>
                 <div data-aos="fade-up>">
@@ -152,32 +205,9 @@
         </div>
       </section>
   
+      <div class="spacer pt-5"></div>
 
-    <!--SECTION CONTATO-->
-    <section class="contato padding-content mb-5 mt-5 mt-xs-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-xs-5 pt-sm-5 pt-md-5 pb-5 ">
-      <div class="conteiner-fluid pl-4 pr-4 ">
-
-        <img class=" mb-3 " src="imgs/contato.svg" alt="" data-aos="zoom-in">
-        <h1 class="color-l-yellow h1-sections  " data-aos="fade-right">ENTRE EM CONTATO</h1>
-        <p class="txt-grey mb-5 " data-aos="fade-right">Entre em contato e descubra todas
-          as possibilidades<br>
-          para realizar um evento de sucesso.</p>
-        <p class=" mt-5 color-l-yellow " data-aos="fade-up">São Paulo: <br>
-          eventos@t4f.com.br
-
-        </p>
-        <p class=" mt-5 color-l-yellow " data-aos="fade-up">Belo Horizonte:<br>
-          kcruz@t4f.com.br
-
-        </p>
-        <p class=" mt-5 color-l-yellow " data-aos="fade-up">Rio de Janeiro:<br>
-          rhassid@t4f.com.br
-
-        </p>
-      </div>
-    </section>
-
-
+    
   </div>
   <!--SECTION RODAPE-->
   <section class="rodape bg-purple mt-5">
@@ -214,38 +244,48 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque nibh ac interdum pellentesque.
             Donec elementum facilisis pulvinar. Sed tincidunt ex lobortis, iaculis enim eu, rutrum ex. Nullam eget
             dictum ipsum.
+            <br> <br>
+            <span>
+                Desenvolvido por <a href="https://www.behance.net/ArthurRobertoGB" target="_blank">Arthur Roberto</a>
+            </span>
           </p>
+         
         </div>
       </div>
     </div>
 
   </section>
-  <script>
-    $('.contact-form').find('.form-control').each(function() {
-      var targetItem = $(this).parent();
-      if ($(this).val()) {
-        $(targetItem).find('label').css({
-          'top': '10px',
-          'fontSize': '14px'
-        });
-      }
-    })
-    $('.contact-form').find('.form-control').focus(function() {
-      $(this).parent('.input-block').addClass('focus');
-      $(this).parent().find('label').animate({
-        'top': '10px',
-        'fontSize': '14px'
-      }, 300);
-    })
-    $('.contact-form').find('.form-control').blur(function() {
-      if ($(this).val().length == 0) {
-        $(this).parent('.input-block').removeClass('focus');
-        $(this).parent().find('label').animate({
-          'top': '25px',
-          'fontSize': '18px'
-        }, 300);
-      }
-    })</script>
+  
+<script>
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+
+
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+   $('#datepicker').datepicker(); 
+  });
+  </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -260,6 +300,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js' type='text/javascript'></script>
 </body>
 
 </html>
