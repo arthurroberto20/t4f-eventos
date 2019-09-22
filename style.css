@@ -37,7 +37,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color:#FF7A46;
+  color:none;
 }
 
 /* mouse over link */
@@ -116,10 +116,6 @@ transition: all 0.3s linear;
 
 }
 
-.color-dark-grey2 {
-font-size:16px;
-  color: #7A7A8C;
-}
 
 .color-dark-grey {
   font-family: 'Josefin Sans', sans-serif;
@@ -285,14 +281,37 @@ background-image: #fff;
   left: 0;
   z-index: 1000;
 }
+.color-dark-grey2{
+  font-size:16px;
+  color: #7A7A8C;
+}
+.color-txt{
+  font-size:16px;
+  color: #fff;
+}
+.cta{
+  transition: all 400ms ease-in-out;
 
-
-.evento-cta{
+}
+.cta:hover{
+  transform:scale(1.04);
+}
+.venda-cta{
   background-blend-mode: luminosity;
   background: center;
   background-attachment: fixed;
-  background-image: url(https://images.pexels.com/photos/2237190/pexels-photo-2237190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) !important;
+  background-image: url(https://images.pexels.com/photos/64057/pexels-photo-64057.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) !important;
 }
+
+.evento-cta{
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(imgs/cta-evento.jpg) !important;
+}
+
+
+
+
 
 /********************************/
 /*     CASAS CARDS        */
