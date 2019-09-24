@@ -20,10 +20,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 
 
   <style>
@@ -35,8 +33,8 @@
 
 <body>
 
-<!---->
-  <div class="navwrap" data-aos="fade-down">
+  <!---->
+  <header class="navwrap" data-aos="fade-down">
     <nav class="navbar navbar-expand-lg navbar-dark bg-navbar padding-content-header fixed-top">
       <a class="navbar-brand" href="index.html">
         <img class="logo" src="imgs/logo-t4f.png" alt="">
@@ -47,16 +45,20 @@
       </button>
       <div class="collapse navbar-collapse josefin" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto stroke">
-          <a class="nav-item nav-link active selected-nav" href="index.html">HOME <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active selected-nav" href="index.html">HOME <span
+              class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="nossas-casas.html">CASAS</a>
           <a class="nav-item nav-link" href="venda-grupo.html">VENDA A GRUPOS</a>
           <a class="nav-item nav-link" href="contato.html">CONTATO</a>
-          <button class="btn btn-gradient  navbar-btn" onclick="window.location.href = 'contato.html';">FAÇA SEU EVENTO</button>
+          <button class="btn btn-gradient  navbar-btn" onclick="window.location.href = 'contato.html';">FAÇA SEU
+            EVENTO</button>
         </div>
       </div>
     </nav>
-  </div>
-  <section>
+  </header>
+
+    <!--.SECTION BANNER-->
+    <section class="banner-topo">
 
     <div id="carouselExampleIndicators" class="carousel slide " data-interval="6000" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -118,11 +120,11 @@
       </a>
     </div>
   </section>
-  <div class="">
+  <main>
     <!--.SECTION O QUE FAZEMOS-->
-    <section class="oque-fazemos padding-content-oque">
+    <section class="oque-fazemos margin-content-oque">
       <div class="conteiner bg-dark2 d-flex justify-content-center">
-        <div class="row justify-content-center padding-content-mobile">
+        <div class="row justify-content-center margin-content-mobile">
           <div
             class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-5 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-1 mt-sm-5 mt-xl-0 p-0 p-xl-3 pb-5 pb-xl-5 ">
             <h1 class="color-l-yellow mt-3 mt-xl-5 pl-4 pr-4 pr-xl-1 pl-xl-5 pt-1 pt-xl-2 ml-xl-4 h1-sections"
@@ -147,23 +149,26 @@
     </section>
     <!--.SECTION NOSSAS CASAS-->
     <section class="nossas-casas max-wrap" style="margin-top:75px;">
-      <div class="conteiner-fluid  pl-xs-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 ">
-        <img class=" mb-3  padding-content" src="imgs/casa.svg" alt="" data-aos="zoom-in">
-        <h1 class="color-l-yellow  mb-2 mb-xs-2 mb-sm-5 mb-lg-5 mb-xl-5 h1-sections padding-content" data-aos="fade-right">NOSSAS CASAS
+      <div class="conteiner-fluid  pl-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 ">
+        <img class=" mb-3  margin-content" src="imgs/casa.svg" alt="" data-aos="zoom-in">
+        <h1 class="color-l-yellow  mb-2 mb-2 mb-sm-5 mb-lg-5 mb-xl-5 h1-sections margin-content" data-aos="fade-right">
+          NOSSAS CASAS
         </h1>
       </div>
       <!--TEATRO RENAULT-->
       <div class="conteiner bg-dark2 d-flex justify-content-center pt-4 pb-4">
-        <div class="row justify-content-center padding-content ">
+        <div class="row justify-content-center margin-content ">
           <div
             class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 mt-sm-5 mt-xl-0 p-0 ">
             <img class="w-100" src="imgs/teatro-renault.png" alt="Teatro Renault" data-aos="zoom-in">
 
           </div>
-          <div class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2 p-0 p-xl-3 pl-xs-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2 p-0 p-xl-3 pl-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
 
             <h1 class="color-l-yellow mt-5 ppr-xl-1 h1-sections " data-aos="fade-down">TEATRO RENAULT</h1>
-            <p class="txt-grey mt-3  pr-xl-1 max-width" data-aos="fade-up">O palco dos maiores espetáculos da Broadway no
+            <p class="txt-grey mt-3  pr-xl-1 max-width" data-aos="fade-up">O palco dos maiores espetáculos da Broadway
+              no
               Brasil é um ícone de São Paulo. Tombado pelo patrimônio histórico, o Teatro Renault é um dos endereços
               mais elegantes da cidade e oferece estrutura completa para todos os tamanhos de evento.
 
@@ -187,13 +192,14 @@
       <!--UNIMED HALL-->
       <div class="spacer pt-5"></div>
       <div class="conteiner d-flex justify-content-center mt-5 pt-4 pb-4">
-        <div class="row justify-content-center padding-content ">
+        <div class="row justify-content-center margin-content ">
           <div
             class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-2 mt-sm-5 mt-xl-0 p-0  ">
             <img class="w-100" src="imgs/UNIMED.png" alt="Unimed Hall" data-aos="zoom-in">
 
           </div>
-          <div class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-1 p-0 p-xl-3 pl-xs-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-1 p-0 p-xl-3 pl-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
 
             <h1 class="color-l-yellow mt-5  pr-xl-1 h1-sections" data-aos="fade-down">UNIMED HALL</h1>
             <p class="txt-grey mt-3  pr-xl-1 max-width" data-aos="fade-up">O Unimed Hall São Paulo é o endereço ideal
@@ -219,74 +225,79 @@
       <!--KM DE VANTAGENS HALL - BH-->
       <div class="spacer pt-5"></div>
       <div class="conteiner bg-dark2 d-flex justify-content-center pt-4 pb-4">
-          <div class="row justify-content-center padding-content ">
-            <div
-              class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 mt-sm-5 mt-xl-0 p-0  ">
-              <img class="w-100" src="imgs/KM-BH.png" alt="KM DE VANTAGENS HALL - BH" data-aos="zoom-in">
-  
-            </div>
-            <div class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2 p-0 p-xl-3 pl-xs-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
-  
-              <h1 class="color-l-yellow mt-5  pr-xl-1 h1-sections" data-aos="fade-down">KM DE VANTAGENS HALL - BH</h1>
-              <p class="txt-grey mt-3  pr-xl-1 max-width" data-aos="fade-up">O palco dos maiores espetáculos da Broadway no
-                Brasil é um ícone de São Paulo. Tombado pelo patrimônio histórico, o Teatro Renault é um dos endereços
-                mais elegantes da cidade e oferece estrutura completa para todos os tamanhos de evento.
-  
-                <hr class="style2 mt-4 mt-xl-5">
-                <p class="color-l-yellow font-weight-bold mt-4 " data-aos="fade-up">Área: 985m²<br>
-                  Capacidade: 7.000
-                </p>
-              </p>
-              <p class="color-dark-grey mt-4" data-aos="fade-up">
-                Endereço: Av. das Nações Unidas, 17955 - Vila Almeida,<br> São Paulo - SP, 04795-100
-              </p>
-              <div data-aos="fade-up>">
-                <button class="btn btn-gradient mt-2 mt-sm-1 mt-xl-3">SAIBA MAIS</button>
-              </div>
-            </div>
-  
+        <div class="row justify-content-center margin-content ">
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 mt-sm-5 mt-xl-0 p-0  ">
+            <img class="w-100" src="imgs/KM-BH.png" alt="KM DE VANTAGENS HALL - BH" data-aos="zoom-in">
+
           </div>
-  
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2 p-0 p-xl-3 pl-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
+
+            <h1 class="color-l-yellow mt-5  pr-xl-1 h1-sections" data-aos="fade-down">KM DE VANTAGENS HALL - BH</h1>
+            <p class="txt-grey mt-3  pr-xl-1 max-width" data-aos="fade-up">O palco dos maiores espetáculos da Broadway
+              no
+              Brasil é um ícone de São Paulo. Tombado pelo patrimônio histórico, o Teatro Renault é um dos endereços
+              mais elegantes da cidade e oferece estrutura completa para todos os tamanhos de evento.
+
+              <hr class="style2 mt-4 mt-xl-5">
+              <p class="color-l-yellow font-weight-bold mt-4 " data-aos="fade-up">Área: 985m²<br>
+                Capacidade: 7.000
+              </p>
+            </p>
+            <p class="color-dark-grey mt-4" data-aos="fade-up">
+              Endereço: Av. das Nações Unidas, 17955 - Vila Almeida,<br> São Paulo - SP, 04795-100
+            </p>
+            <div data-aos="fade-up>">
+              <button class="btn btn-gradient mt-2 mt-sm-1 mt-xl-3">SAIBA MAIS</button>
+            </div>
+          </div>
+
         </div>
-   
+
+      </div>
+
       <!--KM DE VANTAGENS HALL - RJ-->
       <div class="spacer pt-5"></div>
-      
+
       <div class="conteiner d-flex justify-content-center mt-5 pt-4 pb-4">
-          <div class="row justify-content-center padding-content ">
-            <div
-              class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-2 mt-sm-5 mt-xl-0 p-0 ">
-              <img class="w-100" src="imgs/KM-RJ.png" alt="KM DE VANTAGENS HALL - RJ" data-aos="zoom-in">
-  
-            </div>
-            <div class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-1 p-0 p-xl-3 pl-xs-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
-  
-              <h1 class="color-l-yellow mt-5 pr-xl-1 h1-sections" data-aos="fade-down">KM DE VANTAGENS - RJ</h1>
-              <p class="txt-grey mt-3 pr-xl-1 max-width" data-aos="fade-up">A maior casa de espetáculos da América Latina tem opções que atendem a todos os tamanhos de evento. Com configurações flexíveis, o Km de Vantagens Hall se adapta às necessidades de cada cliente
-  
-                <hr class="style2 mt-4 mt-xl-5">
-                <p class="color-l-yellow font-weight-bold mt-4" data-aos="fade-up">Área: 985m²<br>
-                  Capacidade: 7.000
-                </p>
-              </p>
-              <p class="color-dark-grey mt-4 " data-aos="fade-up">
-                Endereço: Av. das Nações Unidas, 17955 - Vila Almeida,<br> São Paulo - SP, 04795-100
-              </p>
-              <div data-aos="fade-up>">
-                <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3">SAIBA MAIS</button>
-              </div>
-            </div>
-  
+        <div class="row justify-content-center margin-content ">
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-2 mt-sm-5 mt-xl-0 p-0 ">
+            <img class="w-100" src="imgs/KM-RJ.png" alt="KM DE VANTAGENS HALL - RJ" data-aos="zoom-in">
+
           </div>
-  
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-1 p-0 p-xl-3 pl-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
+
+            <h1 class="color-l-yellow mt-5 pr-xl-1 h1-sections" data-aos="fade-down">KM DE VANTAGENS - RJ</h1>
+            <p class="txt-grey mt-3 pr-xl-1 max-width" data-aos="fade-up">A maior casa de espetáculos da América Latina
+              tem opções que atendem a todos os tamanhos de evento. Com configurações flexíveis, o Km de Vantagens Hall
+              se adapta às necessidades de cada cliente
+
+              <hr class="style2 mt-4 mt-xl-5">
+              <p class="color-l-yellow font-weight-bold mt-4" data-aos="fade-up">Área: 985m²<br>
+                Capacidade: 7.000
+              </p>
+            </p>
+            <p class="color-dark-grey mt-4 " data-aos="fade-up">
+              Endereço: Av. das Nações Unidas, 17955 - Vila Almeida,<br> São Paulo - SP, 04795-100
+            </p>
+            <div data-aos="fade-up>">
+              <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3">SAIBA MAIS</button>
+            </div>
+          </div>
+
         </div>
+
+      </div>
     </section>
 
-    
+
     <!--.SECTION DEPOIMENTOS-->
-    
+
     <div class="spacer pt-5"></div>
-    <section class="depoimentos padding-content mb-5 pb-4">
+    <section class="depoimentos margin-content mb-5 pb-4">
       <div class="conteiner-fluid pl-4 pr-4 ">
         <img class="mb-3" src="imgs/depoimento.svg" alt="" data-aos="zoom-in">
         <h1 class="color-l-yellow  h1-sections " data-aos="fade-right">DEPOIMENTOS</h1>
@@ -297,155 +308,155 @@
 
 
 
-      
-        
-<div class="conteiner depoimentos">
-            <div class="owl-carousel owl-theme owl-loaded owl-drag"  data-aos="fade-right">
-              <div class="item card card-img  pb-3">
-
-                <div class=" text-white d-flex flex-column justify-content-center">
-                  <blockquote class="bg-white text-dark blockquote text-left p-5">
-                    <p>"The haunting of history is ever present in Barcelona. I see cities as organisms, as
-                      living creatures. To me, Madrid is a man and Barcelona is a woman. And it's a woman who's
-                      extremely vain."</p>
-                  </blockquote>
-                  <div class=" d-flex align-items-center ml-4 mt-3">
-                    <img class="avatar rounded-circle mx-2"
-                      src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg">
-                    <p class="color-l-yellow font-weight-bold txt-depoimento">Carlos Ruiz Zafon</p><br>
 
 
-                  </div>
+      <div class="conteiner depoimentos">
+        <div class="owl-carousel owl-theme owl-loaded owl-drag" data-aos="fade-right">
+          <div class="item card card-img  pb-3">
 
-                </div>
-                <p class="justify-contetn-left txt-grey card-job-txt">Gerente comercial na BMW</p>
+            <div class=" text-white d-flex flex-column justify-content-center">
+              <blockquote class="bg-white text-dark blockquote text-left p-5">
+                <p>"The haunting of history is ever present in Barcelona. I see cities as organisms, as
+                  living creatures. To me, Madrid is a man and Barcelona is a woman. And it's a woman who's
+                  extremely vain."</p>
+              </blockquote>
+              <div class=" d-flex align-items-center ml-4 mt-3">
+                <img class="avatar rounded-circle mx-2"
+                  src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg">
+                <p class="color-l-yellow font-weight-bold txt-depoimento">Carlos Ruiz Zafon</p><br>
 
 
               </div>
-              <div class="item card card-img pb-3">
 
-                <div class=" text-white d-flex flex-column justify-content-center">
-                  <blockquote class="bg-white text-dark blockquote text-left p-5">
-                    <p>"The haunting of history is ever present in Barcelona. I see cities as organisms, as
-                      living creatures. To me, Madrid is a man and Barcelona is a woman. And it's a woman who's
-                      extremely vain."</p>
-                  </blockquote>
-                  <div class=" d-flex align-items-center ml-4 mt-3">
-                    <img class="avatar rounded-circle mx-2"
-                      src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg">
-                    <p class="color-l-yellow font-weight-bold txt-depoimento">Carlos Ruiz Zafon</p><br>
-
-
-                  </div>
-
-                </div>
-                <p class="justify-contetn-left txt-grey card-job-txt">Gerente comercial na BMW</p>
-
-
-              </div>
-              <div class="item card card-img pb-3">
-
-                <div class=" text-white d-flex flex-column justify-content-center">
-                  <blockquote class="bg-white text-dark blockquote text-left p-5">
-                    <p>"The haunting of history is ever present in Barcelona. I see cities as organisms, as
-                      living creatures. To me, Madrid is a man and Barcelona is a woman. And it's a woman who's
-                      extremely vain."</p>
-                  </blockquote>
-                  <div class=" d-flex align-items-center ml-4 mt-3">
-                    <img class="avatar rounded-circle mx-2"
-                      src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg">
-                    <p class="color-l-yellow font-weight-bold txt-depoimento">Carlos Ruiz Zafon</p><br>
-
-
-                  </div>
-
-                </div>
-                <p class="justify-contetn-left txt-grey card-job-txt">Gerente comercial na BMW</p>
-
-
-              </div>
-              
-              <div class="item card card-img pb-3">
-
-                  <div class=" text-white d-flex flex-column justify-content-center">
-                    <blockquote class="bg-white text-dark blockquote text-left p-5">
-                      <p>"The haunting of history is ever present in Barcelona. I see cities as organisms, as
-                        living creatures. To me, Madrid is a man and Barcelona is a woman. And it's a woman who's
-                        extremely vain."</p>
-                    </blockquote>
-                    <div class=" d-flex align-items-center ml-4 mt-3">
-                      <img class="avatar rounded-circle mx-2"
-                        src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg">
-                      <p class="color-l-yellow font-weight-bold txt-depoimento">Carlos Ruiz Zafon</p><br>
-  
-  
-                    </div>
-  
-                  </div>
-                  <p class="justify-contetn-left txt-grey card-job-txt">Gerente comercial na BMW</p>
-  
-  
-                </div>  
-            
-                <div class="item card card-img pb-3">
-
-                    <div class=" text-white d-flex flex-column justify-content-center">
-                      <blockquote class="bg-white text-dark blockquote text-left p-5">
-                        <p>"The haunting of history is ever present in Barcelona. I see cities as organisms, as
-                          living creatures. To me, Madrid is a man and Barcelona is a woman. And it's a woman who's
-                          extremely vain."</p>
-                      </blockquote>
-                      <div class=" d-flex align-items-center ml-4 mt-3">
-                        <img class="avatar rounded-circle mx-2"
-                          src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg">
-                        <p class="color-l-yellow font-weight-bold txt-depoimento">Carlos Ruiz Zafon</p><br>
-    
-    
-                      </div>
-    
-                    </div>
-                    <p class="justify-contetn-left txt-grey card-job-txt">Gerente comercial na BMW</p>
-    
-    
-                  </div>
-
-                  <div class="item card card-img pb-3">
-
-                      <div class=" text-white d-flex flex-column justify-content-center">
-                        <blockquote class="bg-white text-dark blockquote text-left p-5">
-                          <p>"The haunting of history is ever present in Barcelona. I see cities as organisms, as
-                            living creatures. To me, Madrid is a man and Barcelona is a woman. And it's a woman who's
-                            extremely vain."</p>
-                        </blockquote>
-                        <div class=" d-flex align-items-center ml-4 mt-3">
-                          <img class="avatar rounded-circle mx-2"
-                            src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg">
-                          <p class="color-l-yellow font-weight-bold txt-depoimento">Carlos Ruiz Zafon</p><br>
-      
-      
-                        </div>
-      
-                      </div>
-                      <p class="justify-contetn-left txt-grey card-job-txt">Gerente comercial na BMW</p>
-      
-      
-                    </div>
             </div>
+            <p class="justify-contetn-left txt-grey card-job-txt">Gerente comercial na BMW</p>
 
 
-        
+          </div>
+          <div class="item card card-img pb-3">
+
+            <div class=" text-white d-flex flex-column justify-content-center">
+              <blockquote class="bg-white text-dark blockquote text-left p-5">
+                <p>"The haunting of history is ever present in Barcelona. I see cities as organisms, as
+                  living creatures. To me, Madrid is a man and Barcelona is a woman. And it's a woman who's
+                  extremely vain."</p>
+              </blockquote>
+              <div class=" d-flex align-items-center ml-4 mt-3">
+                <img class="avatar rounded-circle mx-2"
+                  src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg">
+                <p class="color-l-yellow font-weight-bold txt-depoimento">Carlos Ruiz Zafon</p><br>
+
+
+              </div>
+
+            </div>
+            <p class="justify-contetn-left txt-grey card-job-txt">Gerente comercial na BMW</p>
+
+
+          </div>
+          <div class="item card card-img pb-3">
+
+            <div class=" text-white d-flex flex-column justify-content-center">
+              <blockquote class="bg-white text-dark blockquote text-left p-5">
+                <p>"The haunting of history is ever present in Barcelona. I see cities as organisms, as
+                  living creatures. To me, Madrid is a man and Barcelona is a woman. And it's a woman who's
+                  extremely vain."</p>
+              </blockquote>
+              <div class=" d-flex align-items-center ml-4 mt-3">
+                <img class="avatar rounded-circle mx-2"
+                  src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg">
+                <p class="color-l-yellow font-weight-bold txt-depoimento">Carlos Ruiz Zafon</p><br>
+
+
+              </div>
+
+            </div>
+            <p class="justify-contetn-left txt-grey card-job-txt">Gerente comercial na BMW</p>
+
+
+          </div>
+
+          <div class="item card card-img pb-3">
+
+            <div class=" text-white d-flex flex-column justify-content-center">
+              <blockquote class="bg-white text-dark blockquote text-left p-5">
+                <p>"The haunting of history is ever present in Barcelona. I see cities as organisms, as
+                  living creatures. To me, Madrid is a man and Barcelona is a woman. And it's a woman who's
+                  extremely vain."</p>
+              </blockquote>
+              <div class=" d-flex align-items-center ml-4 mt-3">
+                <img class="avatar rounded-circle mx-2"
+                  src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg">
+                <p class="color-l-yellow font-weight-bold txt-depoimento">Carlos Ruiz Zafon</p><br>
+
+
+              </div>
+
+            </div>
+            <p class="justify-contetn-left txt-grey card-job-txt">Gerente comercial na BMW</p>
+
+
+          </div>
+
+          <div class="item card card-img pb-3">
+
+            <div class=" text-white d-flex flex-column justify-content-center">
+              <blockquote class="bg-white text-dark blockquote text-left p-5">
+                <p>"The haunting of history is ever present in Barcelona. I see cities as organisms, as
+                  living creatures. To me, Madrid is a man and Barcelona is a woman. And it's a woman who's
+                  extremely vain."</p>
+              </blockquote>
+              <div class=" d-flex align-items-center ml-4 mt-3">
+                <img class="avatar rounded-circle mx-2"
+                  src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg">
+                <p class="color-l-yellow font-weight-bold txt-depoimento">Carlos Ruiz Zafon</p><br>
+
+
+              </div>
+
+            </div>
+            <p class="justify-contetn-left txt-grey card-job-txt">Gerente comercial na BMW</p>
+
+
+          </div>
+
+          <div class="item card card-img pb-3">
+
+            <div class=" text-white d-flex flex-column justify-content-center">
+              <blockquote class="bg-white text-dark blockquote text-left p-5">
+                <p>"The haunting of history is ever present in Barcelona. I see cities as organisms, as
+                  living creatures. To me, Madrid is a man and Barcelona is a woman. And it's a woman who's
+                  extremely vain."</p>
+              </blockquote>
+              <div class=" d-flex align-items-center ml-4 mt-3">
+                <img class="avatar rounded-circle mx-2"
+                  src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg">
+                <p class="color-l-yellow font-weight-bold txt-depoimento">Carlos Ruiz Zafon</p><br>
+
+
+              </div>
+
+            </div>
+            <p class="justify-contetn-left txt-grey card-job-txt">Gerente comercial na BMW</p>
+
+
+          </div>
+        </div>
+
+
+
       </div>
-     
+
 
     </section>
 
     <!--.BANNERS-CTAS-->
-    <section class="banners-ctas mb-5 mt-5 pt-2 padding-content">
+    <section class="banners-ctas mb-5 mt-4 pt-2 margin-content">
       <div class="conteiner d-flex justify-content-center">
         <div class="row justify-content-center w-100 ">
 
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 cta-height pl-3 pr-3" data-aos="fade-up">
-            <div class="cta bg-white p-5 mt-xs-5 mt-5">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 cta-height pl-3 pr-3" data-aos="fade-up">
+            <div class="cta bg-white p-5 mt-4">
               <h1 class="color-orange font-weight-bold">VENDA A GRUPOS</h1>
               <p class="color-dark-grey2">Nas compras acima de 15 ingressos (espetáculos) temos uma equipe
                 altamente capacitada para atender seu grupo de empresas, agências,
@@ -455,13 +466,12 @@
               </div>
             </div>
           </div>
-          <div
-            class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 cta-height pl-3 pr-3 pt-xs-5 pt-sm-5 pt-md-5 pt-lg-0 p-xl-0" data-aos="fade-up">
-            <div class="cta bg-white p-5 mt-xs-5 mt-5">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 cta-height pl-3 pr-3 pt-5 pt-sm-5 pt-md-5 pt-lg-0 p-xl-0" data-aos="fade-up">
+            <div class="cta bg-white p-5 mt-4">
               <h1 class="color-orange font-weight-bold">FAÇA SEU EVENTO CONOSCO!</h1>
               <p class="color-dark-grey2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc erat massa,
-                  commodo id vehicula a, vulputate non lorem. Praesent vehicula enim sit amet lacus sodales
- 
+                commodo id vehicula a, vulputate non lorem. Praesent vehicula enim sit amet lacus sodales
+
               </p>
               <div data-aos="fade-up>">
                 <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3">PEÇA UM ORÇAMENTO</button>
@@ -473,7 +483,7 @@
     </section>
 
     <!--SECTION CONTATO-->
-    <section class="contato padding-content mb-5 mt-5 mt-xs-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-xs-5 pt-sm-5 pt-md-5 pb-5 ">
+    <section class="contato margin-content mb-5 mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 ">
       <div class="conteiner-fluid pl-4 pr-4 ">
 
         <img class=" mb-3 " src="imgs/contato.svg" alt="" data-aos="zoom-in">
@@ -481,114 +491,88 @@
         <p class="txt-grey mb-5 " data-aos="fade-right">Entre em contato e descubra todas
           as possibilidades<br>
           para realizar um evento de sucesso.</p>
-        <p class=" mt-5 color-l-yellow " data-aos="fade-up">São Paulo: <br>
+        <p class=" mt-3 mt-sm-4 mt-md-5 mt-xl-5 color-l-yellow " data-aos="fade-up">São Paulo: <br>
           eventos@t4f.com.br
 
         </p>
-        <p class=" mt-5 color-l-yellow " data-aos="fade-up">Belo Horizonte:<br>
+        <p class=" mt-3 mt-sm-4 mt-md-5 mt-xl-5 color-l-yellow " data-aos="fade-up">Belo Horizonte:<br>
           kcruz@t4f.com.br
 
         </p>
-        <p class=" mt-5 color-l-yellow " data-aos="fade-up">Rio de Janeiro:<br>
+        <p class=" mt-3 mt-sm-4 mt-md-5 mt-xl-5 color-l-yellow " data-aos="fade-up">Rio de Janeiro:<br>
           rhassid@t4f.com.br
 
         </p>
       </div>
     </section>
 
-  </div>
-  <!--SECTION RODAPE-->
-  <section class="rodape bg-purple mt-5">
-    <div class="conteiner-fluid  d-flex justify-content-center pl-4 pr-4">
-      <div class="row mt-5 pt-2">
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
-          <img src="imgs/logo-t4f.png" alt="logo T4F Eventos">
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
-          <h6 class="text-white font-weight-bold mt-xs-5 mt-5 mt-sm-0 mt-lg-0 mt-xl-0">CONTATO</h6>
-          <p class="text-white">t4feventos@t4f.com.br</p>
-          <p class="text-white">(11) 9 8272-2090</p>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
-          <h6 class="text-white font-weight-bold">REDES SOCIAIS</h6>
-          <div class="row">
-            <a class="facebook" href="https://www.facebook.com/t4feventos/" target="_blank">
-              <img class="icon-social pl-3 pr-1" src="imgs/facebook-logo.svg" alt="logo Facebook"></a>
-            <a class="instagram" href="#" target="_blank">
-              <img class="icon-social pl-3 pr-1" src="imgs/instagram-logo.svg" alt="logo Instagram"></a>
-            <a class="instagram" href="#" target="_blank">
-              <img class="icon-social pl-3 pr-1" src="imgs/linkedin-logo.svg" alt="logo Linkedin"></a>
+  </main>
+  <footer>
+    <!--SECTION RODAPE-->
+    <section class="rodape bg-purple mt-5">
+      <address class="conteiner-fluid  d-flex justify-content-center pl-4 pr-4">
+        <div class="row mt-5 pt-2">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
+            <img src="imgs/logo-t4f.png" alt="logo T4F Eventos">
           </div>
-
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
+            <h6 class="text-white font-weight-bold mt-5 mt-5 mt-sm-0 mt-lg-0 mt-xl-0">CONTATO</h6>
+            <p class="text-white">t4feventos@t4f.com.br</p>
+            <p class="text-white">(11) 9 8272-2090</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
+            <h6 class="text-white font-weight-bold">REDES SOCIAIS</h6>
+            <div class="row">
+              <a class="facebook" href="https://www.facebook.com/t4feventos/" target="_blank">
+                <img class="icon-social pl-3 pr-1" src="imgs/facebook-logo.svg" alt="logo Facebook"></a>
+              <a class="instagram" href="#" target="_blank">
+                <img class="icon-social pl-3 pr-1" src="imgs/instagram-logo.svg" alt="logo Instagram"></a>
+              <a class="instagram" href="#" target="_blank">
+                <img class="icon-social pl-3 pr-1" src="imgs/linkedin-logo.svg" alt="logo Linkedin"></a>
+            </div>
+  
+          </div>
         </div>
-      </div>
-
-
-    </div>
-    <div class="conteiner-fluid padding-content pt-4 d-flex justify-content-center  pl-4 pr-4">
-      <div class="row">
-        <div class="col-12">
-          <p class="txt-grey text-center" style=" max-width: 900px;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque nibh ac interdum pellentesque.
-            Donec elementum facilisis pulvinar. Sed tincidunt ex lobortis, iaculis enim eu, rutrum ex. Nullam eget
-            dictum ipsum.
-            <br> <br>
-            <span>
+      </address>
+   <div class="conteiner-fluid margin-content pt-4 d-flex justify-content-center  pl-4 pr-4">
+        <div class="row">
+          <div class="col-12">
+            <p class="txt-grey text-center" style=" max-width: 900px;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque nibh ac interdum pellentesque.
+              Donec elementum facilisis pulvinar. Sed tincidunt ex lobortis, iaculis enim eu, rutrum ex. Nullam eget
+              dictum ipsum.
+              <br> <br>
+              <span>
                 Desenvolvido por <a href="https://www.behance.net/ArthurRobertoGB" target="_blank">Arthur Roberto</a>
-            </span>
-          </p>
+              </span>
+            </p>
+  
+          </div>
         </div>
       </div>
-    </div>
-    
-  </section>
+  
+    </section>
+    </footer>
 
   <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <script src="jquery.min.js"></script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <script src="jquery.min.js"></script>
-  <script src="owlcarousel/owl.carousel.min.js"></script>
-  <script>
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:20,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            dots:true
-        },
-        600:{
-            items:1,
-            dots:true
-        },
-        1000:{
-            items:3,
-            dots:true,
-            loop:false
-        }
-    }
-})
+  <script defer src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/functions.js"></script>
 
-
-
-
-
-  </script>
 </body>
 
 </html>

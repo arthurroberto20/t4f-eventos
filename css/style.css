@@ -34,7 +34,10 @@ text-decoration:none;
 a:link {
   color: #fff;
 }
+.mensagem-mt{
+  margin-top:-1em;
 
+}
 /* visited link */
 a:visited {
   color:none;
@@ -54,7 +57,7 @@ a:active {
   padding-left: 9%;
   padding-right: 9%;
 }
-.margin-content-casas{
+.padding-content-casas{
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -148,7 +151,7 @@ hr.style2 {
 .slideimg1 {
 
   background-attachment: fixed;
-  background: url("imgs/Banner\ 1.png") no-repeat center center fixed;
+  background: url("../imgs/Banner\ 1.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -157,7 +160,7 @@ hr.style2 {
 .slide-casas {
 
   background-attachment: fixed;
-  background: url("imgs/bn-casas.png") no-repeat center center fixed;
+  background: url("../imgs/bn-casas.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -306,7 +309,7 @@ background-image: #fff;
 .evento-cta{
   background-size: cover;
   background-attachment: fixed;
-  background-image: url(imgs/cta-evento.jpg) !important;
+  background-image: url(../imgs/cta-evento.jpg) !important;
 }
 
 
@@ -449,7 +452,7 @@ border-radius: 10px;
 border: solid #7455FF;
 border-width: 1px;
   
-  background: url("imgs/teatro-renault-card2.png") no-repeat;
+  background: url("../imgs/teatro-renault-card2.png") no-repeat;
   
   
  
@@ -458,7 +461,7 @@ border-width: 1px;
   border-radius: 10px;
   border: solid #7455FF;
   border-width: 1px;
-  background: url("imgs/km-rj-card2.png") no-repeat;
+  background: url("../imgs/km-rj-card2.png") no-repeat;
  
 }
 .card-bg-km-bh{
@@ -466,14 +469,14 @@ border-width: 1px;
   border: solid #7455FF;
   border-width: 1px;
   
-  background: url("imgs/km-bh-card2.png") no-repeat;
+  background: url("../imgs/km-bh-card2.png") no-repeat;
 
 }
 .card-bg-unimed{
   border-radius: 10px;
 border: solid #7455FF;
 border-width:  1px;
-  background: url("imgs/credicard-hall-card2.png") no-repeat;
+  background: url("../imgs/credicard-hall-card2.png") no-repeat;
   
 }
 
@@ -593,12 +596,12 @@ border-width:  1px;
 
 }
 
-.padding-content {
+.margin-content {
   margin-left: 9%;
   margin-right: 9%;
 }
 
-.padding-content-oque {
+.margin-content-oque {
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -891,7 +894,7 @@ textarea.form-control {
   .h1-sections{
     font-size: 2em;
   }
-  .padding-content {
+  .margin-content {
     margin-left:0% !important;
     margin-right: 0% !important;
   }
@@ -968,12 +971,12 @@ textarea.form-control {
   }
 
  
-  .padding-content-mobile {
+  .margin-content-mobile {
     margin-left: 9%;
     margin-right: 9%;
   }
 
-  .padding-content-oque {
+  .margin-content-oque {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
@@ -1010,7 +1013,7 @@ textarea.form-control {
 .nav-item {
     padding-right: 1.5rem!important;
     padding-left: 1.5rem!important;}
-  .padding-content {
+  .margin-content {
     margin-left: 9%;
     margin-right: 9%;
   }
@@ -1055,7 +1058,7 @@ font-size: 1.5em;
 /* Extra large devices (4k, 2560px and up) */
 @media only screen and (min-width: 2559px) {
 
-  .padding-content{
+  .margin-content{
     margin-left: 0%;
     margin-right: 0%;
 
