@@ -61,6 +61,10 @@ a:active {
   padding-left: 5%;
   padding-right: 5%;
 }
+
+.fas.fa-download{
+  color:#FECC90;
+}
 .bg-purple{
 
   background: rgb(86,48,167);
@@ -166,6 +170,15 @@ hr.style2 {
   -o-background-size: cover;
   background-size: cover;
 }
+.slide-casa-teatro {
+
+  background-attachment: fixed;
+  background: url("../imgs/banners-teatro-renault.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .selected-nav{
  color:#FECC90 !important;
 
@@ -233,11 +246,12 @@ hr.style2 {
 }
 .btn-gradient2 {
   
-background-image: #fff;
   font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 1px;
+
   border-radius: 60px;
   padding: 10px;
-  color: #FF7A46;
+  color: #FECC90;
   width: 194px;
   border:solid 1px;
   border-color: #FF7A46;
@@ -483,7 +497,22 @@ border-width:  1px;
 /********************************/
 /*          Hero Headers        */
 /********************************/
-
+.hero3 {
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  z-index: 3;
+  color: #FECC90;
+  text-align: left;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .75);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
 .hero2 {
   width: 100%;
   position: absolute;
@@ -507,7 +536,12 @@ border-width:  1px;
   margin: 0;
   padding: 0;
 }
-
+.hero3 h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
 .hero2 h3 {
   font-size: 1.5em;
   font-weight: 100;
@@ -634,6 +668,10 @@ border-width:  1px;
 .nav-item.nav-link:hover:after {
   width: 80%;
 
+}
+.img-carousel-pg-casas {
+  object-fit: cover;
+  height: 560px;
 }
 .img-carousel-paginas {
   object-fit: cover;
@@ -832,7 +870,60 @@ textarea.form-control {
 }
 .invalid-tooltp{
   transition: all 300ms ease-in-out;
+
 }
+
+
+/********************************/
+/*         ANCHORS NAV          */
+/********************************/
+
+
+.nav-anchors {
+  flex-direction: column;
+  float: right;
+   /* position: fixed;*/
+  top: 50%;
+  transform: translateY(25%);
+  display: flex;
+  flex-wrap: wrap;
+}
+.title-anchor{
+  margin-left:20%;
+  color:#fff;
+  line-height:1.5;
+  font-family:helvetica,sans-serif;
+}
+.tag{
+position:absolute; 
+  justify-content:center;
+  margin-left:15px;
+  color:#fff;
+width:200px;
+  text-transform:uppercase;
+}
+.nav-anchors a {
+
+  text-decoration:none;
+  width: 15px;
+  height: 60px;
+  display: block;
+  background: #505050;
+  background-clip: content-box;
+  padding: 0 7px;
+  margin: 30px 20px;
+  cursor: pointer;
+}
+
+.vivid:nth-child(odd) {
+  background-color: #e46a2f;
+}
+
+.vivid:nth-child(even) {
+  background-color: #846ffd;
+}
+
+
 
 /********************************/
 /*       RESPONSIVE CODE        */
@@ -863,14 +954,32 @@ textarea.form-control {
 .logo{
   width:160px;
 }
+.margin-content-venda{
+  margin-right: 0% !important;
+  margin-left: 0% !important;
+}
 
+.margin-content-venda2{
+  margin-right: 0% !important;
+  margin-left: 0% !important;
+}
   .padding-content-header {
         padding-left: 5%;
     padding-right: 5%;
   }
   
+
+ 
+
+
   .hero2 h1 {
     font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  .hero3 h1 {
+    font-size: 2.3em;
     font-weight: bold;
     margin: 0;
     padding: 0;
