@@ -46,7 +46,7 @@ $('.owl-carousel').owlCarousel({
   })();
 
 
-// PAGINA DAS CASAS - ANCHORS NAV
+
 
 // ataredo.com/morphology/lucidscroll - documentation
 

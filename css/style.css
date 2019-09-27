@@ -886,31 +886,48 @@ textarea.form-control {
   top: 50%;
   transform: translateY(25%);
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 .title-anchor{
-  margin-left:20%;
+  font-size: 14px;
+  margin-right: 20px;
+  text-align: right;
   color:#fff;
   line-height:1.5;
-  font-family:helvetica,sans-serif;
 }
+/*
 .tag{
-position:absolute; 
-  justify-content:center;
-  margin-left:15px;
-  color:#fff;
-width:200px;
-  text-transform:uppercase;
+  font-size: 11px;
+  position: relative;
+  margin-top: 15px;
+  text-align: right;
+  display: flex;
+  color: #fff;
+  margin-right: 14px;
+  letter-spacing: 1px;
+  width: 200px;
+  text-transform: uppercase;
+}*/
+.tag{
+  font-size: 11px;
+  position: absolute;
+  margin-top: 15px;
+  text-align: right;
+  display: flex;
+  color: #fff;
+  padding-right: 16px;
+  letter-spacing: 1px;
+  width: 130px;
+  text-transform: uppercase;
 }
 .nav-anchors a {
 
-  text-decoration:none;
-  width: 15px;
+  text-decoration: none;
+  width: 4px;
   height: 60px;
-  display: block;
+  display: flex;
+  justify-content: flex-end;
   background: #505050;
-  background-clip: content-box;
-  padding: 0 7px;
   margin: 30px 20px;
   cursor: pointer;
 }
@@ -1056,6 +1073,9 @@ width:200px;
 /* Large devices (laptops/desktops, 992px and down) */
 
 @media only screen and (max-width: 992px) {
+  .nav-anchors{
+    display: none;
+  }
   .card-job-txt {
     margin-left: 89px;
     margin-top: -3% !important;
