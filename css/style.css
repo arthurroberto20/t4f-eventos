@@ -77,6 +77,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5630a7",endCo
   max-width: 540px;
 
 }
+.max-wrap{
+  max-width: 1920px;
+}
+.max-width-dados{
+  max-width: 400px;
+}
+.line-h-dados{
+line-height: 160%;
+}
 .color-l-yellow {
   font-family: 'Josefin Sans', sans-serif;
 
@@ -147,9 +156,6 @@ hr.style2 {
   border: 0;
   height: 1px;
   background-image: -webkit-linear-gradient(left, #201C29, #201C29, #17141D);
-}
-.max-wrap{
-  max-width: 1920px;
 }
 
 .slideimg1 {
@@ -1073,6 +1079,7 @@ textarea.form-control {
 /* Large devices (laptops/desktops, 992px and down) */
 
 @media only screen and (max-width: 992px) {
+
   .nav-anchors{
     display: none;
   }
@@ -1152,7 +1159,19 @@ textarea.form-control {
 /* Large devices (laptops/desktops, 1024px and down) */
 
 @media only screen and (max-width: 1024px) {
-
+  .color-dark-grey2{
+    font-size: 14px;
+  }
+  .h1-sections{
+    font-size: 2em;
+  }
+  .color-orange{
+    font-size:1.8em;
+  }
+  .max-width{
+    max-width: 360px;
+  
+  }
   .img-mobile {
     height: 22em;
     object-fit: fill;
