@@ -991,10 +991,6 @@ textarea.form-control {
     padding-right: 5%;
   }
   
-
- 
-
-
   .hero2 h1 {
     font-size: 1.8em;
     font-weight: bold;
@@ -1046,8 +1042,9 @@ textarea.form-control {
   }
 
   .img-mobile {
-    height: 240px;
+    height: 240px !important;
     object-fit: fill;
+    margin-top: 1px !important;
   }
 
 
@@ -1175,6 +1172,7 @@ textarea.form-control {
   .img-mobile {
     height: 22em;
     object-fit: fill;
+    margin-top: 30px;
   }
 
   .margin-content-venda{
