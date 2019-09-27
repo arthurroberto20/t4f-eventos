@@ -46,3 +46,16 @@ $('.owl-carousel').owlCarousel({
   })();
 
 
+// NAVBAR X ANIMATION
+
+  $(function() {
+    //toggle class open on button
+    $('#navbarNavAltMarkup').on('hide.bs.collapse', function () {
+      $('.navbar-toggler').removeClass('open');
+    })
+    $('#navbarNavAltMarkup').on('show.bs.collapse', function () {
+      $('.navbar-toggler').addClass('open');
+    })
+  });
+
+
