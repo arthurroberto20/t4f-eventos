@@ -16,7 +16,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
   <style>
@@ -28,29 +29,38 @@
 
 <body>
 
+  <!--HEADER-->
   <header class="navwrap" data-aos="fade-down">
     <nav class="navbar navbar-expand-lg navbar-dark bg-navbar padding-content-header fixed-top">
       <a class="navbar-brand" href="index.html">
-        <img src="imgs/logo-t4f.png" alt="">
+        <img class="logo" src="imgs/logo-t4f.png" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+
+        <!--just add these span here-->
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <!--/end span-->
       </button>
-      <div class="collapse navbar-collapse josefin" id="navbarNavAltMarkup">
+
+      <div class="collapse navbar-collapse josefin overlay-content" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto stroke">
-          <a class="nav-item nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active selected-nav" href="index.html">HOME <span
+              class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="nossas-casas.html">CASAS</a>
-          <a class="nav-item nav-link selected-nav" href="venda-grupo.html">VENDA A GRUPOS</a>
+          <a class="nav-item nav-link" href="venda-grupo.html">VENDA A GRUPOS</a>
           <a class="nav-item nav-link" href="contato.html">CONTATO</a>
-          <button class="btn btn-gradient  navbar-btn" onclick="window.location.href = 'contato.html';">FAÇA SEU
+          <button class="btn btn-gradient navbar-btn" onclick="window.location.href = 'contato.html';">FAÇA SEU
             EVENTO</button>
         </div>
       </div>
     </nav>
   </header>
 
-      <!--.SECTION BANNER-->
+  <!--.SECTION BANNER-->
   <section class="banner-topo">
 
     <div id="carouselExampleIndicators" class="carousel slide " data-interval="6000" data-ride="carousel">
@@ -92,81 +102,81 @@
 
       </div>
     </section>
-      <!--SECTION INGRESSOS/SESSÃ0-->
+    <!--SECTION INGRESSOS/SESSÃ0-->
     <section class="max-wrap mb-5">
-    <!--INGRESSOS-->
+      <!--INGRESSOS-->
 
-    <div class="conteiner bg-dark2 d-flex justify-content-center pt-4 pb-4">
-      <div class="row justify-content-center margin-content-venda ">
-        <div
-          class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 mt-sm-5 mt-xl-0 p-0 ">
-          <img class="w-100" src="imgs/img-ingressos.png" alt="" data-aos="zoom-in">
+      <div class="conteiner bg-dark2 d-flex justify-content-center pt-4 pb-4">
+        <div class="row justify-content-center margin-content-venda ">
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 mt-sm-5 mt-xl-0 p-0 ">
+            <img class="w-100" src="imgs/img-ingressos.png" alt="" data-aos="zoom-in">
 
-        </div>
-        <div
-          class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2 p-0 p-xl-3 pl-xs-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
-          <img class="mt-4 mb-3" src="imgs/icon-ingressos.svg" alt="" data-aos="zoom-in">
-          <h1 class="color-l-yellow  ppr-xl-1 h1-sections " data-aos="fade-down">INGRESSOS</h1>
-          <p class="txt-grey mt-3  pr-xl-1 max-width" data-aos="fade-up">
-            Nas compras acima de 15 ingressos (espetáculos) temos uma equipe
-            altamente capacitada para atender seu grupo de empresas, agências,
-            escolas, associacoes. </p>
+          </div>
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2 p-0 p-xl-3 pl-xs-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
+            <img class="mt-4 mb-3" src="imgs/icon-ingressos.svg" alt="" data-aos="zoom-in">
+            <h1 class="color-l-yellow  ppr-xl-1 h1-sections " data-aos="fade-down">INGRESSOS</h1>
+            <p class="txt-grey mt-3  pr-xl-1 max-width" data-aos="fade-up">
+              Nas compras acima de 15 ingressos (espetáculos) temos uma equipe
+              altamente capacitada para atender seu grupo de empresas, agências,
+              escolas, associacoes. </p>
 
 
 
-          <p class="txt-grey font-weight-bold mt-5" data-aos="fade-up">
-            Diferenciais de realizar uma reserva pelo <br>departamento de venda a grupos:<br>
-          </p>
-          <p class="txt-grey" data-aos="fade-up">
-            • Descontos especiais – consulte-nos<br>
-            • Atendimento personalizado<br>
-            • Reserva preferencial<br>
-            • Escolha dos melhores assentos disponiveis no setor de sua preferencia<br>
-            • Prazo para confirmacao da sua reserva e pagamento<br>
-            • Para cada espetaculo, uma politica diferenciada.
-          </p>
+            <p class="txt-grey font-weight-bold mt-5" data-aos="fade-up">
+              Diferenciais de realizar uma reserva pelo <br>departamento de venda a grupos:<br>
+            </p>
+            <p class="txt-grey" data-aos="fade-up">
+              • Descontos especiais – consulte-nos<br>
+              • Atendimento personalizado<br>
+              • Reserva preferencial<br>
+              • Escolha dos melhores assentos disponiveis no setor de sua preferencia<br>
+              • Prazo para confirmacao da sua reserva e pagamento<br>
+              • Para cada espetaculo, uma politica diferenciada.
+            </p>
 
+
+          </div>
 
         </div>
 
       </div>
 
-    </div>
 
+      <!--SESSÃO FECHADA-->
+      <div class="conteiner bg-dark2  d-flex justify-content-center pt-4 pb-4 ">
+        <div class="row justify-content-center margin-content-venda2 ">
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-2 mt-sm-5 mt-xl-0 p-0  ">
+            <img class="w-100" src="imgs/img-sessao-fechada.png" alt="Sessão fechada" data-aos="zoom-in">
 
-    <!--SESSÃO FECHADA-->
-    <div class="conteiner bg-dark2  d-flex justify-content-center pt-4 pb-4 ">
-      <div class="row justify-content-center margin-content-venda2 ">
-        <div
-          class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-2 mt-sm-5 mt-xl-0 p-0  ">
-          <img class="w-100" src="imgs/img-sessao-fechada.png" alt="Sessão fechada" data-aos="zoom-in">
+          </div>
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-1 p-0 p-xl-3 pl-xs-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
+            <img class=" mt-4  mb-3" src="imgs/icon-sessaofechada.svg" alt="" data-aos="zoom-in">
 
-        </div>
-        <div
-          class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-1 p-0 p-xl-3 pl-xs-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
-          <img class=" mt-4  mb-3" src="imgs/icon-sessaofechada.svg" alt="" data-aos="zoom-in">
+            <h1 class="color-l-yellow   pr-xl-1 h1-sections" data-aos="fade-down">SESSÃO FECHADA</h1>
+            <p class="txt-grey mt-3  pr-xl-1 max-width" data-aos="fade-up">
+              Com excecao dos shows, todos os nossos espetaculos podem
+              ser<br> adquiridos como uma sessao exclusiva para convidados!
+            </p>
 
-          <h1 class="color-l-yellow   pr-xl-1 h1-sections" data-aos="fade-down">SESSÃO FECHADA</h1>
-          <p class="txt-grey mt-3  pr-xl-1 max-width" data-aos="fade-up">
-            Com excecao dos shows, todos os nossos espetaculos podem
-            ser<br> adquiridos como uma sessao exclusiva para convidados!
-          </p>
+            <p class="txt-grey  mt-5 mb-5" data-aos="fade-up">
+              • Disponibilidade de ingressos na capacidade maxima<br> da
+              casa apenas para os convidados;<br>
+              • Exposicao da marca do cliente;<br>
+              • Contratacao de coquetel exclusivo, se desejar;<br>
+              • Breve fala do cliente antes do espetaculo;<br>
+              • Operacional da casa (segurancas, limpeza, recepção..) inclusos;
 
-          <p class="txt-grey  mt-5 mb-5" data-aos="fade-up">
-            • Disponibilidade de ingressos na capacidade maxima<br> da
-            casa apenas para os convidados;<br>
-            • Exposicao da marca do cliente;<br>
-            • Contratacao de coquetel exclusivo, se desejar;<br>
-            • Breve fala do cliente antes do espetaculo;<br>
-            • Operacional da casa (segurancas, limpeza, recepção..) inclusos;
+            </p>
+          </div>
 
-          </p>
         </div>
 
       </div>
-
-    </div>
-  </section>
+    </section>
     <!--.BANNERS-CTAS-->
     <section class="banners-ctas mb-5 mt-4 pt-2 margin-content max-wrap">
       <div class="conteiner d-flex justify-content-center">
@@ -183,7 +193,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-3 pr-3 pt-5 pt-sm-5 pt-md-5 pt-lg-0 p-xl-0" data-aos="fade-up">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-3 pr-3 pt-5 pt-sm-5 pt-md-5 pt-lg-0 p-xl-0"
+            data-aos="fade-up">
             <div class="cta bg-white p-5 mt-4">
               <h1 class="color-orange font-weight-bold">FAÇA SEU EVENTO CONOSCO!</h1>
               <p class="color-dark-grey2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc erat massa,
@@ -203,7 +214,8 @@
 
 
     <!--SECTION CONTATO-->
-    <section class="contato margin-content mb-5 mt-5 mt-xs-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-xs-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
+    <section
+      class="contato margin-content mb-5 mt-5 mt-xs-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-xs-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
       <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0 ">
 
         <img class=" mb-3 " src="imgs/contato.svg" alt="" data-aos="zoom-in">
@@ -230,72 +242,73 @@
   </main>
 
   <footer>
-  <!--SECTION RODAPE-->
-  <footer>
     <!--SECTION RODAPE-->
-    <section class="rodape bg-purple mt-5">
-      <address class="conteiner-fluid  d-flex justify-content-center pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0 max-wrap">
-        <div class="row mt-5 pt-2">
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
-            <img src="imgs/logo-t4f.png" alt="logo T4F Eventos">
-          </div>
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
-            <h6 class="text-white font-weight-bold mt-5 mt-5 mt-sm-0 mt-lg-0 mt-xl-0">CONTATO</h6>
-            <p class="text-white">t4feventos@t4f.com.br</p>
-            <p class="text-white">(11) 9 8272-2090</p>
-          </div>
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
-            <h6 class="text-white font-weight-bold">REDES SOCIAIS</h6>
-            <div class="row">
-              <a class="facebook" href="https://www.facebook.com/t4feventos/" target="_blank">
-                <img class="icon-social pl-3 pr-1" src="imgs/facebook-logo.svg" alt="logo Facebook"></a>
-              <a class="instagram" href="#" target="_blank">
-                <img class="icon-social pl-3 pr-1" src="imgs/instagram-logo.svg" alt="logo Instagram"></a>
-              <a class="instagram" href="#" target="_blank">
-                <img class="icon-social pl-3 pr-1" src="imgs/linkedin-logo.svg" alt="logo Linkedin"></a>
+    <footer>
+      <!--SECTION RODAPE-->
+      <section class="rodape bg-purple mt-5">
+        <address
+          class="conteiner-fluid  d-flex justify-content-center pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0 max-wrap">
+          <div class="row mt-5 pt-2">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
+              <img src="imgs/logo-t4f.png" alt="logo T4F Eventos">
             </div>
-  
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
+              <h6 class="text-white font-weight-bold mt-5 mt-5 mt-sm-0 mt-lg-0 mt-xl-0">CONTATO</h6>
+              <p class="text-white">t4feventos@t4f.com.br</p>
+              <p class="text-white">(11) 9 8272-2090</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
+              <h6 class="text-white font-weight-bold">REDES SOCIAIS</h6>
+              <div class="row">
+                <a class="facebook" href="https://www.facebook.com/t4feventos/" target="_blank">
+                  <img class="icon-social pl-3 pr-1" src="imgs/facebook-logo.svg" alt="logo Facebook"></a>
+                <a class="instagram" href="#" target="_blank">
+                  <img class="icon-social pl-3 pr-1" src="imgs/instagram-logo.svg" alt="logo Instagram"></a>
+                <a class="instagram" href="#" target="_blank">
+                  <img class="icon-social pl-3 pr-1" src="imgs/linkedin-logo.svg" alt="logo Linkedin"></a>
+              </div>
+
+            </div>
+          </div>
+        </address>
+        <div class="conteiner-fluid margin-content pt-4 d-flex justify-content-center  pl-4 pr-4">
+          <div class="row">
+            <div class="col-12">
+              <p class="txt-grey text-center" style=" max-width: 900px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque nibh ac interdum pellentesque.
+                Donec elementum facilisis pulvinar. Sed tincidunt ex lobortis, iaculis enim eu, rutrum ex. Nullam eget
+                dictum ipsum.
+                <br> <br>
+                <span>
+                  Desenvolvido por <a href="https://www.behance.net/ArthurRobertoGB" target="_blank">Arthur Roberto</a>
+                </span>
+              </p>
+
+            </div>
           </div>
         </div>
-      </address>
-   <div class="conteiner-fluid margin-content pt-4 d-flex justify-content-center  pl-4 pr-4">
-        <div class="row">
-          <div class="col-12">
-            <p class="txt-grey text-center" style=" max-width: 900px;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque nibh ac interdum pellentesque.
-              Donec elementum facilisis pulvinar. Sed tincidunt ex lobortis, iaculis enim eu, rutrum ex. Nullam eget
-              dictum ipsum.
-              <br> <br>
-              <span>
-                Desenvolvido por <a href="https://www.behance.net/ArthurRobertoGB" target="_blank">Arthur Roberto</a>
-              </span>
-            </p>
-  
-          </div>
-        </div>
-      </div>
-  
-    </section>
+
+      </section>
     </footer>
-  <!--[if lt IE 7]>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
-        <script defer src="owlcarousel/owl.carousel.min.js"></script>
-        <script src="js/functions.js"></script>
-       
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script defer src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/functions.js"></script>
+
 </body>
 
 </html>

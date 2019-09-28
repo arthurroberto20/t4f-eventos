@@ -13,12 +13,18 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/5e5f9fbe22.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/style.css">
 
   <style>
@@ -30,40 +36,57 @@
 
 <body>
 
-  <header class="navwrap" data-aos="fade-down">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar padding-content-header fixed-top">
-      <a class="navbar-brand" href="index.html">
-        <img src="imgs/logo-t4f.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse josefin" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto stroke">
-          <a class="nav-item nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="nossas-casas.html">CASAS</a>
-          <a class="nav-item nav-link selected-nav" href="venda-grupo.html">VENDA A GRUPOS</a>
-          <a class="nav-item nav-link" href="contato.html">CONTATO</a>
-          <button class="btn btn-gradient  navbar-btn" onclick="window.location.href = 'contato.html';">FAÇA SEU
-            EVENTO</button>
-        </div>
-      </div>
-    </nav>
+  <header>
+    <div class="conteiner-fluid navwrap">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-navbar padding-content-header fixed-top " data-aos="fade-down">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="imgs/logo-t4f.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 
-    
+          <!--just add these span here-->
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <!--/end span-->
+        </button>
+
+        <div class="collapse navbar-collapse josefin overlay-content" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto stroke">
+            <a class="nav-item nav-link active selected-nav" href="index.html">HOME <span
+                class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="nossas-casas.html">CASAS</a>
+            <a class="nav-item nav-link" href="venda-grupo.html">VENDA A GRUPOS</a>
+            <a class="nav-item nav-link" href="contato.html">CONTATO</a>
+            <button class="btn btn-gradient navbar-btn" onclick="window.location.href = 'contato.html';">FAÇA SEU
+              EVENTO</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
     <div class="nav-anchors">
-        <p class="title-anchor"> O QUE TEM <br>NESSA PÁGINA</p>
-        <a href="#item1"><p class="tag">01 - Conheça o espaço</p></a>
-       <a href="#item2"><p class="tag">02 - dados técnicos</p></a>
-       <a href="#item3"><p class="tag">03 - ações de relacionamento</p></a>
-       <a href="#item4"><p class="tag">04 - como chegar</p></a>
-      </div>
+      <p class="title-anchor"> O QUE TEM <br>NESSA PÁGINA</p>
+      <a href="#item1">
+        <p class="tag">01 - Conheça o espaço</p>
+      </a>
+      <a href="#item2">
+        <p class="tag">02 - dados técnicos</p>
+      </a>
+      <a href="#item3">
+        <p class="tag">03 - ações de relacionamento</p>
+      </a>
+      <a href="#item4">
+        <p class="tag">04 - como chegar</p>
+      </a>
+    </div>
   </header>
 
- 
 
-      <!--.SECTION BANNER-->
+
+  <!--.SECTION BANNER-->
   <section class="banner-topo">
 
     <div id="carouselExampleIndicators" class="carousel slide " data-interval="6000" data-ride="carousel">
@@ -95,160 +118,386 @@
     <section class="oque-fazemos  margin-content mt-5 pt-5 max-wrap">
       <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
         <h1 class="color-l-yellow  h1-sections " data-aos="fade-right">A CASA IDEAL PARA O SEU SHOW</h1>
-        <p class="txt-grey  mb-5" style="max-width:540px;" data-aos="fade-right">O palco dos maiores espetáculos da Broadway no Brasil é um ícone de São Paulo. Tombado pelo patrimônio histórico, o Teatro Renault é um dos endereços mais elegantes da cidade e oferece estrutura completa para todos os tamanhos de evento.
-<br><br>
-            Com capacidade para até 1530 pessoas, o Teatro Renault conta com uma equipe de profissionais e fornecedores especializados que garantem muito mais que o melhor custo-benefício, com a tecnologia, segurança e conforto que o seu evento precisa para ser um grande sucesso.
-<div class="row pl-4">
+        <p class="txt-grey  mb-5" style="max-width:540px;" data-aos="fade-right">O palco dos maiores espetáculos da
+          Broadway no Brasil é um ícone de São Paulo. Tombado pelo patrimônio histórico, o Teatro Renault é um dos
+          endereços mais elegantes da cidade e oferece estrutura completa para todos os tamanhos de evento.
+          <br><br>
+          Com capacidade para até 1530 pessoas, o Teatro Renault conta com uma equipe de profissionais e fornecedores
+          especializados que garantem muito mais que o melhor custo-benefício, com a tecnologia, segurança e conforto
+          que o seu evento precisa para ser um grande sucesso.
+          <div class="row pl-4">
 
-</p><i class="fas fa-download " data-aos="zoom-in"></i>
-  <p class="color-l-yellow font-weight-bold  pl-3 " data-aos="fade-up">MAPA / PLANTA
-  </p>
+        </p><i class="fas fa-download " data-aos="zoom-in"></i>
+        <p class="color-l-yellow font-weight-bold  pl-3 " data-aos="fade-up">MAPA / PLANTA
+        </p>
 
 
-</div>
-        
-<div data-aos="fade-up>">
-    <button class="btn btn-gradient2 ">DOWNLOAD</button>
-  </div>
+      </div>
+
+      <div data-aos="fade-up>">
+        <button class="btn btn-gradient2 ">DOWNLOAD</button>
+      </div>
       </div>
     </section>
 
-     <!--CONHEÇA O ESPAÇO-->
-  
-   
-      <section id="item1" class="contato margin-content mb-5 mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
-          <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
-    
-              <img class=" mb-3" src="imgs/casa.svg" alt="" data-aos="zoom-in">
-              <h1 class="color-l-yellow h1-sections  " data-aos="fade-right">CONHEÇA O ESPAÇO</h1>
-            <p class="txt-grey mb-5 max-width " data-aos="fade-right">O Credicard Hall São Paulo é o endereço ideal para qualquer tipo de evento. Com um espaço versátil, a casa permite a realização de</p>
-            
+    <!--CONHEÇA O ESPAÇO-->
+
+
+    <section id="item1"
+      class="contato margin-content mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
+      <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+
+        <img class=" mb-3" src="imgs/casa.svg" alt="" data-aos="zoom-in">
+        <h1 class="color-l-yellow h1-sections  " data-aos="fade-right">CONHEÇA O ESPAÇO</h1>
+        <p class="txt-grey mb-5 max-width " data-aos="fade-right">O Credicard Hall São Paulo é o endereço ideal para
+          qualquer tipo de evento. Com um espaço versátil, a casa permite a realização de</p>
+
+
+      </div>
+    </section>
+    <!--CAROUSEL TAB-->
+    <section class="carousel tab">
+      <div class="container-fluid tabs pl-4 pr-4 justify-content-center padding-content-casas">
+        <div class="row">
+          <div class="col-12">
+
+            <div>
+
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs margin-content pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0" role="tablist">
+                <li role="presentation" class="nav-item"><a class="nav-link active" href="#hall" aria-controls="hall"
+                    role="tab" data-toggle="tab">Hall</a></li>
+                <li role="presentation" class="nav-item"><a class="nav-link" href="#pistas" aria-controls="pistas"
+                    role="tab" data-toggle="tab">Pistas</a></li>
+                <li role="presentation" class="nav-item"><a class="nav-link" href="#salao" aria-controls="salao"
+                    role="tab" data-toggle="tab">Salão com mesas</a></li>
+                <li role="presentation" class="nav-item"><a class="nav-link" href="#foyer" aria-controls="foyer"
+                    role="tab" data-toggle="tab">Foyer</a></li>
+                <li role="presentation" class="nav-item"><a class="nav-link" href="#backstage" aria-controls="backstage"
+                    role="tab" data-toggle="tab">Backstage</a></li>
+
+
+
+
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <!-- HALL -->
+                <div role="tabpanel" class="tab-pane active" id="hall">
+                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+
+                  </div>
+                  <div class="row margin-content mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+                    <div class="col-6">
+                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h6>
+                      <p class="txt-grey">
+
+                        Até 2096 convidados<br>
+                        Cadeiras (térreo) – 1.200 lugares<br>
+                        Poltronas (térreo) – 896 lugares<br>
+                        Camarotes (2º piso/ casa toda) - 282 lugares<br>
+                        Plateia superior (3º piso/ casa toda) – 1.650 lugares
+                      </p>
+                    </div>
+                    <div class="col-6">
+                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h6>
+                      <p class="txt-grey">
+
+                        Até 2096 convidados<br>
+                        Cadeiras (térreo) – 1.200 lugares<br>
+                        Poltronas (térreo) – 896 lugares<br>
+                        Camarotes (2º piso/ casa toda) - 282 lugares<br>
+                        Plateia superior (3º piso/ casa toda) – 1.650 lugares
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- PISTAS -->
+                <div role="tabpanel" class="tab-pane" id="pistas">
+                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+
+                  </div>
+                </div>
+                <!-- SALAO -->
+                <div role="tabpanel" class="tab-pane" id="salao">
+                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+
+                  </div>
+                </div>
+                <!-- FOYER-->
+                <div role="tabpanel" class="tab-pane" id="foyer">
+                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+
+                  </div>
+                </div>
+                <!-- BACKSTAGE-->
+                <div role="tabpanel" class="tab-pane" id="backstage">
+                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
 
           </div>
-        
-      </section>
-  <!--DADOS-TECNICOS-->
-   
-    <section id="item2" class="dados margin-content mb-5 mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
-        <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
-  
-          <img class=" mb-3 " src="imgs/icon-dados.svg" alt="" data-aos="zoom-in">
-          <h1 class="color-l-yellow h1-sections  max-width " data-aos="fade-right">DADOS TÉCNICOS</h1>
-          <p class="txt-grey font-weight-light mt-0 " data-aos="fade-up">Teatro Renault - SP
-          
-           </p>
+        </div>
+      </div>
+    </section>
+
+    <!--DADOS-TECNICOS-->
+
+    <section id="item2"
+      class="dados margin-content mb-5 mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
+      <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+
+        <img class=" mb-3 " src="imgs/icon-dados.svg" alt="" data-aos="zoom-in">
+        <h1 class="color-l-yellow h1-sections  max-width " data-aos="fade-right">DADOS TÉCNICOS</h1>
+        <p class="txt-grey  mt-0 " data-aos="fade-up" style="letter-spacing:2px;">TEATRO RENAULT - SP</p>
+
+      </div>
+
+      <div class="conteiner-fluid d-flex justify-content-center pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+        <div class="row justify-content-center w-100 ">
+          <div class="mt-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-0 p-0">
+            <h5 class="color-l-yellow font-weight-bold  max-width-dados" data-aos="fade-up">Locação
+            </h5>
+            <p class="txt-grey" data-aos="fade-up">A locação do espaço compreende:</p>
+            <p class="color-l-yellow  mt-4 max-width-dados line-h-dados" data-aos="fade-up">
+              • Hall de Entrada<br>
+              • Sala de Espetáculos <br>
+              • Palco<br>
+              • Camarins e Backstage
+              • (Consultar disponibilidade)<br>
+              • Sala de Produção<br>
+              • Ar-condicionado central (Exceto Lobby)<br>
+              • Bares & Toilettes<br>
+            </p>
+            <!--LOBBY-->
+            <h5 class="color-l-yellow font-weight-bold mt-5 max-width-dados" data-aos="fade-up">Lobby
+            </h5>
+            <p class="txt-grey max-width-dados" data-aos="fade-up"> (em estilo Art Nouveau tombado pelo Patrimônio
+              Histórico com restrições para montagem de cenografia)<br>
+              Área útil: lobby térreo 250m² e mezanino 185m².<br>
+              2 Bares de atendimento ao público sendo 1 no piso térreo e outro no mezanino.</p>
+
+            <!--BACKSTAGE TÉRREO-->
+            <h5 class="color-l-yellow font-weight-bold mt-5 max-width-dados" data-aos="fade-up">Backstage Térreo
+            </h5>
+            <p class="txt-grey max-width-dados" data-aos="fade-up">
+              2 camarins coletivos (até 12 pax) e 1 camarim coletivo (até 16 pax) – sem banheiro<br>
+              1 camarim individual (até 3 px)<br>
+              Área para catering<br>
+              Camarins equipados com sofás, espelhos, araras, ar condicionado e banheiro.
+
+            </p>
+
+
+          </div>
+          <div class="mt-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-0 p-0">
+            <!--PALCO-->
+            <h5 class="color-l-yellow font-weight-bold  max-width-dados" data-aos="fade-up">Palco
+            </h5>
+            <p class="txt-grey max-width-dados" data-aos="fade-up">
+              Com 8.60m de comprimento até a boca de cena, 1.30m da cortina de boca até a frente do palco e 36m de
+              pé-direito<br>
+              Boca de cena: aproximadamente 12m de largura, 6m de altura e 24m de urdimento (medidas de acordo com o
+              espetáculo em cartaz).
+              1 Cortina corta-fogo<br>
+              2 escadas de acesso ao palco<br>
+              1 Rotunda de veludo preto<br>
+              3 Varas cênicas – de acordo com o espetáculo em cartaz<br>
+              Vide planta
+            </p>
+
+            <!--CONFIGURAÇÃO-->
+            <h5 class="color-l-yellow font-weight-bold mt-5 max-width-dados" data-aos="fade-up">Configuração
+            </h5>
+            <p class="txt-grey max-width-dados" data-aos="fade-up">O espaço é dividido em três setores, totalizando 1530
+              lugares: plateia A, plateia superior e camarotes.</p>
+            <div class="conteiner-fluid table-wrap" data-aos="fade-up">
+              <table class="table-simple">
+                <tr>
+                  <td class="color-l-yellow">PISO</td>
+                  <td>TÉRREO</td>
+                  <td>1º PISO</td>
+                  <td>1º PISO</td>
+                </tr>
+                <tr>
+                  <td class="small color-l-yellow">CONFIGURAÇÃO</td>
+                  <td class="white">PLATEIA <br><small>(cadeiras fixas)</small></td>
+                  <td class="white">CAMAROTES</td>
+                  <td class="white">BALCÃO</td>
+                </tr>
+                <tr>
+                  <td class="small color-l-yellow">1530 LUGARES</td>
+                  <td class="small">950</td>
+                  <td class="small">94</td>
+                  <td class="small">486</td>
+                </tr>
+              </table>
+            </div>
+          </div>
 
         </div>
-      
-            <div class="conteiner-fluid d-flex justify-content-center pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
-              <div class="row justify-content-center w-100 ">
-                  <div class="mt-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-0 p-0">
-                      <h5 class="color-l-yellow font-weight-bold  max-width-dados" data-aos="fade-up">Locação
-                        </h5>
-                    <p class="txt-grey" data-aos="fade-up">A locação do espaço compreende:</p>
-                      <p class="color-l-yellow  mt-4 max-width-dados line-h-dados" data-aos="fade-up">
-                          •  Hall de Entrada<br>
-                          •  Sala de Espetáculos <br>
-                          •  Palco<br>
-                          •  Camarins e Backstage
-                          •  (Consultar disponibilidade)<br>
-                          •  Sala de Produção<br>
-                          •  Ar-condicionado central (Exceto Lobby)<br>
-                          •  Bares & Toilettes<br>
-                        </p>
-                        <!--CONFIGURAÇÃO-->
-                        <h5 class="color-l-yellow font-weight-bold mt-5 max-width-dados" data-aos="fade-up">Lobby
-                        </h5>
-                        <p class="txt-grey max-width-dados" data-aos="fade-up"> (em estilo Art Nouveau tombado pelo Patrimônio Histórico com restrições para montagem de cenografia)<br>
-                            Área útil: lobby térreo 250m² e mezanino 185m².<br>
-                            2 Bares de atendimento ao público sendo 1 no piso térreo e outro no mezanino.</p>
-                           <!--BACKSTAGE TÉRREO-->
-                        <h5 class="color-l-yellow font-weight-bold mt-5 max-width-dados" data-aos="fade-up">Backstage Térreo
-                        </h5>
-                          <p class="txt-grey max-width-dados" data-aos="fade-up">
-                            2 camarins coletivos (até 12 pax) e 1 camarim coletivo (até 16 pax) – sem banheiro<br>
-                              1 camarim individual (até 3 px)<br>
-                              Área para catering<br>
-                              Camarins equipados com sofás, espelhos, araras, ar condicionado e banheiro.
-  
-                            </p>
-
-
-              </div>
-              <div class="mt-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-0 p-0">
-                    <!--PALCO-->
-                    <h5 class="color-l-yellow font-weight-bold  max-width-dados" data-aos="fade-up">Palco
-                    </h5>
-                      <p class="txt-grey max-width-dados" data-aos="fade-up">
-                          Com 8.60m de comprimento até a boca de cena, 1.30m da cortina de boca até a frente do palco e 36m de pé-direito<br>
-                          Boca de cena: aproximadamente 12m de largura, 6m de altura e 24m de urdimento (medidas de acordo com o espetáculo em cartaz).
-                          1 Cortina corta-fogo<br>
-                          2 escadas de acesso ao palco<br>
-                          1 Rotunda de veludo preto<br>
-                          3 Varas cênicas – de acordo com o espetáculo em cartaz<br>
-                          Vide planta
-                        </p>
-                        <h5 class="color-l-yellow font-weight-bold mt-5 max-width-dados" data-aos="fade-up">Configuração
-                        </h5>
-                          <p class="txt-grey max-width-dados" data-aos="fade-up">O espaço é dividido em três setores, totalizando 1530 lugares: plateia A, plateia superior e camarotes.</p>
-
-            </div>
-
-              </div>
-            </div>
+      </div>
     </section>
 
 
-    
-  <!--AÇÕES DE RELACIONAMENTO-->
-   
-      <section id="item3" class="açoes margin-content mb-5 mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
-          <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
-    
-            <img class=" mb-3 " src="imgs/icon-açoes.svg" alt="" data-aos="zoom-in">
-            <h1 class="color-l-yellow h1-sections  max-width " data-aos="fade-right">AÇÕES DE RELACIONAMENTO</h1>
-            <p class="txt-grey mb-5 max-width " data-aos="fade-right">O palco dos maiores espetáculos da Broadway no Brasil é um ícone de São Paulo. Tombado pelo patrimônio histórico, o Teatro Renault é um dos endereços mais elegantes da cidade e oferece estrutura completa para todos os tamanhos de evento.</p>
 
-  
-          </div>
-        
-      </section>
+    <!--AÇÕES DE RELACIONAMENTO-->
 
- <!-- COMO CHEGAR-->
- <section id="item4" class="max-wrap como chegar">
- <div class="conteiner bg-dark2 d-flex justify-content-center pt-4 pb-4">
-    <div class="row justify-content-center margin-content ">
-      <div
-        class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 mt-sm-5 mt-xl-0 p-0 ">
-        <img class="w-100" src="imgs/teatro-renault.png" alt="Teatro Renault" data-aos="zoom-in">
+    <section id="item3"
+      class="açoes margin-content mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
+      <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+
+        <img class=" mb-3 " src="imgs/icon-açoes.svg" alt="" data-aos="zoom-in">
+        <h1 class="color-l-yellow h1-sections  max-width " data-aos="fade-right">AÇÕES DE RELACIONAMENTO</h1>
+        <p class="txt-grey mb-5 max-width " data-aos="fade-right">O palco dos maiores espetáculos da Broadway no Brasil
+          é um ícone de São Paulo. Tombado pelo patrimônio histórico, o Teatro Renault é um dos endereços mais elegantes
+          da cidade e oferece estrutura completa para todos os tamanhos de evento.</p>
+
 
       </div>
-      <div
-        class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2 p-0 p-xl-3 pl-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
 
-        <h1 class="color-l-yellow mt-5 ppr-xl-1 h1-sections " data-aos="fade-down">COMO CHEGAR</h1>
-        <p class="txt-grey mt-3  pr-xl-1 max-width" data-aos="fade-up">O palco dos maiores espetáculos da Broadway
-          no
-          Brasil é um ícone de São Paulo. Tombado pelo patrimônio histórico, o Teatro Renault é um dos endereços
-          mais elegantes da cidade e oferece estrutura completa para todos os tamanhos de evento.
+    </section>
+    <!--CAROUSEL TAB-->
+    <section class="carousel tab">
+      <div class="container-fluid tabs pl-4 pr-4 justify-content-center padding-content-casas">
+        <div class="row">
+          <div class="col-12">
 
-          <hr class="style2 mt-4 mt-xl-5">
-          <p class="color-l-yellow font-weight-bold mt-4" data-aos="fade-up">Área: 985m²<br>
-            Capacidade: 7.000
-          </p>
-        </p>
-        <p class="color-dark-grey mt-4" data-aos="fade-up">
-          Endereço: Av. das Nações Unidas, 17955 - Vila Almeida,<br> São Paulo - SP, 04795-100
-        </p>
-        <div data-aos="fade-up>">
-          <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3"  onclick="window.location.href = 'casa-teatro-renault.html';">SAIBA MAIS</button>
+            <div>
+
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs margin-content pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0" role="tablist">
+                <li role="presentation" class="nav-item"><a class="nav-link active" href="#home" aria-controls="home"
+                    role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation" class="nav-item"><a class="nav-link" href="#pistas" aria-controls="pistas"
+                    role="tab" data-toggle="tab">pistas</a></li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+
+                  </div>
+                  <div class="row margin-content mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+                    <div class="col-6">
+                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h6>
+                      <p class="txt-grey">
+
+                        Até 2096 convidados<br>
+                        Cadeiras (térreo) – 1.200 lugares<br>
+                        Poltronas (térreo) – 896 lugares<br>
+                        Camarotes (2º piso/ casa toda) - 282 lugares<br>
+                        Plateia superior (3º piso/ casa toda) – 1.650 lugares
+                      </p>
+                    </div>
+                    <div class="col-6">
+                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h6>
+                      <p class="txt-grey">
+
+                        Até 2096 convidados<br>
+                        Cadeiras (térreo) – 1.200 lugares<br>
+                        Poltronas (térreo) – 896 lugares<br>
+                        Camarotes (2º piso/ casa toda) - 282 lugares<br>
+                        Plateia superior (3º piso/ casa toda) – 1.650 lugares
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="pistas">
+                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
         </div>
       </div>
+    </section>
 
-    </div>
 
-  </div>
-</section>
+
+    <!-- COMO CHEGAR-->
+    <section id="item4" class="max-wrap como chegar">
+      <div class="conteiner bg-dark2 d-flex justify-content-center pt-4 pb-4">
+        <div class="row justify-content-center margin-content ">
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 mt-sm-5 mt-xl-0 p-0 ">
+            <img class="w-100" src="imgs/teatro-renault.png" alt="Teatro Renault" data-aos="zoom-in">
+
+          </div>
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2 p-0 p-xl-3 pl-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
+
+            <h1 class="color-l-yellow mt-5 ppr-xl-1 h1-sections " data-aos="fade-down">COMO CHEGAR</h1>
+            <p class="txt-grey mt-3  pr-xl-1 max-width" data-aos="fade-up">O palco dos maiores espetáculos da Broadway
+              no
+              Brasil é um ícone de São Paulo. Tombado pelo patrimônio histórico, o Teatro Renault é um dos endereços
+              mais elegantes da cidade e oferece estrutura completa para todos os tamanhos de evento.
+
+              <hr class="style2 mt-4 mt-xl-5">
+              <p class="color-l-yellow font-weight-bold mt-4" data-aos="fade-up">Área: 985m²<br>
+                Capacidade: 7.000
+              </p>
+            </p>
+            <p class="color-dark-grey mt-4" data-aos="fade-up">
+              Endereço: Av. das Nações Unidas, 17955 - Vila Almeida,<br> São Paulo - SP, 04795-100
+            </p>
+            <div data-aos="fade-up>">
+              <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3"
+                onclick="window.location.href = 'casa-teatro-renault.html';">SAIBA MAIS</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
     <!--.BANNERS-CTAS-->
     <section id="item5" class="banners-ctas mb-5 mt-4 pt-2 margin-content max-wrap">
       <div class="conteiner d-flex justify-content-center">
@@ -265,7 +514,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-3 pr-3 pt-5 pt-sm-5 pt-md-5 pt-lg-0 p-xl-0" data-aos="fade-up">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-3 pr-3 pt-5 pt-sm-5 pt-md-5 pt-lg-0 p-xl-0"
+            data-aos="fade-up">
             <div class="cta bg-white p-5 mt-4">
               <h1 class="color-orange font-weight-bold">FAÇA SEU EVENTO CONOSCO!</h1>
               <p class="color-dark-grey2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc erat massa,
@@ -285,7 +535,8 @@
 
 
     <!--SECTION CONTATO-->
-    <section class="contato margin-content mb-5 mt-5 mt-xs-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-xs-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
+    <section
+      class="contato margin-content mb-5 mt-5 mt-xs-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-xs-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
       <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
 
         <img class=" mb-3 " src="imgs/contato.svg" alt="" data-aos="zoom-in">
@@ -311,11 +562,12 @@
 
   </main>
 
- 
+
   <footer>
     <!--SECTION RODAPE-->
     <section class="rodape bg-purple mt-5">
-      <address class="conteiner-fluid  d-flex justify-content-center pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0 max-wrap">
+      <address
+        class="conteiner-fluid  d-flex justify-content-center pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0 max-wrap">
         <div class="row mt-5 pt-2">
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
             <img src="imgs/logo-t4f.png" alt="logo T4F Eventos">
@@ -335,11 +587,11 @@
               <a class="instagram" href="#" target="_blank">
                 <img class="icon-social pl-3 pr-1" src="imgs/linkedin-logo.svg" alt="logo Linkedin"></a>
             </div>
-  
+
           </div>
         </div>
       </address>
-   <div class="conteiner-fluid margin-content pt-4 d-flex justify-content-center  pl-4 pr-4">
+      <div class="conteiner-fluid margin-content pt-4 d-flex justify-content-center  pl-4 pr-4">
         <div class="row">
           <div class="col-12">
             <p class="txt-grey text-center" style=" max-width: 900px;">
@@ -351,33 +603,36 @@
                 Desenvolvido por <a href="https://www.behance.net/ArthurRobertoGB" target="_blank">Arthur Roberto</a>
               </span>
             </p>
-  
+
           </div>
         </div>
       </div>
-  
+
     </section>
-    </footer>
+  </footer>
   <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
-       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
-          <script defer src="js/lucid.js"></script>
-          <script defer src="owlcarousel/owl.carousel.min.js"></script>
-          <script src="js/functions.js"></script>
-          <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script defer src="js/lucid.js"></script>
+  <script defer src="owlcarousel/owl.carousel.min.js"></script>
+
+  <script src="js/carousel-tab.js"></script>
+
+  <script src="js/functions.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

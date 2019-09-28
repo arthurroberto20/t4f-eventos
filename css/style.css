@@ -14,7 +14,13 @@ a {
 }
 
 
-
+[data-aos] {
+  pointer-events: none !important;
+ 
+}
+.aos-animate {
+  pointer-events: auto !important;
+}
 
 html,
 body {
@@ -52,7 +58,9 @@ a:hover {
 a:active {
   color: #FECC90;
 }
-
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background:#FF7A46;
+}
 .padding-content-header {
   padding-left: 9%;
   padding-right: 9%;
@@ -888,11 +896,19 @@ textarea.form-control {
 .nav-anchors {
   flex-direction: column;
   float: right;
-   /* position: fixed;*/
-  top: 50%;
-  transform: translateY(25%);
+  position: fixed;
+  top: 15%;
+  left: 92%;
   display: flex;
   flex-wrap: wrap-reverse;
+  position: fixed;
+  width: fit-content;
+  z-index: 2;
+  background: rgb(16,14,23);
+  background: -moz-linear-gradient(90deg, rgba(16,14,23,0) 0%, rgba(16,14,23,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(16,14,23,0) 0%, rgba(16,14,23,1) 100%);
+  background: linear-gradient(90deg, rgba(16,14,23,0) 0%, rgba(16,14,23,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#100e17",endColorstr="#100e17",GradientType=1);
 }
 .title-anchor{
   font-size: 14px;
@@ -1014,8 +1030,69 @@ textarea.form-control {
 
 
 
+/********************************/
+/*      CONFIGURAÇAO TABLE      */
+/********************************/
+.table-wrap{
+  max-width: 488px;
+}
+.table-simple {
+  display: block;
+  width: fit-content;
+  padding: 2%;
+  margin: 4% 0;
+  border: 1px solid #846ffd;
+  border-radius: 10px;
+}
+
+.table-simple td {
+  font-size: 0.7em;
+  text-align: center;
+  display: table-cell;
+  width: 9vw;
+  height: 4vw;
+  padding: 1em;
+  border-bottom: 1px solid #444444;
+  border-right: 1px solid #444444;
+}
 
 
+/********************************/
+/*      CAROUSEL TABS       */
+/********************************/
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #FECC90;
+  background-color: #201C29;
+  border-bottom: solid 8px #846ffd;
+  padding: 1em 2em;
+  border-color: #201c29 #201c29 #846ffd;
+
+}
+
+  .nav-tabs .nav-link{
+    transition: all 0.25s ease-in-out;
+    padding: 1em 2em;
+    border:none;
+    color:#9c9c9c;
+   
+  }
+.tab-content{
+
+border-top: solid 4px #846ffd;
+}
+.nav-tabs{
+  z-index:1000;
+
+  border-bottom: none;
+  }
+
+.tabs{
+  padding-bottom: 100px;
+background-color: #17141D;
+ 
+
+}
 
 /********************************/
 /*       RESPONSIVE CODE        */
@@ -1036,6 +1113,15 @@ textarea.form-control {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+  .navbar-nav {
+    padding-top: 40px;
+    font-size: 1.4em !important;
+    background-color: #100e17ba;
+
+    padding: 50px;
+  }
+
 .logo{
   width:160px;
 }
@@ -1111,10 +1197,7 @@ textarea.form-control {
 
 
 
-  /* .navbar-nav{
-    margin-left: -10% !important;
-  
-  }*/
+ 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -1137,24 +1220,33 @@ textarea.form-control {
 
 /* Large devices (laptops/desktops, 992px and down) */
 
-@media only screen and (max-width: 992px) {
-  .navbar .collapse.in,
+@media only screen and (max-width: 991px) {
+  
+  
   .navbar .collapsing {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .navbar .collapse.in{
     padding-top: 110px !important;
-     position: absolute;
-      right: 0;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      min-height: 100vh;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
   }
   .navbar .navbar-nav>.nav-item {
       float: none;
-      clear: both;}
+      clear: both;
+    }
       
   .navbar-nav{
     background-color: #100e17ba;
-      position: absolute;
+    position: absolute;
     right: 0;
     left: 0;
     padding-top: 110px !important;
@@ -1211,11 +1303,12 @@ textarea.form-control {
   .navbar-nav {
     /* margin-left: -10% !important; */
     padding-top: 40px;
-    font-size: 1.4em;
+    font-size: 2em;
     background-color: #100e17ba;
 
     padding: 50px;
   }
+
   #navbarNavAltMarkup > div > button{
     font-size: 14px;
     margin-left:1px;
