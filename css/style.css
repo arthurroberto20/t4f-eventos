@@ -44,6 +44,12 @@ a:link {
   margin-top:-1em;
 
 }
+.font-small{
+ font-size:14px !important;
+}
+.btn-large{
+  width: 260px !important;
+}
 /* visited link */
 a:visited {
   color:none;
@@ -97,7 +103,7 @@ line-height: 160%;
 .color-l-yellow {
   font-family: 'Josefin Sans', sans-serif;
 
-  color: #FECC90;
+  color: #FECC90 !important;
 }
 
 .color-orange {
@@ -1092,6 +1098,40 @@ border-top: solid 4px #846ffd;
 background-color: #17141D;
  
 
+}
+
+/********************************/
+/*       FORNECEDORES EXCL      */
+/********************************/
+.icon-wrap{
+  display: flex;
+}
+.forne-ex{
+  left: 23px;
+    top:7px;
+  position: absolute;
+  display: flex;
+}
+
+.card-fornecedor{
+  background-color:#100e17;
+
+}
+.card-fornecedores{
+  padding:30px;
+}
+.mb-0 > a {
+  display: block;
+  position: relative;
+}
+.mb-0 > a:after {
+  content: "\f078";
+  font-family: 'FontAwesome';
+ 
+
+}
+.mb-0 > a[aria-expanded="true"]:after {
+  content: "\f077"; /* fa-chevron-up */
 }
 
 /********************************/
