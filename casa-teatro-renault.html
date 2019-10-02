@@ -20,12 +20,14 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+
+  
+
 
   <style>
 
@@ -37,6 +39,10 @@
 <body>
 
   <header>
+    <script>
+      
+      
+      </script>
     <div class="conteiner-fluid navwrap">
       <nav class="navbar navbar-expand-lg navbar-dark bg-navbar padding-content-header fixed-top " data-aos="fade-down">
         <a class="navbar-brand" href="index.html">
@@ -55,8 +61,7 @@
 
         <div class="collapse navbar-collapse josefin overlay-content" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto stroke">
-            <a class="nav-item nav-link active selected-nav" href="index.html">HOME <span
-                class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="nossas-casas.html">CASAS</a>
             <a class="nav-item nav-link" href="venda-grupo.html">VENDA A GRUPOS</a>
             <a class="nav-item nav-link" href="contato.html">CONTATO</a>
@@ -143,8 +148,7 @@
     <!--CONHEÇA O ESPAÇO-->
 
 
-    <section id="item1"
-      class="contato margin-content mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
+    <section id="item1" class="contato margin-content mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
       <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
 
         <img class=" mb-3" src="imgs/casa.svg" alt="" data-aos="zoom-in">
@@ -156,15 +160,17 @@
       </div>
     </section>
     <!--CAROUSEL TAB-->
-    <section class="carousel tab">
+    <section class="carousel tab nav-anch max-wrap">
       <div class="container-fluid tabs pl-4 pr-4 justify-content-center padding-content-casas">
         <div class="row">
           <div class="col-12">
 
             <div>
-
+                <div class="scroller scroller-left"><i class="fas fa-chevron-left"></i></div>
+                <div class="scroller scroller-right"><i class="fas fa-chevron-right"></i></div>
+                <div class="wrapper">
               <!-- Nav tabs -->
-              <ul class="nav nav-tabs margin-content pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0" role="tablist">
+              <ul class="nav nav-tabs list margin-content pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0" role="tablist">
                 <li role="presentation" class="nav-item"><a class="nav-link active" href="#hall" aria-controls="hall"
                     role="tab" data-toggle="tab">Hall</a></li>
                 <li role="presentation" class="nav-item"><a class="nav-link" href="#pistas" aria-controls="pistas"
@@ -176,25 +182,32 @@
                 <li role="presentation" class="nav-item"><a class="nav-link" href="#backstage" aria-controls="backstage"
                     role="tab" data-toggle="tab">Backstage</a></li>
 
-
-
-
               </ul>
+              
+            </div>
 
               <!-- Tab panes -->
               <div class="tab-content">
                 <!-- HALL -->
-                <div role="tabpanel" class="tab-pane active" id="hall">
-                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
-                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
 
+                <div role="tabpanel" class=" tab-pane active " id="hall">
+                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                    <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                    </div>
+                    <div class="item"><a href="imgs/carousel-teatro-renault/img2-grande.jpg" data-gallery="example-gallery" data-type="image"  data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img2.jpg" alt=""></a>
+                    </div>
+                    <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                    </div>
+                    <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                    </div>
+                    <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                    </div>
+                    <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                    </div>
+                    <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                    </div>
+                    <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                    </div>
                   </div>
                   <div class="row margin-content mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -220,6 +233,9 @@
                       </p>
                     </div>
                   </div>
+
+
+
                 </div>
                 <!-- PISTAS -->
                 <div role="tabpanel" class="tab-pane" id="pistas">
@@ -273,8 +289,7 @@
 
     <!--DADOS-TECNICOS-->
 
-    <section id="item2"
-      class="dados margin-content mb-5 mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
+    <section id="item2" class="dados margin-content mb-5 mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
       <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
 
         <img class=" mb-3 " src="imgs/icon-dados.svg" alt="" data-aos="zoom-in">
@@ -367,36 +382,50 @@
 
         </div>
       </div>
-  <!--FORNECEDORES EXCLUSIVOS-->
-<div class="fornecedores container-fluid mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap" >
-  <div class="row" >
-    <div class="col-12 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+      <!--FORNECEDORES EXCLUSIVOS-->
+      <div class="fornecedores container-fluid mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
+        <div class="row">
+          <div class="col-12 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
 
-        <div id="accordion">
-            <div class="card card-fornecedor">
-              <div class="card-header bg-dark2 card-fornecedores" id="heading-1">
-                <h5 class="mb-0 icon-wrap">
+            <div id="accordion">
+              <div class="card card-fornecedor">
+                <div class="card-header bg-dark2 card-fornecedores" id="heading-1">
+                  <h5 class="mb-0 icon-wrap">
 
                     <img class="" src="imgs/fornecedores.svg" alt="" data-aos="zoom-in">
-                  <a class="color-l-yellow forne-ex" role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
-                    FORNECEDORES EXCLUSIVOS
-                  </a>
-                </h5>
-              </div>
-              <div id="collapse-1" class="collapse" data-parent="#accordion" aria-labelledby="heading-1">
-                <div class="card-body">
-          
-                      
-                
+                    <a class="color-l-yellow forne-ex" role="button" data-toggle="collapse" href="#collapse-1"
+                      aria-expanded="false" aria-controls="collapse-1">
+                      FORNECEDORES EXCLUSIVOS
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapse-1" class="collapse" data-parent="#accordion" aria-labelledby="heading-1">
+                  <div class="card-body">
+                    <div class="row">
+                      <div id="owl-fornecedores" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                        <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                        <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+
+                      </div>
+
+                    </div>
+
+
+                  </div>
                 </div>
               </div>
+
+
             </div>
-           
-           
           </div>
-    </div>
-  </div>
-</div>
+        </div>
+      </div>
 
     </section>
 
@@ -404,8 +433,7 @@
 
     <!--AÇÕES DE RELACIONAMENTO-->
 
-    <section id="item3"
-      class="açoes margin-content mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
+    <section id="item3"class="açoes margin-content mt-5 mt-5 mt-sm-5 mt-md-5 pb-5 pt-5 pt-5 pt-sm-5 pt-md-5 pb-5 max-wrap">
       <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
 
         <img class=" mb-3 " src="imgs/icon-açoes.svg" alt="" data-aos="zoom-in">
@@ -429,60 +457,103 @@
               <!-- Nav tabs -->
               <ul class="nav nav-tabs margin-content pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0" role="tablist">
                 <li role="presentation" class="nav-item"><a class="nav-link active" href="#home" aria-controls="home"
-                    role="tab" data-toggle="tab">Home</a></li>
-                <li role="presentation" class="nav-item"><a class="nav-link" href="#pistas" aria-controls="pistas"
-                    role="tab" data-toggle="tab">pistas</a></li>
+                    role="tab" data-toggle="tab">Mezzanino</a></li>
+              
               </ul>
 
               <!-- Tab panes -->
               <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home">
-                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
-                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-
-                  </div>
-                  <div class="row margin-content mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
-                    <div class="col-6">
-                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h6>
-                      <p class="txt-grey">
-
-                        Até 2096 convidados<br>
-                        Cadeiras (térreo) – 1.200 lugares<br>
-                        Poltronas (térreo) – 896 lugares<br>
-                        Camarotes (2º piso/ casa toda) - 282 lugares<br>
-                        Plateia superior (3º piso/ casa toda) – 1.650 lugares
-                      </p>
+                  <!-- HALL -->
+  
+                  <div role="tabpanel" class=" tab-pane active " id="hall">
+                    <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                      <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                      </div>
+                      <div class="item"><a href="imgs/carousel-teatro-renault/img2-grande.jpg" data-gallery="example-gallery" data-type="image"  data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img2.jpg" alt=""></a>
+                      </div>
+                      <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                      </div>
+                      <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                      </div>
+                      <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                      </div>
+                      <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                      </div>
+                      <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                      </div>
+                      <div class="item"><a href="imgs/carousel-teatro-renault/img1-grande.jpg" data-gallery="example-gallery" data-type="image" data-toggle="lightbox" > <img class="img-carousel-tab img-fluid" src="imgs/carousel-teatro-renault/img1.png" alt=""></a>
+                      </div>
                     </div>
-                    <div class="col-6">
-                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h6>
-                      <p class="txt-grey">
-
-                        Até 2096 convidados<br>
-                        Cadeiras (térreo) – 1.200 lugares<br>
-                        Poltronas (térreo) – 896 lugares<br>
-                        Camarotes (2º piso/ casa toda) - 282 lugares<br>
-                        Plateia superior (3º piso/ casa toda) – 1.650 lugares
-                      </p>
+                    <div class="row margin-content mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h6>
+                        <p class="txt-grey">
+  
+                          Até 2096 convidados<br>
+                          Cadeiras (térreo) – 1.200 lugares<br>
+                          Poltronas (térreo) – 896 lugares<br>
+                          Camarotes (2º piso/ casa toda) - 282 lugares<br>
+                          Plateia superior (3º piso/ casa toda) – 1.650 lugares
+                        </p>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h6>
+                        <p class="txt-grey">
+  
+                          Até 2096 convidados<br>
+                          Cadeiras (térreo) – 1.200 lugares<br>
+                          Poltronas (térreo) – 896 lugares<br>
+                          Camarotes (2º piso/ casa toda) - 282 lugares<br>
+                          Plateia superior (3º piso/ casa toda) – 1.650 lugares
+                        </p>
+                      </div>
+                    </div>
+  
+  
+  
+                  </div>
+                  <!-- PISTAS -->
+                  <div role="tabpanel" class="tab-pane" id="pistas">
+                    <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+  
                     </div>
                   </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="pistas">
-                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
-                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-                    <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
-
+                  <!-- SALAO -->
+                  <div role="tabpanel" class="tab-pane" id="salao">
+                    <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+  
+                    </div>
                   </div>
+                  <!-- FOYER-->
+                  <div role="tabpanel" class="tab-pane" id="foyer">
+                    <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+  
+                    </div>
+                  </div>
+                  <!-- BACKSTAGE-->
+                  <div role="tabpanel" class="tab-pane" id="backstage">
+                    <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+                      <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/img1.png" alt=""></div>
+  
+                    </div>
+                  </div>
+  
                 </div>
-              </div>
 
             </div>
 
@@ -494,16 +565,15 @@
 
 
     <!-- COMO CHEGAR-->
-    <section id="item4" class="max-wrap como chegar">
-      <div class="conteiner bg-dark2 d-flex justify-content-center pt-4 pb-4">
-        <div class="row justify-content-center margin-content ">
-          <div
-            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 mt-sm-5 mt-xl-0 p-0 ">
-            <img class="w-100" src="imgs/teatro-renault.png" alt="Teatro Renault" data-aos="zoom-in">
+    <section id="item4" class="max-wrap como chegar margin-content">
+      <div class="conteiner-fluid d-flex justify-content-center pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+        <div class="row w-100">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pr-0 pl-0 ">
+           <!--   <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Q6FNgACdWfT-nyDc7hzULSq_ez_kXUtg" width="640" height="480"></iframe> -->
+           <div id="googleMap" style="width:100%;height:500px;"></div>
 
           </div>
-          <div
-            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2 p-0 p-xl-3 pl-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  pr-0 pl-0 pl-lg-5 pl-xl-5">
 
             <h1 class="color-l-yellow mt-5 ppr-xl-1 h1-sections " data-aos="fade-down">COMO CHEGAR</h1>
             <p class="txt-grey mt-3  pr-xl-1 max-width" data-aos="fade-up">O palco dos maiores espetáculos da Broadway
@@ -512,12 +582,12 @@
               mais elegantes da cidade e oferece estrutura completa para todos os tamanhos de evento.
 
               <hr class="style2 mt-4 mt-xl-3">
-            
+
             </p>
             <p class="color-l-yellow mt-4" data-aos="fade-up">
               Endereço: Av. das Nações Unidas, 17955 - Vila Almeida,<br> São Paulo - SP, 04795-100
             </p>
-           
+
           </div>
 
         </div>
@@ -532,7 +602,8 @@
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-3 pr-3" data-aos="fade-up">
             <div class="cta bg-white p-5 mt-4">
               <h1 class="color-orange font-weight-bold">VENDA A GRUPOS</h1>
-              <p class="color-dark-grey2">Nas compras acima de 15 ingressos, possuímos uma equipe altamente capacitada para atender seu grupo corportaivo, agências, escolas e associações.</p>
+              <p class="color-dark-grey2">Nas compras acima de 15 ingressos, possuímos uma equipe altamente capacitada
+                para atender seu grupo corportaivo, agências, escolas e associações.</p>
               <div data-aos="fade-up>">
                 <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3">CONFIRA</button>
               </div>
@@ -588,52 +659,52 @@
 
 
   <footer>
-    <!--SECTION RODAPE-->
-    <section class="rodape bg-purple mt-5">
-      <address
-        class="conteiner-fluid  d-flex justify-content-center pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0 max-wrap">
-        <div class="row mt-5 pt-2">
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
-            <img src="imgs/logo-t4f.png" alt="logo T4F Eventos">
-          </div>
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
-            <h6 class="text-white font-weight-bold mt-5 mt-5 mt-sm-0 mt-lg-0 mt-xl-0">CONTATO</h6>
-            <p class="text-white">t4feventos@t4f.com.br</p>
-            <p class="text-white">(11) 9 8272-2090</p>
-          </div>
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
-            <h6 class="text-white font-weight-bold">REDES SOCIAIS</h6>
-            <div class="row">
-              <a class="facebook" href="https://www.facebook.com/t4feventos/" target="_blank">
-                <img class="icon-social pl-3 pr-1" src="imgs/facebook-logo.svg" alt="logo Facebook"></a>
-              <a class="instagram" href="#" target="_blank">
-                <img class="icon-social pl-3 pr-1" src="imgs/instagram-logo.svg" alt="logo Instagram"></a>
-              <a class="instagram" href="#" target="_blank">
-                <img class="icon-social pl-3 pr-1" src="imgs/linkedin-logo.svg" alt="logo Linkedin"></a>
+     <!--SECTION RODAPE-->
+     <section class="rodape bg-purple mt-5">
+        <address
+          class="conteiner-fluid  d-flex justify-content-center pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0 max-wrap">
+          <div class="row mt-5 pt-2">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
+              <img src="imgs/logo-t4f.png" alt="logo T4F Eventos">
             </div>
-
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
+              <h6 class="text-white font-weight-bold mt-5 mt-5 mt-sm-0 mt-lg-0 mt-xl-0">CONTATO</h6>
+              <p class="text-white">t4feventos@t4f.com.br</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
+              <h6 class="text-white font-weight-bold">REDES SOCIAIS</h6>
+              <div class="row">
+                <a class="facebook" href="https://www.facebook.com/t4feventos/" target="_blank">
+                  <img class="icon-social pl-3 pr-1" src="imgs/facebook-logo.svg" alt="logo Facebook"></a>
+                <a class="instagram" href="#" target="_blank">
+                  <img class="icon-social pl-3 pr-1" src="imgs/instagram-logo.svg" alt="logo Instagram"></a>
+                <a class="instagram" href="#" target="_blank">
+                  <img class="icon-social pl-3 pr-1" src="imgs/linkedin-logo.svg" alt="logo Linkedin"></a>
+              </div>
+  
+            </div>
+          </div>
+        </address>
+        <div class="conteiner-fluid margin-content pt-4 d-flex justify-content-center  pl-4 pr-4">
+          <div class="row">
+            <div class="col-12">
+              <p class="txt-grey text-center small" style=" max-width: 900px;">
+              
+                <span>
+                    Copyright© Time For Fun - Todos os direitos reservados
+                  </span><br>
+                <span>
+                  Desenvolvido por <a href="https://www.behance.net/ArthurRobertoGB" target="_blank">Arthur Roberto</a>
+                </span>
+              </p>
+  
+            </div>
           </div>
         </div>
-      </address>
-      <div class="conteiner-fluid margin-content pt-4 d-flex justify-content-center  pl-4 pr-4">
-        <div class="row">
-          <div class="col-12">
-            <p class="txt-grey text-center" style=" max-width: 900px;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque nibh ac interdum pellentesque.
-              Donec elementum facilisis pulvinar. Sed tincidunt ex lobortis, iaculis enim eu, rutrum ex. Nullam eget
-              dictum ipsum.
-              <br> <br>
-              <span>
-                Desenvolvido por <a href="https://www.behance.net/ArthurRobertoGB" target="_blank">Arthur Roberto</a>
-              </span>
-            </p>
-
-          </div>
-        </div>
-      </div>
-
-    </section>
-  </footer>
+  
+      </section>
+    </footer>
+  
   <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -652,12 +723,20 @@
   </script>
   <script defer src="js/lucid.js"></script>
   <script defer src="owlcarousel/owl.carousel.min.js"></script>
-
   <script src="js/carousel-tab.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzffX0ILMed59yzCtgMksQovNc_zYOsLk"></script>
+
 
   <script src="js/functions.js"></script>
   <script src="js/script.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script>$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+
+</script>
 </body>
 
 </html>

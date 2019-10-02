@@ -1100,6 +1100,67 @@ background-color: #17141D;
 
 }
 
+
+/********************************/
+/*      CAROUSEL MODAL       */
+/********************************/
+.modal-content{
+background-color: #17141D !important;
+}
+
+.modal-body{
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0 !important;
+  border-radius: 10px !important;
+  border: solid 4px #7455FF !important;
+}
+.wrapper {
+  position:relative;
+  margin:0 auto;
+  overflow:hidden;
+padding:5px;
+  height:50px;
+}
+
+.list {
+  position:absolute;
+  left:0px;
+  top:0px;
+  min-width:3000px;
+  margin-left:12px;
+  margin-top:0px;
+}
+
+.list li{
+display:table-cell;
+  position:relative;
+  text-align:center;
+  cursor:grab;
+  cursor:-webkit-grab;
+  color:#efefef;
+  vertical-align:middle;
+}
+
+.scroller {
+text-align:center;
+cursor:pointer;
+display:none;
+padding:7px;
+padding-top:11px;
+white-space:no-wrap;
+vertical-align:middle;
+
+}
+
+.scroller-right{
+float:right;
+}
+
+.scroller-left {
+float:left;
+}
 /********************************/
 /*       FORNECEDORES EXCL      */
 /********************************/
@@ -1115,9 +1176,18 @@ background-color: #17141D;
 
 .card-fornecedor{
   background-color:#100e17;
-
+  
 }
+.card-fornecedores:hover{
+  background-color:#100e17;
+border: solid 1px #7455FF;
+border-radius: 10px;
+}
+
 .card-fornecedores{
+  border-radius: 10px;
+  transition: all 0.25s ease-in-out;
+
   padding:30px;
 }
 .mb-0 > a {
@@ -1132,6 +1202,12 @@ background-color: #17141D;
 }
 .mb-0 > a[aria-expanded="true"]:after {
   content: "\f077"; /* fa-chevron-up */
+}
+
+
+#map-canvas {
+  height: 100%;
+  width: 100%;
 }
 
 /********************************/
