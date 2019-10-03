@@ -1122,12 +1122,16 @@ letter-spacing: 2px;
     color:#9c9c9c;
    
   }
+  .nav-tabs .nav-link:hover{
+
+color:#FECC90;
+  }
 .tab-content{
 
 border-top: solid 4px #846ffd;
 }
 .nav-tabs{
-  z-index:1000;
+ 
 
   border-bottom: none;
   }
