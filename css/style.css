@@ -18,6 +18,8 @@ i{
   
 }
 
+
+
 .dropdown-item{
 padding-top: 12px !important;
 padding-bottom: 12px !important;
@@ -93,6 +95,9 @@ color:#C2C2C2 !important;
 .font-small{
  font-size:14px !important;
 }
+.font-tiny{
+  font-size:12px !important;
+}
 .font-lg{
   font-size:22px;
   color: #FECC90;
@@ -161,6 +166,12 @@ line-height: 160%;
 
   color: #FECC90 !important;
 }
+.color-highlight {
+
+
+  color: #FECC90 !important;
+}
+
 
 .color-orange {
   font-family: 'Josefin Sans', sans-serif;
@@ -237,15 +248,59 @@ hr.style2 {
   -o-background-size: cover;
   background-size: cover;
 }
-.slide-casas {
 
+
+/********************************/
+/*      BANNERS PAGINAS       */
+/********************************/
+
+.slide-pg-casas {
+  background-position: top;
   background-attachment: fixed;
-  background: url("../imgs/bn-casas.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url("../imgs/bn-casas.png") no-repeat top fixed;
+  -webkit-background-size:  auto;
+  -moz-background-size:  auto;
+  -o-background-size:  auto;
+  background-size:   auto;
 }
+.slide-pg-sobre {
+  
+  background-position: top;
+  background-attachment: fixed;
+  background: url("../imgs/bn-pg-sobre.jpg") no-repeat top fixed;
+  -webkit-background-size:  auto;
+  -moz-background-size: auto;
+  -o-background-size:  auto;
+  background-size: auto;
+}
+
+.slide-pg-contato {
+  
+  background-position: top;
+  background-attachment: fixed;
+  background: url("../imgs/bn-pg-contato.jpg") no-repeat top fixed;
+  -webkit-background-size: auto;
+  -moz-background-size:  auto;
+  -o-background-size: auto;
+  background-size: auto;
+}
+
+.slide-pg-venda {
+  
+  background-position: top;
+  background-attachment: fixed;
+  background: url("../imgs/bn-pg-venda.jpg") no-repeat top fixed;
+  -webkit-background-size: auto;
+  -moz-background-size:  auto;
+  -o-background-size: auto;
+  background-size: auto;
+}
+
+
+
+/********************************/
+/*      BANNERS HOME CASAS      */
+/********************************/
 .slide-casa-teatro {
 
   background-attachment: fixed;
@@ -318,8 +373,34 @@ hr.style2 {
   color: #FECC90;
 }
 
+.btn-indice{
 
+  border: solid 2px #846ffd;
+  background-color: #1d1a26;
 
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 60px;
+  padding: 10px;
+  color: #fff;
+  width: 194px;
+  -webkit-box-shadow: -2px 5px 22px 1px rgba(255,122,70,0.2);
+  -moz-box-shadow: -2px 5px 22px 1px rgba(255,122,70,0.2);
+  box-shadow: -2px 5px 22px 1px rgba(255,122,70,0.2);
+    font-weight: 600;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+
+  transition: all 400ms ease 10ms;
+}
+
+.btn-indice:hover {
+  -webkit-box-shadow: -2px 12px 22px 0px rgba(132, 111, 253, 0.3);
+  -moz-box-shadow: -2px 12px 22px 0px rgba(132, 111, 253, 0.3);
+  box-shadow: -2px 12px 22px 0px rgba(132, 111, 253, 0.3);
+  transform: scale(1.04);
+  letter-spacing: 2px;
+  color: #fff;
+}
 .btn-gradient {
   background-image: linear-gradient(to right,
       rgba(255, 122, 70, 1),
@@ -602,6 +683,13 @@ border-width:  1px;
 /********************************/
 /*          Hero Headers        */
 /********************************/
+.carousel-indicators .active{
+  background-color: #FF7A46 !important;
+
+}
+.carousel-indicators li{
+  border:none !important;
+}
 .hero3 {
   width: 100%;
   position: absolute;
@@ -653,7 +741,13 @@ border-width:  1px;
   margin: 0;
   padding: 0;
 }
+.hero h4 {
 
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
 
 .hero {
   width:100%;
@@ -673,7 +767,7 @@ border-width:  1px;
 }
 
 .hero h1 {
-  font-size: 3.5em;
+  font-size: 2.9em;
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -787,14 +881,6 @@ border-width:  1px;
   object-fit: cover;
   height: 660px;
 }
-
-.bg-dark-card {
-
-  background-color: #201C29;
-  border-radius: 10px;
-  box-shadow: 0px 19px 14px rgba(0, 0, 0, 0.4);
-}
-
 .bg-dark2 {
   background-color: #17141D;
   color: #fff;
@@ -802,6 +888,19 @@ border-width:  1px;
   border-radius: 10px;
   box-shadow: 0px 19px 14px rgba(0, 0, 0, 0.4);
 }
+
+
+/********************************/
+/*       DEPOIMENTOS            */
+/********************************/
+.bg-dark-card {
+
+  background-color: #201C29;
+  border-radius: 10px;
+  box-shadow: 0px 19px 14px rgba(0, 0, 0, 0.4);
+}
+
+
 
 .card-img {
   background-color: #201C29;
@@ -832,6 +931,7 @@ border-width:  1px;
 .card-job-txt {
   margin-left: 89px;
   margin-top: -6%;
+  padding-right: 10px
 }
 
 
@@ -839,9 +939,43 @@ border-width:  1px;
   bottom: -65px;
 }
 
-input[type="text"].data-picker::-webkit-input-placeholder {
-  color: #c2c2c2;
+
+.blockquote{
+  padding-right: 22px !important;
 }
+.overflow-txt{
+  max-height: 170px;
+      
+    overflow-y: scroll !important;
+}
+
+/*
+ *  STYLE 1
+ */
+
+.scroll-style::-webkit-scrollbar-track
+ {
+box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+   border-radius: 10px;
+   background-color: #F5F5F5;
+ }
+ 
+.scroll-style::-webkit-scrollbar
+ {
+   width: 8px;
+ }
+ 
+.scroll-style::-webkit-scrollbar-thumb
+ {
+   border-radius: 10px;
+   box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+   background-color: #dedede;
+ }
+ 
 
 
 /********************************/
@@ -849,7 +983,9 @@ input[type="text"].data-picker::-webkit-input-placeholder {
 /********************************/
 /*       DATA PICKER       */
 
-
+input[type="text"].data-picker::-webkit-input-placeholder {
+  color: #c2c2c2;
+}
 .wrapper-form:before {
   content: "\f073";
   font-family: FontAwesome;
@@ -1456,6 +1592,11 @@ border-radius: 10px;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .overflow-txt {
+    max-height: 170px;
+
+    overflow-y: scroll !important;
+  }
   .breadcrumb-page{
 font-size:12px;
   }
@@ -1519,12 +1660,17 @@ font-size:0.7em;
   }
   
 
-  .hero h3 {
+  .hero h4 {
     margin-left: 13% !important;
-    font-size: 1.6em !important;
+    
+    margin-right: 13% !important;
+    font-size: 1.1em !important;
+  
   }
 
   .hero h1 {
+    margin-right: 13% !important;
+
     margin-left: 13% !important;
     font-size: 2.3em !important;
   }
@@ -1547,7 +1693,7 @@ font-size:0.7em;
   hr.style1 {
     margin-left: 14% !important;
   }
-  .hero h3 {
+  .hero h4 {
     font-size: 1em;
   }
 
@@ -1587,8 +1733,11 @@ font-size:0.7em;
 /* Large devices (laptops/desktops, 992px and down) */
 
 @media only screen and (max-width: 991px) {
-  
-  
+  .overflow-txt {
+    max-height: 100px;
+
+    overflow-y: scroll !important;
+  }
   .navbar .collapsing {
     position: absolute;
     right: 0;
@@ -1753,7 +1902,7 @@ font-size: 1.5em;
     left:89% !important;
   }
   .toggle-arrow{
-    left:90% !important;
+    left:91% !important;
 
   }
 }
@@ -1822,3 +1971,14 @@ font-size: 1.5em;
     left: 95% ;
   }
   }
+ 
+  /* Large devices (laptops/desktops, 1360px and up) */
+  @media only screen and (min-width: 1360px) {
+    .overflow-txt{
+      max-height: 170px;
+          min-height: 170px;
+        overflow-y: scroll !important;
+    }
+ 
+  }
+  
