@@ -255,6 +255,35 @@ hr.style2 {
   -o-background-size: cover;
   background-size: cover;
 }
+.slide-casa-unimed {
+
+  background-attachment: fixed;
+  background: url("../imgs/banners-unimed.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slide-casa-km-rj {
+
+  background-attachment: fixed;
+  background: url("../imgs/banners-km-rj.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slide-casa-km-bh {
+
+  background-attachment: fixed;
+  background: url("../imgs/banners-km-bh.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .selected-nav{
  color:#FECC90 !important;
 
@@ -748,6 +777,7 @@ border-width:  1px;
 .img-carousel-pg-casas {
   object-fit: cover;
   height: 560px;
+  opacity: 0.6;
 }
 .img-carousel-paginas {
   object-fit: cover;
@@ -1056,7 +1086,7 @@ textarea.form-control {
   flex-direction: column;
   float: right;
   position: fixed;
-  top: 22%;
+  top: 20%;
   padding-top: 22px;
   left: 92%;
   display: flex;
@@ -1426,7 +1456,13 @@ border-radius: 10px;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
- 
+  .breadcrumb-page{
+font-size:12px;
+  }
+  .prev-bread{
+    font-size:12px;
+      }
+
  .icon-fornecedores{
   width: 30px;
 
@@ -1475,7 +1511,8 @@ font-size:0.7em;
     padding: 0;
   }
   .hero3 h1 {
-    font-size: 2.3em;
+    max-width: 200px;
+    font-size: 2em;
     font-weight: bold;
     margin: 0;
     padding: 0;
