@@ -242,7 +242,7 @@ hr.style2 {
 .slideimg1 {
 
   background-attachment: fixed;
-  background: url("../imgs/Banner\ 1.png") no-repeat center center fixed;
+  background: url("../imgs/Banner\ 1.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -747,6 +747,7 @@ border-width:  1px;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  letter-spacing: 3px
 }
 
 .hero {
@@ -771,6 +772,7 @@ border-width:  1px;
   font-weight: bold;
   margin: 0;
   padding: 0;
+  letter-spacing: 3px;
 }
 
 .hero h3 {
@@ -879,7 +881,7 @@ border-width:  1px;
 }
 .img-carousel {
   object-fit: cover;
-  height: 660px;
+  height: 630px;
 }
 .bg-dark2 {
   background-color: #17141D;
@@ -1650,6 +1652,7 @@ font-size:0.7em;
     font-weight: bold;
     margin: 0;
     padding: 0;
+    
   }
   .hero3 h1 {
     max-width: 200px;
