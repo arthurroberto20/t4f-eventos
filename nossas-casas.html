@@ -60,6 +60,15 @@
       </div>
     </nav>
   </header>
+  <div class="bg-loader" >
+      <div id="logocontainer" onclick=fill()>
+          <img id="pelogo" src="imgs/logo-t4f.png"></img>
+          <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite"></div>
+          <div class="loader" style="right:0; top:2vh; width:2vh; height:0; animation:slide2 1s linear forwards infinite; animation-delay:0.5s"></div>
+          <div class="loader" style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
+          <div class="loader" style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s"></div>
+        </div>
+      </div>
   <!--.SECTION BANNER-->
   <section class="banner-topo">
     <div id="carouselExampleIndicators" class="carousel slide " data-interval="6000" data-ride="carousel">
@@ -113,7 +122,7 @@
                 <div class="location color-l-yellow">São Paulo, SP</div>
                 <div class="title color-l-yellow card-casas-txt">UNIMED HALL</div>
                 
-                <a class="link btn btn-gradient" href="casa-unimed-hall.html" target="_blank"
+                <a class="link btn btn-gradient" href="casa-unimed-hall.html" target="_self"
                   rel="noreferrer">CONHEÇA</a>
               </div>
             </div>
@@ -125,7 +134,7 @@
               <div class="text">
                 <div class="location color-l-yellow">São Paulo, SP</div>
                 <div class="title color-l-yellow card-casas-txt">TEATRO RENAULT</div>
-                <a class="link btn btn-gradient" href="casa-teatro-renault.html" target="_blank"
+                <a class="link btn btn-gradient" href="casa-teatro-renault.html" target="_self"
                   rel="noreferrer">CONHEÇA</a>
               </div>
             </div>
@@ -137,7 +146,7 @@
               <div class="text">
                 <div class="location color-l-yellow">Rio de janeiro, RJ</div>
                 <div class="title color-l-yellow card-casas-txt">KM DE VANTAGENS HALL </div>
-                <a class="link btn btn-gradient" href="casa-km-rj.html" target="_blank"
+                <a class="link btn btn-gradient" href="casa-km-rj.html" target="_self"
                   rel="noreferrer">CONHEÇA</a>
               </div>
             </div>
@@ -149,7 +158,7 @@
               <div class="text">
                 <div class="location color-l-yellow">Belo Horizonte, BH</div>
                 <div class="title color-l-yellow card-casas-txt">KM DE VANTAGENS HALL</div>
-                <a class="link btn btn-gradient" href="casa-km-bh.html" target="_blank"
+                <a class="link btn btn-gradient" href="casa-km-bh.html" target="_self"
                   rel="noreferrer">CONHEÇA</a>
               </div>
             </div>
@@ -217,11 +226,11 @@
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
             <h6 class="text-white font-weight-bold">REDES SOCIAIS</h6>
             <div class="row">
-              <a class="facebook" href="https://www.facebook.com/t4feventos/" target="_blank">
+              <a class="facebook" href="https://www.facebook.com/t4feventos/" target="_self">
                 <img class="icon-social pl-3 pr-1" src="imgs/facebook-logo.svg" alt="logo Facebook"></a>
-              <a class="instagram" href="#" target="_blank">
+              <a class="instagram" href="#" target="_self">
                 <img class="icon-social pl-3 pr-1" src="imgs/instagram-logo.svg" alt="logo Instagram"></a>
-              <a class="instagram" href="#" target="_blank">
+              <a class="instagram" href="#" target="_self">
                 <img class="icon-social pl-3 pr-1" src="imgs/linkedin-logo.svg" alt="logo Linkedin"></a>
             </div>
 
@@ -237,7 +246,7 @@
                 Copyright© Time For Fun - Todos os direitos reservados
               </span><br>
               <span>
-                Desenvolvido por <a href="https://www.behance.net/ArthurRobertoGB" target="_blank">Arthur Roberto</a>
+                Desenvolvido por <a href="https://www.behance.net/ArthurRobertoGB" target="_self">Arthur Roberto</a>
               </span>
             </p>
 
@@ -267,6 +276,9 @@
   </script>
   <script defer src="owlcarousel/owl.carousel.min.js"></script>
   <script src="js/functions.js"></script>
+  <script> $(window).on("load",function(){
+      $(".bg-loader").fadeOut("slow");
+    });</script>
 </body>
 
 </html>

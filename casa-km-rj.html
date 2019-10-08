@@ -101,8 +101,15 @@
     </div>
   </div>
   </header>
-
-
+  <div class="bg-loader" >
+  <div id="logocontainer" onclick=fill()>
+      <img id="pelogo" src="imgs/logo-t4f.png"></img>
+      <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite"></div>
+      <div class="loader" style="right:0; top:2vh; width:2vh; height:0; animation:slide2 1s linear forwards infinite; animation-delay:0.5s"></div>
+      <div class="loader" style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
+      <div class="loader" style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s"></div>
+    </div>
+  </div>
 
   <!--.SECTION BANNER-->
   <section class="banner-topo">
@@ -446,14 +453,14 @@ Até 4.028 convidados
                   <div class="card-body">
                     <div class="row">
                       <div id="owl-fornecedores" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/auditorio-img1.jpg" alt=""></div>
-                        <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/auditorio-img1.jpg" alt=""></div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/auditorio-img1.jpg" alt=""></div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/auditorio-img1.jpg" alt=""></div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/auditorio-img1.jpg" alt=""></div>
-                        <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/auditorio-img1.jpg" alt=""></div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/auditorio-img1.jpg" alt=""></div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/auditorio-img1.jpg" alt=""></div>
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-km-rj/KM RJ FORNECEDORES/AQUIM-LOGO.jpg" alt=""></div>
+                        <div><img class="img-carousel-tab" src="imgs/carousel-km-rj/KM RJ FORNECEDORES/AUROLIGHTS-LOGO.jpg" alt=""></div>
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-km-rj/KM RJ FORNECEDORES/CENTRAL-DE-FESTAS-LOGO.jpg" alt=""></div>
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-km-rj/KM RJ FORNECEDORES/PONTO-3-LOGO.jpg" alt=""></div>
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-km-rj/KM RJ FORNECEDORES/RESGATE-SA-LOGO.jpg" alt=""></div>
+                        <div><img class="img-carousel-tab" src="imgs/carousel-km-rj/KM RJ FORNECEDORES/SUETH-LOGO.jpg" alt=""></div>
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-km-rj/KM RJ FORNECEDORES/SUNSET-LOGO.jpg" alt=""></div>
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-km-rj/KM RJ FORNECEDORES/gabisom.jpg" alt=""></div>
 
                       </div>
 
@@ -509,7 +516,7 @@ Até 4.028 convidados
                   <!-- MEZANINO -->
   
                   <div role="tabpanel" class=" tab-pane active " id="mezanino">
-                    <div id="owl-example2" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                    <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
 
                       <div class="item-carousel"><a href="imgs/carousel-teatro-renault/mezanino-img1-grande.jpg" data-gallery="galeria-mezanino" data-type="image" data-toggle="lightbox" >
                          <img class="img-carousel-tab img-fluid" src="imgs/carousel-km-rj/placeholder-img.jpg" alt=""></a>
@@ -723,6 +730,9 @@ $(function() {
 
 
 </script>
+ <script> $(window).on("load",function(){
+    $(".bg-loader").fadeOut("slow");
+  });</script>
 </body>
 
 </html>

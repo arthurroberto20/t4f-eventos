@@ -103,8 +103,15 @@
       </div>
     </div>
   </header>
-
-     
+  <div class="bg-loader" >
+      <div id="logocontainer" onclick=fill()>
+          <img id="pelogo" src="imgs/logo-t4f.png"></img>
+          <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite"></div>
+          <div class="loader" style="right:0; top:2vh; width:2vh; height:0; animation:slide2 1s linear forwards infinite; animation-delay:0.5s"></div>
+          <div class="loader" style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
+          <div class="loader" style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s"></div>
+        </div>
+      </div>
 
   <!--.SECTION BANNER-->
   <section class="banner-topo">
@@ -132,6 +139,7 @@
 
     </div>
   </section>
+  
   <main>
     <!--.SECTION AQUI SEU EVENTO ACONTECE-->
     <section class="oque-fazemos  margin-content mt-5 pt-5 max-wrap">
@@ -612,23 +620,26 @@
                   <div class="card-body">
                     <div class="row">
                       <div id="owl-fornecedores" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/AUTOVAGAS-LOGO.jpg" alt="">
                         </div>
-                        <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div><img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/CIA-DA-TRUFA-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/ESC-SEGURANÇA-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/MARIO-AZEVEDO-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/NA-EQUIPAMENTOS-LOGO.jpg" alt="">
                         </div>
-                        <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div><img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/PONTO-MÍDIA-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/RP-LIGHTING-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/SAPORE-LOGO.jpg" alt="">
                         </div>
-
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/TANKER-LOGO.jpg" alt="">
+                        </div>
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/gabisom.jpg" alt="">
+                        </div>
                       </div>
 
                     </div>
@@ -683,7 +694,7 @@
                 <!-- MEZANINO -->
 
                 <div role="tabpanel" class=" tab-pane active " id="hall">
-                  <div id="owl-example2" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
 
                     <div class="item-carousel"><a href="imgs/carousel-unimed/mezanino/mezanino 1.jpg"
                         data-gallery="galeria-mezanino" data-type="image" data-toggle="lightbox"> <img
@@ -907,7 +918,11 @@
 
       });
     });
+   
   </script>
+   <script> $(window).on("load",function(){
+      $(".bg-loader").fadeOut("slow");
+    });</script>
 </body>
 
 </html>

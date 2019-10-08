@@ -65,7 +65,15 @@
       </div>
     </nav>
   </header>
-
+  <div class="bg-loader" >
+      <div id="logocontainer" onclick=fill()>
+          <img id="pelogo" src="imgs/logo-t4f.png"></img>
+          <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite"></div>
+          <div class="loader" style="right:0; top:2vh; width:2vh; height:0; animation:slide2 1s linear forwards infinite; animation-delay:0.5s"></div>
+          <div class="loader" style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
+          <div class="loader" style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s"></div>
+        </div>
+      </div>
   <!--.SECTION BANNER-->
   <section class="banner-topo">
 
@@ -525,7 +533,9 @@
   </script>
   <script defer src="owlcarousel/owl.carousel.min.js"></script>
   <script src="js/functions.js"></script>
-
+  <script> $(window).on("load",function(){
+      $(".bg-loader").fadeOut("slow");
+    });</script>
 </body>
 
 </html>

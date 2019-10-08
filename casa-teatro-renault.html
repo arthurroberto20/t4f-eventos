@@ -103,7 +103,15 @@
       </div>
     </div>
   </header>
-
+  <div class="bg-loader" >
+      <div id="logocontainer" onclick=fill()>
+          <img id="pelogo" src="imgs/logo-t4f.png"></img>
+          <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite"></div>
+          <div class="loader" style="right:0; top:2vh; width:2vh; height:0; animation:slide2 1s linear forwards infinite; animation-delay:0.5s"></div>
+          <div class="loader" style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
+          <div class="loader" style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s"></div>
+        </div>
+      </div>
 
 
   <!--.SECTION BANNER-->
@@ -443,21 +451,19 @@
                   <div class="card-body">
                     <div class="row">
                       <div id="owl-fornecedores" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/TEATRO RENAULT FORNECEDORES/PONTO-MÍDIA-LOGO.jpg" alt="">
                         </div>
-                        <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/TEATRO RENAULT FORNECEDORES/RP-LIGHTING-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/TEATRO RENAULT FORNECEDORES/SAPORE-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/TEATRO RENAULT FORNECEDORES/TANKER-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/TEATRO RENAULT FORNECEDORES/TCA-EVENTOS-LOGO.jpg" alt="">
                         </div>
-                        <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div><img class="img-carousel-tab" src="imgs/carousel-teatro-renault/TEATRO RENAULT FORNECEDORES/foco-video.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
-                        </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/Hall-img1.jpg" alt="">
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-teatro-renault/TEATRO RENAULT FORNECEDORES/gabisom.jpg" alt="">
                         </div>
 
                       </div>
@@ -513,7 +519,7 @@
                 <!-- MEZANINO -->
 
                 <div role="tabpanel" class=" tab-pane active " id="hall">
-                  <div id="owl-example2" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
 
                     <div class="item-carousel"><a href="imgs/carousel-teatro-renault/mezanino/mezanino 1.jpg"
                         data-gallery="galeria-mezanino" data-type="image" data-toggle="lightbox"> <img
@@ -742,6 +748,9 @@
       });
     });
   </script>
+    <script> $(window).on("load",function(){
+        $(".bg-loader").fadeOut("slow");
+      });</script>
 </body>
 
 </html>
