@@ -109,10 +109,10 @@ $(document).ready(function () {
 
 
     var hidWidth;
-var scrollBarWidths = 40;
+var scrollBarWidths = 20;
 
 var widthOfList = function(){
-  var itemsWidth = 0;
+  var itemsWidth = 10;
   $('.list li').each(function(){
     var itemWidth = $(this).outerWidth();
     itemsWidth+=itemWidth;
