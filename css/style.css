@@ -18,6 +18,9 @@ i{
   
 }
 
+.logo{
+  width: 160px;
+}
 
 
 .dropdown-item{
@@ -184,7 +187,7 @@ overflow: auto;
   display: flex;
   position: absolute;
   left: 3vh;
-    top: 13vh;
+    top: 10vh;
   width: 21vh;
  
   background-size: contain;
@@ -1297,38 +1300,11 @@ textarea.form-control {
   transition: all .3s ease-in-out;
 }
 
-.nav-anchors-wrap{
-  display: flex;
-  width: 100%;
-  height: 100%;
 
-}
 /* <-----THE SECRET ---- */
 html{
   scroll-behavior: smooth;    }
  
-
-.nav-anchors {
-  
-  height: -webkit-fill-available;
-  flex-direction: column;
-  float: right;
-  position: fixed;
-  top: 20%;
-  padding-top: 22px;
-  left: 92%;
-  display: flex;
-  flex-wrap: wrap-reverse;
-  position: fixed;
-  width: fit-content;
-  z-index: 2;
-  transition: all .3s ease-out;
-  background: rgb(16,14,23);
-  background: -moz-linear-gradient(90deg, rgba(16,14,23,0) 0%, rgba(16,14,23,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(16,14,23,0) 0%, rgba(16,14,23,1) 100%);
-  background: linear-gradient(90deg, rgba(16,14,23,0) 0%, rgba(16,14,23,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#100e17",endColorstr="#100e17",GradientType=1);
-}
 .title-anchor{
   font-size: 14px;
   margin-right: 20px;
@@ -1338,11 +1314,6 @@ html{
   margin-bottom: 0;
 }
 
-.nav-anchors.is-collapsed {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-          left: 122% !important;
-}
 .tag{
   font-size: 11px;
   position: absolute;
@@ -1359,17 +1330,7 @@ html{
 .tag:hover{
   color:#FECC90;
 }
-.nav-anchors a {
 
-  text-decoration: none;
-  width: 4px;
-  height: 60px;
-  display: flex;
-  justify-content: flex-end;
-  background: #505050;
-  margin: 30px 20px;
-  cursor: pointer;
-}
 
 .vivid:nth-child(odd) {
   background-color: #e46a2f;
@@ -1548,23 +1509,6 @@ background-color: #17141D;
  
 
 }
-/* .draggable navs */
-
-.draggable-container {
-  overflow: hidden;
-  /* no selection */
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.draggable {
-  width: 9999999px;
-  white-space: nowrap; /* all on same line */
-  font-size: 0; /* fix inline block spacing */
-}
 
 
 
@@ -1585,6 +1529,72 @@ background-color: #17141D !important;
   border-radius: 10px !important;
   border: solid 4px #7455FF !important;
 }
+/**
+ * jquery-bootstrap-scrolling-tabs
+ * @version v2.1.0
+ * @link https://github.com/mikejacobson/jquery-bootstrap-scrolling-tabs
+ * @author Mike Jacobson <michaeljjacobson1@gmail.com>
+ * @license MIT License, http://www.opensource.org/licenses/MIT */
+ .scrtabs-tab-container {
+  height: 84px;
+}
+.scrtabs-tab-container * {
+  box-sizing: border-box;
+}
+.scrtabs-tab-container .tab-content {
+  clear: left;
+}
+
+.scrtabs-tabs-fixed-container {
+  float: left;
+  height:85px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.scrtabs-tabs-movable-container {
+  position: relative;
+}
+.scrtabs-tabs-movable-container .tab-content {
+  display: none;
+}
+
+.scrtabs-tab-container.scrtabs-rtl .scrtabs-tabs-movable-container > ul.nav-tabs {
+  padding-right: 0;
+}
+
+.scroller-right{
+  
+   display: none;
+}
+  
+.scrtabs-tab-scroll-arrow {  
+  color: #428bca;
+  cursor: pointer;
+  display: none;
+  float: left;
+  font-size: 12px;
+  height: 84px;
+  margin-bottom: -1px;
+  padding-left: 2px;
+  padding-top: 13px;
+  width: 20px;
+}
+.scrtabs-tab-scroll-arrow:hover {
+  background-color: #eeeeee;
+  opacity: 0.1;
+}
+.scrtabs-tab-scroll-arrow.scrtabs-disable {
+  color: #ddd;
+  cursor: default;
+}
+
+.scrtabs-tabs-fixed-container ul.nav-tabs > li {
+  white-space: nowrap;
+}
+
+
+/*
 .wrapper {
   position:relative;
   margin:0 auto;
@@ -1630,6 +1640,7 @@ float:right;
 .scroller-left {
 float:left;
 }
+*/
 /********************************/
 /*       FORNECEDORES EXCL      */
 /********************************/
@@ -1708,6 +1719,14 @@ border-radius: 10px;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+  .scroller-right{
+  
+    position: absolute;
+    display: flex;
+    right: 2%;
+    top: 3.5%;
+}
   .overflow-txt {
     max-height: 170px;
 
