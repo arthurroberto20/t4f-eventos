@@ -13,12 +13,12 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/5e5f9fbe22.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
   <link rel="stylesheet" href="css/style.css">
 
   <style>
@@ -53,20 +53,26 @@
           <a class="nav-item nav-link" href="sobre-t4f.html">SOBRE A T4F</a>
           <a class="nav-item nav-link active selected-nav" href="nossas-casas.html">CASAS</a>
           <a class="nav-item nav-link" href="venda-grupo.html">VENDA A GRUPOS</a>
-          <button class="btn btn-gradient navbar-btn" onclick="window.location.href = 'contato.html';">CONTATO</button>
+          <button class="btn btn-gradient navbar-btn" onclick="window.location.href = 'contato.php';">CONTATO</button>
         </div>
       </div>
     </nav>
   </header>
-  <div class="bg-loader" >
-      <div id="logocontainer" onclick=fill()>
-          <img id="pelogo" src="imgs/logo-t4f.png"></img>
-          <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite"></div>
-          <div class="loader" style="right:0; top:2vh; width:2vh; height:0; animation:slide2 1s linear forwards infinite; animation-delay:0.5s"></div>
-          <div class="loader" style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
-          <div class="loader" style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s"></div>
-        </div>
+  <div class="bg-loader">
+    <div id="logocontainer" onclick=fill()>
+      <img id="pelogo" src="imgs/logo-t4f.png"></img>
+      <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite">
       </div>
+      <div class="loader"
+        style="right:0; top:2vh; width:2vh; height:0; animation:slide2 1s linear forwards infinite; animation-delay:0.5s">
+      </div>
+      <div class="loader"
+        style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
+      <div class="loader"
+        style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s">
+      </div>
+    </div>
+  </div>
   <!--.SECTION BANNER-->
   <section class="banner-topo">
     <div id="carouselExampleIndicators" class="carousel slide " data-interval="6000" data-ride="carousel">
@@ -98,8 +104,7 @@
     <!--.SECTION AQUI SEU EVENTO ACONTECE-->
     <section class="oque-fazemos  margin-content mt-5 pt-5 max-wrap">
       <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0 ">
-        <h1 class="color-l-yellow  h1-sections max-width2" data-aos="fade-right">NAS NOSSAS CASAS, VOCÊ COMANDA O
-          ESPETÁCULO!</h1>
+        <h1 class="color-l-yellow  h1-sections max-width2" data-aos="fade-right">AQUI VOCÊ COMANDA <br>O ESPETÁCULO</h1>
         <p class="txt-grey  mb-5 max-width2" data-aos="fade-right">
           Contamos com infraestrutura completa, equipe de profissionais treinados e fornecedores especializados, prontos
           para tornar o seu evento memorável. </p>
@@ -118,8 +123,8 @@
               <div class="background card-bg-unimed"></div>
               <div class="text">
                 <div class="location color-l-yellow">São Paulo, SP</div>
-                <div class="title color-l-yellow card-casas-txt">UNIMED HALL</div>
-                
+                <div class="title color-l-yellow card-casas-txt">UNIMEDHALL</div>
+
                 <a class="link btn btn-gradient" href="casa-unimed-hall.html" target="_self"
                   rel="noreferrer">CONHEÇA</a>
               </div>
@@ -144,8 +149,7 @@
               <div class="text">
                 <div class="location color-l-yellow">Rio de janeiro, RJ</div>
                 <div class="title color-l-yellow card-casas-txt">KM DE VANTAGENS HALL </div>
-                <a class="link btn btn-gradient" href="casa-km-rj.html" target="_self"
-                  rel="noreferrer">CONHEÇA</a>
+                <a class="link btn btn-gradient" href="casa-km-rj.html" target="_self" rel="noreferrer">CONHEÇA</a>
               </div>
             </div>
           </div>
@@ -156,8 +160,7 @@
               <div class="text">
                 <div class="location color-l-yellow">Belo Horizonte, BH</div>
                 <div class="title color-l-yellow card-casas-txt">KM DE VANTAGENS HALL</div>
-                <a class="link btn btn-gradient" href="casa-km-bh.html" target="_self"
-                  rel="noreferrer">CONHEÇA</a>
+                <a class="link btn btn-gradient" href="casa-km-bh.html" target="_self" rel="noreferrer">CONHEÇA</a>
               </div>
             </div>
 
@@ -170,36 +173,36 @@
 
     <!--.BANNERS-CTAS-->
     <section class="banners-ctas mb-5 pb-5 mt-4 pt-2 margin-content max-wrap">
-        <div class="conteiner d-flex justify-content-center">
-          <div class="row justify-content-center w-100 ">
-  
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-3 pr-3" data-aos="fade-up">
-              <div class="cta bg-white p-5 mt-4">
-                <h1 class="color-orange font-weight-bold">VENDA A GRUPOS</h1>
-                <p class="color-dark-grey2">Nas compras acima de 15 ingressos, possuímos uma equipe altamente capacitada
-                  para atender seu grupo corportaivo, agências, escolas e associações.</p>
-                <div data-aos="fade-up>">
-                  <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3">ENTRE EM CONTATO</button>
-                </div>
+      <div class="conteiner d-flex justify-content-center">
+        <div class="row justify-content-center w-100 ">
+
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-3 pr-3" data-aos="fade-up">
+            <div class="cta bg-white p-5 mt-4">
+              <h1 class="color-orange font-weight-bold">VENDA A GRUPOS</h1>
+              <p class="color-dark-grey2">Nas compras acima de 15 ingressos, possuímos uma equipe altamente capacitada
+                para atender seu grupo corporativo, agências, escolas e associações.</p>
+              <div data-aos="fade-up>">
+                <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3" onclick="window.location.href = 'venda-grupo.html';">ENTRE EM CONTATO</button>
               </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-3 pr-3 pt-5 pt-sm-5 pt-md-5 pt-lg-0 p-xl-0"
-              data-aos="fade-up">
-              <div class="cta bg-white p-5 mt-4">
-                <h1 class="color-orange font-weight-bold">FAÇA SEU EVENTO</h1>
-                <p class="color-dark-grey2">Para maiores informações, entre em contato e descubra todas possibilidades que
-                  oferecemos em nossas casas.
-  
-                </p>
-                <div data-aos="fade-up>">
-                  <button class="btn btn-gradient btn-large mt-2 mt-sm-1 mt-xl-3">SOLICITE SEU ORÇAMENTO</button>
-                </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-3 pr-3 pt-5 pt-sm-5 pt-md-5 pt-lg-0 p-xl-0"
+            data-aos="fade-up">
+            <div class="cta bg-white p-5 mt-4">
+              <h1 class="color-orange font-weight-bold">FAÇA SEU EVENTO</h1>
+              <p class="color-dark-grey2">Para maiores informações, entre em contato e descubra todas as possibilidades que
+                oferecemos em nossas casas.
+
+              </p>
+              <div data-aos="fade-up>">
+                <button class="btn btn-gradient btn-large mt-2 mt-sm-1 mt-xl-3" onclick="window.location.href = 'contato.php';">SOLICITE SEU ORÇAMENTO</button>
               </div>
             </div>
           </div>
         </div>
-      </section>
-  
+      </div>
+    </section>
+
 
 
 
@@ -214,11 +217,11 @@
         class="conteiner-fluid  d-flex justify-content-center pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0 max-wrap">
         <div class="row mt-5 pt-2">
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
-            <img src="imgs/logo-t4f.png" alt="logo T4F Eventos">
+            <img class="logo" src="imgs/logo-t4f.png" alt="logo T4F Eventos">
           </div>
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
             <h6 class="text-white font-weight-bold mt-5 mt-5 mt-sm-0 mt-lg-0 mt-xl-0">CONTATO</h6>
-            <p class="text-white">t4feventos@t4f.com.br</p>
+            <p class="text-white">eventos@t4f.com.br</p>
           </div>
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
             <h6 class="text-white font-weight-bold">REDES SOCIAIS</h6>
@@ -258,24 +261,15 @@
             <p class="browsehappy">Você está utilizando um navegador <strong>antigo</strong>. Por favor <a href="#">atualize</a> seu navegador para melhorar a experiência </p>
         <![endif]-->
 
-  <script src="js/jquery.min.js"></script>
+  <script defer src="js/jquery.min.js"></script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script defer src="owlcarousel/owl.carousel.min.js"></script>
-  <script src="js/functions.js"></script>
-  <script> $(window).on("load",function(){
-      $(".bg-loader").fadeOut("slow");
-    });</script>
+
+  <script defer src="js/bootstrap.min.js"></script>  
+
+  <script defer src="js/script.js"></script>
+ 
 </body>
 
 </html>

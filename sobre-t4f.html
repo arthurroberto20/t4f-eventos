@@ -13,17 +13,15 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/5e5f9fbe22.js" crossorigin="anonymous"></script>
-  <!-- Datepicker -->
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css'
-    rel='stylesheet' type='text/css'>
+ 
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
   <link rel="stylesheet" href="css/style.css">
 
 
@@ -60,7 +58,7 @@
 
           <a class="nav-item nav-link" href="nossas-casas.html">CASAS</a>
           <a class="nav-item nav-link" href="venda-grupo.html">VENDA A GRUPOS</a>
-          <button class="btn btn-gradient navbar-btn" onclick="window.location.href = 'contato.html';">CONTATO</button>
+          <button class="btn btn-gradient navbar-btn" onclick="window.location.href = 'contato.php';">CONTATO</button>
         </div>
       </div>
     </nav>
@@ -117,7 +115,7 @@
             <div
               class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-7 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-2 p-0 p-xl-3">
   
-              <img class="w-100 pb-0 pt-5 pt-xl-5 pb-xl-5 pr-xl-4 pl-xl-4" src="imgs/img-sobre.png" alt="" data-aos="zoom-in">
+              <img class="w-100 img-sobre pb-0 pt-5 pt-xl-5 pb-xl-5 pr-xl-4 pl-xl-4" src="imgs/ilustra-sobret4f.svg" alt="" data-aos="zoom-in">
             </div>
   
           </div>
@@ -134,9 +132,9 @@
               <div class="cta bg-white p-5 mt-4">
                 <h1 class="color-orange font-weight-bold">VENDA A GRUPOS</h1>
                 <p class="color-dark-grey2">Nas compras acima de 15 ingressos, possuímos uma equipe altamente capacitada
-                  para atender seu grupo corportaivo, agências, escolas e associações.</p>
+                  para atender seu grupo corporativo, agências, escolas e associações.</p>
                 <div data-aos="fade-up>">
-                  <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3">ENTRE EM CONTATO</button>
+                  <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3" onclick="window.location.href = 'venda-grupo.html';">ENTRE EM CONTATO</button>
                 </div>
               </div>
             </div>
@@ -144,12 +142,12 @@
               data-aos="fade-up">
               <div class="cta bg-white p-5 mt-4">
                 <h1 class="color-orange font-weight-bold">FAÇA SEU EVENTO</h1>
-                <p class="color-dark-grey2">Para maiores informações, entre em contato e descubra todas possibilidades que
+                <p class="color-dark-grey2">Para maiores informações, entre em contato e descubra todas as possibilidades que
                   oferecemos em nossas casas.
   
                 </p>
                 <div data-aos="fade-up>">
-                  <button class="btn btn-gradient btn-large mt-2 mt-sm-1 mt-xl-3">SOLICITE SEU ORÇAMENTO</button>
+                  <button class="btn btn-gradient btn-large mt-2 mt-sm-1 mt-xl-3" onclick="window.location.href = 'contato.php';">SOLICITE SEU ORÇAMENTO</button>
                 </div>
               </div>
             </div>
@@ -173,7 +171,7 @@
             </div>
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
             <h6 class="text-white font-weight-bold mt-5 mt-5 mt-sm-0 mt-lg-0 mt-xl-0">CONTATO</h6>
-            <p class="text-white">t4feventos@t4f.com.br</p>
+            <p class="text-white">eventos@t4f.com.br</p>
           </div>
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
             <h6 class="text-white font-weight-bold">REDES SOCIAIS</h6>
@@ -212,60 +210,17 @@
 
 
 
-  <script src="js/jquery.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('#datepicker').datepicker();
-    });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <script defer src="js/jquery.min.js"></script>
+ 
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+ 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script defer src="owlcarousel/owl.carousel.min.js"></script>
-  <script src="js/functions.js"></script>
-  <script>
-    // OPTIONAL JS
 
-    // Change the button text & add active class
-    $('.jRadioDropdown').change(function () {
-      var dropdown = $(this).closest('.dropdown');
-      var thislabel = $(this).closest('label');
+  <script defer src="js/bootstrap.min.js"></script>  
 
-      dropdown.find('label').removeClass('active');
-      if ($(this).is(':checked')) {
-        thislabel.addClass('active');
-        dropdown.find('ins').html(thislabel.text());
-      }
-
-    });
-
-    //Add tabindex on labels
-    $('label.dropdown-item').each(function (index, value) {
-      $(this).attr('tabindex', 0);
-      $(this).find('input').attr('tabindex', -1);
-    });
-
-    //Add keyboard navigation
-    $('label.dropdown-item').keypress(function (e) {
-      if ((e.keyCode ? e.keyCode : e.which) == 13) {
-        $(this).find('input').trigger('click');
-        $(this).closest('.dropdown').dropdown('toggle')
-      }
-    });
-  </script>
-   <script> $(window).on("load",function(){
-      $(".bg-loader").fadeOut("slow");
-    });</script>
+  <script defer src="js/script.js"></script>
+ 
 </body>
 
 </html>

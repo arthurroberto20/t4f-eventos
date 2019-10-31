@@ -21,8 +21,15 @@ i{
 .logo{
   width: 160px;
 }
-
-
+.img-sobre{
+  max-width: 780px;
+}
+.img-mobile{
+  max-width: 780px;
+}
+.maps-frame{
+  border-radius:10px;
+}
 .dropdown-item{
 padding-top: 12px !important;
 padding-bottom: 12px !important;
@@ -48,6 +55,12 @@ transition: 0.25s ease-in-out;
 
   border-radius: 10px !important;
   height: calc(2.5em + .75rem + 2px);
+}
+.i4ewOd-pzNkMb-haAclf{
+  background-color: #7455FF !important;
+}
+.i4ewOd-pzNkMb-haAclf {
+  background-color: #7455FF !important;
 }
 ins{
   text-decoration: none;
@@ -173,7 +186,7 @@ overflow: auto;
   display:block;
   position:fixed;
   top:50%;
-  left:50%;
+  left:53%;
   width:31vh;
   height:31vh;
   margin-left:-17vh;
@@ -330,59 +343,93 @@ hr.style2 {
 .slideimg1 {
 
   background-attachment: fixed;
-  background: url("../imgs/Banner\ 1.jpg") no-repeat center center fixed;
+  background: url("../imgs/banner-1.jpg") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slideimg2 {
+
+  background-attachment: fixed;
+  background: url("../imgs/banner-2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+.slideimg3 {
 
+  background-attachment: fixed;
+  background: url("../imgs/banner-3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slideimg4 {
+
+  background-attachment: fixed;
+  background: url("../imgs/banner-4.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /********************************/
 /*      BANNERS PAGINAS       */
 /********************************/
 
 .slide-pg-casas {
-  background-position: top;
+
+
   background-attachment: fixed;
-  background: url("../imgs/bn-casas.png") no-repeat top fixed;
-  -webkit-background-size:  auto;
-  -moz-background-size:  auto;
-  -o-background-size:  auto;
-  background-size:   auto;
+  background: url("../imgs/bn-casas.png") no-repeat fixed;
+  -webkit-background-size:  contain;
+  -moz-background-size:  contain;
+  -o-background-size:  contain;
+ 
+  background-size: contain;
 }
 .slide-pg-sobre {
   
-  background-position: top;
+ 
   background-attachment: fixed;
-  background: url("../imgs/bn-pg-sobre.jpg") no-repeat top fixed;
-  -webkit-background-size:  auto;
-  -moz-background-size: auto;
-  -o-background-size:  auto;
-  background-size: auto;
+  background: url("../imgs/bn-pg-sobre.jpg") no-repeat  fixed;
+  -webkit-background-size:  contain;
+  -moz-background-size:  contain;
+  -o-background-size:  contain;
+ 
+  background-size: contain;
 }
+
 
 .slide-pg-contato {
   
-  background-position: top;
+ 
   background-attachment: fixed;
-  background: url("../imgs/bn-pg-contato.jpg") no-repeat top fixed;
-  -webkit-background-size: auto;
-  -moz-background-size:  auto;
-  -o-background-size: auto;
-  background-size: auto;
+  background: url("../imgs/bn-pg-contato.jpg") no-repeat  fixed;
+  -webkit-background-size:  contain;
+  -moz-background-size:  contain;
+  -o-background-size:  contain;
+ 
+  background-size: contain;
 }
+
 
 .slide-pg-venda {
   
-  background-position: top;
+
   background-attachment: fixed;
-  background: url("../imgs/bn-pg-venda.jpg") no-repeat top fixed;
-  -webkit-background-size: auto;
-  -moz-background-size:  auto;
-  -o-background-size: auto;
-  background-size: auto;
+  background: url("../imgs/bn-pg-venda.jpg") no-repeat fixed;
+  -webkit-background-size:  contain;
+  -moz-background-size:  contain;
+  -o-background-size:  contain;
+ 
+  background-size: contain;
 }
+
 
 
 
@@ -392,39 +439,43 @@ hr.style2 {
 .slide-casa-teatro {
 
   background-attachment: fixed;
-  background: url("../imgs/banners-teatro-renault.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url("../imgs/banners-teatro-renault.jpg") no-repeat fixed;
+  -webkit-background-size:  contain;
+  -moz-background-size:  contain;
+  -o-background-size:  contain;
+ 
+  background-size: contain;
 }
 .slide-casa-unimed {
 
   background-attachment: fixed;
-  background: url("../imgs/banners-unimed.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url("../imgs/banners-unimed.jpg") no-repeat fixed;
+  -webkit-background-size:  contain;
+  -moz-background-size:  contain;
+  -o-background-size:  contain;
+ 
+  background-size: contain;
 }
 .slide-casa-km-rj {
 
   background-attachment: fixed;
-  background: url("../imgs/banners-km-rj.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url("../imgs/banners-km-rj.jpg") no-repeat fixed;
+  -webkit-background-size:  contain;
+  -moz-background-size:  contain;
+  -o-background-size:  contain;
+ 
+  background-size: contain;
 }
 
 .slide-casa-km-bh {
 
   background-attachment: fixed;
-  background: url("../imgs/banners-km-bh.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url("../imgs/banners-km-bh.jpg") no-repeat fixed;
+  -webkit-background-size:  contain;
+  -moz-background-size:  contain;
+  -o-background-size:  contain;
+ 
+  background-size: contain;
 }
 
 .selected-nav{
@@ -740,7 +791,7 @@ border-radius: 10px;
 border: solid #7455FF;
 border-width: 1px;
   
-  background: url("../imgs/teatro-renault-card2.png") no-repeat;
+  background: url("../imgs/teatro-renault-card2.jpg") no-repeat;
   
   
  
@@ -749,7 +800,7 @@ border-width: 1px;
   border-radius: 10px;
   border: solid #7455FF;
   border-width: 1px;
-  background: url("../imgs/km-rj-card2.png") no-repeat;
+  background: url("../imgs/km-rj-card2.jpg") no-repeat;
  
 }
 .card-bg-km-bh{
@@ -757,14 +808,14 @@ border-width: 1px;
   border: solid #7455FF;
   border-width: 1px;
   
-  background: url("../imgs/km-bh-card2.png") no-repeat;
+  background: url("../imgs/km-bh-card2.jpg") no-repeat;
 
 }
 .card-bg-unimed{
   border-radius: 10px;
 border: solid #7455FF;
 border-width:  1px;
-  background: url("../imgs/credicard-hall-card2.png") no-repeat;
+  background: url("../imgs/credicard-hall-card2.jpg") no-repeat;
   
 }
 
@@ -996,6 +1047,7 @@ border-width:  1px;
   background-color: #201C29;
   border-radius: 20px;
   width: 100%;
+  height: 360px;
 
 }
 
@@ -1032,6 +1084,7 @@ border-width:  1px;
 
 .blockquote{
   padding-right: 22px !important;
+  height: 230px !important;
 }
 .overflow-txt{
   max-height: 170px;
@@ -1188,6 +1241,7 @@ textarea.form-control {
 }
 .form-control:focus{
   border-color: #7455FF;}
+  
 .valid-tooltip{
   position: initial;
   background-color:#0f0f0f;
@@ -1719,7 +1773,11 @@ border-radius: 10px;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .navbar{
+padding-top:0;
 
+
+  }
   .scroller-right{
   
     position: absolute;
@@ -1764,7 +1822,7 @@ font-size:0.7em;
   }
 
 .logo{
-  width:160px;
+  width:122px;
 }
 .margin-content-venda{
   margin-right: 0% !important;
@@ -1822,6 +1880,10 @@ font-size:0.7em;
     margin-left:0% !important;
     margin-right: 0% !important;
   }
+  .margin-content2 {
+    margin-left:-4% !important;
+    margin-right: 0% !important;
+  }
   .hero{
     top: 55%;
     left: 45%;
@@ -1869,6 +1931,110 @@ font-size:0.7em;
 /* Large devices (laptops/desktops, 992px and down) */
 
 @media only screen and (max-width: 991px) {
+
+  
+/********************************/
+/*      BANNERS PAGINAS CASAS       */
+/********************************/
+  .slide-casa-teatro {
+
+    background-attachment: fixed;
+    background: url("../imgs/banners-teatro-renault.jpg") no-repeat fixed;
+    -webkit-background-size:  cover;
+    -moz-background-size:  cover;
+    -o-background-size:  cover;
+   
+    background-size: cover;
+  }
+  .slide-casa-unimed {
+  
+    background-attachment: fixed;
+    background: url("../imgs/banners-unimed.jpg") no-repeat fixed;
+    -webkit-background-size:  cover;
+    -moz-background-size:  cover;
+    -o-background-size:  cover;
+   
+    background-size: cover;
+  }
+  .slide-casa-km-rj {
+  
+    background-attachment: fixed;
+    background: url("../imgs/banners-km-rj.jpg") no-repeat fixed;
+    -webkit-background-size:  cover;
+    -moz-background-size:  cover;
+    -o-background-size:  cover;
+   
+    background-size: cover;
+  }
+  
+  .slide-casa-km-bh {
+  
+    background-attachment: fixed;
+    background: url("../imgs/banners-km-bh.jpg") no-repeat fixed;
+    -webkit-background-size:  cover;
+    -moz-background-size:  cover;
+    -o-background-size:  cover;
+   
+    background-size: cover;
+  }
+
+/********************************/
+/*      BANNERS PAGINAS       */
+/********************************/
+
+.slide-pg-casas {
+
+
+  background-attachment: fixed;
+  background: url("../imgs/bn-casas.png") no-repeat fixed;
+  -webkit-background-size:  cover;
+  -moz-background-size:  cover;
+  -o-background-size:  cover;
+ 
+  background-size: cover;
+}
+.slide-pg-sobre {
+  
+ 
+  background-attachment: fixed;
+  background: url("../imgs/bn-pg-sobre.jpg") no-repeat  fixed;
+  -webkit-background-size:  cover;
+  -moz-background-size:  cover;
+  -o-background-size:   cover;
+ 
+  background-size: cover;
+}
+
+
+.slide-pg-contato {
+  
+ 
+  background-attachment: fixed;
+  background: url("../imgs/bn-pg-contato.jpg") no-repeat  fixed;
+  -webkit-background-size:  cover;
+  -moz-background-size:  cover;
+  -o-background-size:  cover;
+ 
+  background-size: cover;
+}
+
+
+.slide-pg-venda {
+  
+
+  background-attachment: fixed;
+  background: url("../imgs/bn-pg-venda.jpg") no-repeat fixed;
+  -webkit-background-size:  cover;
+  -moz-background-size:  cover;
+  -o-background-size:  cover;
+ 
+  background-size: cover;
+}
+
+
+
+
+
   .overflow-txt {
     max-height: 100px;
 
@@ -1984,6 +2150,10 @@ font-size:0.7em;
     margin-right: 9%;
   }
   
+  .margin-content2 {
+    margin-left: 9%;
+    margin-right: 9%;
+  }
 }
 
 /* Large devices (laptops/desktops, 1021px and down) */

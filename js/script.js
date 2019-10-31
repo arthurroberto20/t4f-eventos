@@ -1,21 +1,113 @@
+AOS.init();
 
+ $(window).on("load", function () {
+	$(".bg-loader").fadeOut("slow");
+  });
 
+$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+	event.preventDefault();
+	$(this).ekkoLightbox();
+  });
 
+  // PAGINA HOME
 
+  $(document).ready(function() {
+	$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 20,
+			responsiveClass: true,
+			responsive: {
+			  0: {
+				items: 1,
+				dots: true
+			  },
+			  600: {
+				items: 1,
+				dots: true
+			  },
+			  1000: {
+				items: 3,
+				dots: true,
+				loop: false
+			  },
+			  1920: {
+				items: 4,
+				dots: true,
+				loop: false
+			  }
+			}
+		  })
+		});
+	
+	
+		
+	// PAGINA CONTATO
 
-function initMap() {
+	 // OPTIONAL JS
 
-	var map = new google.maps.Map(document.getElementById('googleMap'), {
-		center: { lat: 34.397, lng: 150.644 },
-		scrollwheel: false,
-		zoom: 2
-	});
+    // Change the button text & add active class
+    $('.jRadioDropdown').change(function () {
+		var dropdown = $(this).closest('.dropdown');
+		var thislabel = $(this).closest('label');
+  
+		dropdown.find('label').removeClass('active');
+		if ($(this).is(':checked')) {
+		  thislabel.addClass('active');
+		  dropdown.find('ins').html(thislabel.text());
+		}
+  
+	  });
+  
+	  //Add tabindex on labels
+	  $('label.dropdown-item').each(function (index, value) {
+		$(this).attr('tabindex', 0);
+		$(this).find('input').attr('tabindex', -1);
+	  });
+  
+	  //Add keyboard navigation
+	  $('label.dropdown-item').keypress(function (e) {
+		if ((e.keyCode ? e.keyCode : e.which) == 13) {
+		  $(this).find('input').trigger('click');
+		  $(this).closest('.dropdown').dropdown('toggle')
+		}
+	  });
 
-}
+	  
+	
+	(function () {
+		'use strict';
+		window.addEventListener('load', function () {
+		  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+		  var forms = document.getElementsByClassName('needs-validation');
+		  // Loop over them and prevent submission
+		  var validation = Array.prototype.filter.call(forms, function (form) {
+			form.addEventListener('submit', function (event) {
+			  if (form.checkValidity() === false) {
+				event.preventDefault();
+				event.stopPropagation();
+			  }
+			  form.classList.add('was-validated');
+			}, false);
+		  });
+		}, false);
+	  })();
+	
+	
+	// NAVBAR X ANIMATION
+	
+	  $(function() {
+		//toggle class open on button
+		$('#navbarNavAltMarkup').on('hide.bs.collapse', function () {
+		  $('.navbar-toggler').removeClass('open');
+		})
+		$('#navbarNavAltMarkup').on('show.bs.collapse', function () {
+		  $('.navbar-toggler').addClass('open');
+		})
+	  });
+	
+	
+	
 
-
-initMap();
-// PAGINA DAS CASAS - TAB NAV MOBILE DRAG
 
 
 
@@ -1631,3 +1723,4 @@ initMap();
 	  '</div>'
 	].join('')
   });
+  

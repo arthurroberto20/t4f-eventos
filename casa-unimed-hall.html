@@ -13,15 +13,14 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/5e5f9fbe22.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
 
   <link rel="stylesheet" href="css/style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
@@ -67,22 +66,29 @@
 
             <a class="nav-item nav-link" href="nossas-casas.html">CASAS</a>
             <a class="nav-item nav-link" href="venda-grupo.html">VENDA A GRUPOS</a>
-            <button class="btn btn-gradient navbar-btn" onclick="window.location.href = 'contato.html';">CONTATO</button>
+            <button class="btn btn-gradient navbar-btn"
+              onclick="window.location.href = 'contato.php';">CONTATO</button>
           </div>
         </div>
       </nav>
     </div>
-   
+
   </header>
-  <div class="bg-loader" >
-      <div id="logocontainer" onclick=fill()>
-          <img id="pelogo" src="imgs/logo-t4f.png"></img>
-          <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite"></div>
-          <div class="loader" style="right:0; top:2vh; width:2vh; height:0; animation:slide2 1s linear forwards infinite; animation-delay:0.5s"></div>
-          <div class="loader" style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
-          <div class="loader" style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s"></div>
-        </div>
+  <div class="bg-loader">
+    <div id="logocontainer" onclick=fill()>
+      <img id="pelogo" src="imgs/logo-t4f.png"></img>
+      <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite">
       </div>
+      <div class="loader"
+        style="right:0; top:2vh; width:2vh; height:0; animation:slide2 1s linear forwards infinite; animation-delay:0.5s">
+      </div>
+      <div class="loader"
+        style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
+      <div class="loader"
+        style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s">
+      </div>
+    </div>
+  </div>
 
   <!--.SECTION BANNER-->
   <section class="banner-topo">
@@ -94,7 +100,7 @@
 
           <div class="hero3 ">
             <hgroup class="animated fadeInLeft delay-1s color-l-yellow " style="position: fixed">
-              <h1>UNIMED HALL</h1>
+              <h1>UNIMEDHALL</h1>
               <hr class="style3 animated fadeInLeft delay-0.5s">
 
             </hgroup>
@@ -110,33 +116,32 @@
 
     </div>
   </section>
-  
+
   <main>
     <!--.SECTION AQUI SEU EVENTO ACONTECE-->
     <section class="oque-fazemos  margin-content mt-5 pt-5 max-wrap">
       <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
         <div class="row breadcrumb-page">
-          <p class="prev-bread color-dark-grey2"><a href="index.html">Home /</a></p>
-          <p class="prev-bread ml-3 color-dark-grey2"><a href="nossas-casas.html">Casas /</a></p>
-          <p class="ml-3 current-bread">Unimed Hall</p>
+          <p class="prev-bread color-dark-grey2"><a class="color-dark-grey2" href="index.html">Home /</a></p>
+          <p class="prev-bread ml-3 color-dark-grey2"><a class="color-dark-grey2" href="nossas-casas.html">Casas /</a></p>
+          <p class="ml-3 current-bread">UnimedHall</p>
         </div>
       </div>
       <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
-        <h1 class="color-l-yellow  h1-sections " data-aos="fade-right">A CASA IDEAL PARA O SEU SHOW</h1>
-        <p class="txt-grey  mb-5" style="max-width:540px;" data-aos="fade-right">Reconhecido como uma das melhores casas de São Paulo, o Unimed Hall é o endereço perfeito para qualquer tipo e tamanho de evento. Com confirgurações versateis, um palco de 720m² e localização privilegiada, oferecemos infraestrutura completa para tornar sua experiência inesquecível. Com capacidade para eventos de pequeno, médio e garnde porte.
+        <h1 class="color-l-yellow  h1-sections " data-aos="fade-right">SUCESSO SOB MEDIDA PARA O SEU EVENTO</h1>
+        <p class="txt-grey  mb-5" style="max-width:540px;" data-aos="fade-right">Reconhecido como uma das melhores casas
+          de São Paulo, o UnimedHall é o endereço perfeito para qualquer tipo e tamanho de evento. Com confirgurações
+          versateis, um palco de 720m² e localização privilegiada, oferecemos infraestrutura completa para tornar sua
+          experiência inesquecível.
           <div class="row pl-4">
 
-        </p><i class="fas fa-download " data-aos="zoom-in"></i>
-        <p class="color-l-yellow font-weight-bold  pl-3 " data-aos="fade-up">MAPA / PLANTA
         </p>
 
 
 
       </div>
 
-      <div data-aos="fade-up>">
-        <button class="btn btn-gradient2 ">DOWNLOAD</button>
-      </div>
+
       </div>
     </section>
 
@@ -149,7 +154,7 @@
 
         <img class=" mb-3" src="imgs/casa.svg" alt="" data-aos="zoom-in">
         <h1 class="color-l-yellow h1-sections  " data-aos="fade-right">CONHEÇA O ESPAÇO</h1>
-      
+
 
 
       </div>
@@ -162,13 +167,13 @@
 
             <div>
               <div class="scroller scroller-right text-center"><i class="fas fa-chevron-right"></i></div>
-              <div class="wrapper" >
+              <div class="wrapper">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs list pl-4 pr-4 pr-xl-5 pl-lg-5" role="tablist" id="tablist">
                   <li role="presentation" class="nav-item"><a class="nav-link font-lg active" href="#auditorio"
                       aria-controls="auditorio" role="tab" data-toggle="tab">Auditório</a></li>
                   <li role="presentation" class="nav-item"><a class="nav-link font-lg" href="#pistas"
-                      aria-controls="pistas" role="tab" data-toggle="tab">Pistas</a></li>
+                      aria-controls="pistas" role="tab" data-toggle="tab">Pista</a></li>
                   <li role="presentation" class="nav-item"><a class="nav-link font-lg" href="#mesas"
                       aria-controls="mesa" role="tab" data-toggle="tab">Mesas</a></li>
                   <li role="presentation" class="nav-item"><a class="nav-link font-lg" href="#foyer"
@@ -190,55 +195,52 @@
                         data-gallery="galeria-auditorio" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/auditorio/auditório 1-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">01 - Auditório </div>
+                      <div class="subtitle-img p-4"></div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/auditorio/auditório 2.jpg"
                         data-gallery="galeria-auditorio" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/auditorio/auditório 2-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">02 - Auditório </div>
+                      <div class="subtitle-img p-4"></div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/auditorio/auditório 3.jpg"
                         data-gallery="galeria-auditorio" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/auditorio/auditório 3-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">03 - Auditório </div>
+                      <div class="subtitle-img p-4"></div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/auditorio/auditório 4.jpg"
                         data-gallery="galeria-auditorio" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/auditorio/auditório 4-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">04 - Auditório </div>
+                      <div class="subtitle-img p-4"> </div>
                     </div>
-                    <div class="item-carousel"><a href="imgs/carousel-unimed/auditorio/auditório 4.jpg"
-                      data-gallery="galeria-auditorio" data-type="image" data-toggle="lightbox"> <img
-                        class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/auditorio/auditório 4-thumb.jpg"
-                        alt=""></a>
-                    <div class="subtitle-img p-4">05 - Auditório </div>
+
+
+
+
+
                   </div>
-                    
-                   
-                    
-                   
-                  </div>
-                  <div class="row margin-content mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h6>
+                  <div class="row margin-content2 mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-0">
+                      <h5 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h5>
                       <p class="txt-grey">
 
-                        Até 2096 convidados<br>
-                        Cadeiras (térreo) – 1.200 lugares<br>
-                        Poltronas (térreo) – 896 lugares<br>
-                        Camarotes (2º piso/ casa toda) - 282 lugares<br>
-                        Plateia superior (3º piso/ casa toda) – 1.650 lugares
+                        Até 2.096 convidados<br>
+                        Cadeiras – 1.200 lugares<br>
+                        Poltronas – 896 lugares<br>
+
                       </p>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0"> Casa Toda</h6>
+                      <h5 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0"> Casa Toda</h5>
                       <p class="txt-grey">
 
-
-                        Até 4.028 convidados
+                        Até 4.028 convidados<br>
+                        Cadeiras – 1.200 lugares<br>
+                        Poltronas – 896 lugares<br>
+                        Camarotes – 282 lugares<br>
+                        Plateia Superior – 1.650 lugares
                       </p>
                     </div>
                   </div>
@@ -253,69 +255,72 @@
                         data-gallery="galeria-pistas" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/pistas/pista 1-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">01 - Pistas </div>
+                      <div class="subtitle-img p-4"></div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/pistas/pista 2.jpg"
                         data-gallery="galeria-pistas" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/pistas/pista 2-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">02 - Pistas </div>
+                      <div class="subtitle-img p-4"></div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/pistas/pista 3.jpg"
                         data-gallery="galeria-pistas" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/pistas/pista 3-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">03 - Pistas </div>
+                      <div class="subtitle-img p-4"></div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/pistas/pista 4.jpg"
                         data-gallery="galeria-pistas" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/pistas/pista 4-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">04 - Pistas </div>
+                      <div class="subtitle-img p-4"> </div>
                     </div>
-                    <div class="item-carousel"><a href="imgs/carousel-unimed/pistas/pista 5.jpg"
-                      data-gallery="galeria-pistas" data-type="image" data-toggle="lightbox"> <img
-                        class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/pistas/pista 5-thumb.jpg"
-                        alt=""></a>
-                    <div class="subtitle-img p-4">05 - Pistas </div>
-                  </div>
-
-                  <div class="item-carousel"><a href="imgs/carousel-unimed/pistas/pista 6.jpg"
-                    data-gallery="galeria-pistas" data-type="image" data-toggle="lightbox"> <img
-                      class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/pistas/pista 6-thumb.jpg"
-                      alt=""></a>
-                  <div class="subtitle-img p-4">06 - Pistas </div>
-                </div>
 
 
-                <div class="item-carousel"><a href="imgs/carousel-unimed/pistas/pista 7.jpg"
-                  data-gallery="galeria-pistas" data-type="image" data-toggle="lightbox"> <img
-                    class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/pistas/pista 7-thumb.jpg"
-                    alt=""></a>
-                <div class="subtitle-img p-4">07 - Pistas </div>
-              </div>
+
+
                   </div>
 
 
 
-                  <div class="row margin-content mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h6>
+                  <div class="row margin-content2 mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-0">
+                      <h5 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Capacidade pista:</h5>
                       <p class="txt-grey">
 
-                        Até 2096 convidados<br>
-                        Cadeiras (térreo) – 1.200 lugares<br>
-                        Poltronas (térreo) – 896 lugares<br>
-                        Camarotes (2º piso/ casa toda) - 282 lugares<br>
-                        Plateia superior (3º piso/ casa toda) – 1.650 lugares
+                        <b>Meia pista (Casa térrea)</b> – até 3396 convidados<br>
+
+                        Pista – 2.500 lugares<br>
+
+                        Poltronas – 896 lugares<br><br>
+
+                        <b>Meia pista (casa toda)</b> – até 5.328 convidados
+
+                        Pista – 2.500 lugares<br>
+
+                        Poltronas – 896 lugares<br>
+
+                        Camarotes – 282 lugares<br>
+
+                        Plateia superior – 1.650 lugares<br>
+
                       </p>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0"> Casa Toda</h6>
+                      <h5 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0"></h5>
                       <p class="txt-grey">
 
+                        <b>Pista zero (casa térrea)</b> – até 5.000 convidados<br>
 
-                        Até 4.028 convidados
+                        Pista – 5.000 lugares<br><br>
+
+                        <b>Pista zero (casa toda)</b> – até 6.932 convidados<br>
+
+                        Pista – 5.000 lugares<br>
+
+                        Camarote – 282 lugares<br>
+
+                        Plateia superior – 1.650 lugares
                       </p>
                     </div>
                   </div>
@@ -327,103 +332,82 @@
                         data-gallery="galeria-mesas" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/mesas/mesa redonda 1-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">01 - Mesas </div>
+                      <div class="subtitle-img p-4"> </div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/mesas/mesa redonda 2.jpg"
                         data-gallery="galeria-mesas" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/mesas/mesa redonda 2-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4"> 02 - Mesas </div>
+                      <div class="subtitle-img p-4"> </div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/mesas/mesa show 3.jpg"
                         data-gallery="galeria-mesas" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/mesas/mesa show 3-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">03 - Mesas </div>
+                      <div class="subtitle-img p-4"> </div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/mesas/mesa redonda 4.jpg"
                         data-gallery="galeria-mesas" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/mesas/mesa redonda 4-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">04 - Mesas  </div>
+                      <div class="subtitle-img p-4"> </div>
                     </div>
-                   
-                   
-                   
+
+
+
                   </div>
-                  <div class="row margin-content mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h6>
+                  <div class="row margin-content2 mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-0">
+                      <h5 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Capacidade mesas:</h5>
                       <p class="txt-grey">
 
-                        Até 2096 convidados<br>
-                        Cadeiras (térreo) – 1.200 lugares<br>
-                        Poltronas (térreo) – 896 lugares<br>
-                        Camarotes (2º piso/ casa toda) - 282 lugares<br>
-                        Plateia superior (3º piso/ casa toda) – 1.650 lugares
+                        1.200 pessoas em formato jantar - mesas redondas<br>
+
                       </p>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0"> Casa Toda</h6>
-                      <p class="txt-grey">
 
-
-                        Até 4.028 convidados
-                      </p>
-                    </div>
                   </div>
                 </div>
                 <!-- FOYER-->
                 <div role="tabpanel" class="tab-pane" id="foyer">
-                    <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
-                      <div class="item-carousel"><a href="imgs/carousel-unimed/foyer/foyer 1.jpg"
-                          data-gallery="galeria-foyer" data-type="image" data-toggle="lightbox"> <img
-                            class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/foyer/foyer 1-thumb.jpg"
-                            alt=""></a>
-                        <div class="subtitle-img p-4">01 - Foyer</div>
-                      </div>
-                      <div class="item-carousel"><a href="imgs/carousel-unimed/foyer/foyer 2.jpg"
-                          data-gallery="galeria-foyer" data-type="image" data-toggle="lightbox"> <img
-                            class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/foyer/foyer 2-thumb.jpg"
-                            alt=""></a>
-                        <div class="subtitle-img p-4">02 - Foyer</div>
-                      </div>
-                      <div class="item-carousel"><a href="imgs/carousel-unimed/foyer/foyer 3.jpg"
-                          data-gallery="galeria-foyer" data-type="image" data-toggle="lightbox"> <img
-                            class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/foyer/foyer 3-thumb.jpg"
-                            alt=""></a>
-                        <div class="subtitle-img p-4">03 - Foyer</div>
-                      </div>
-                      <div class="item-carousel"><a href="imgs/carousel-unimed/foyer/foyer 4.jpg"
-                          data-gallery="galeria-foyer" data-type="image" data-toggle="lightbox"> <img
-                            class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/foyer/foyer 4-thumb.jpg"
-                            alt=""></a>
-                        <div class="subtitle-img p-4">04 - Foyer</div>
-                      </div>
-                     
+                  <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
+                    <div class="item-carousel"><a href="imgs/carousel-unimed/foyer/foyer 1.jpg"
+                        data-gallery="galeria-foyer" data-type="image" data-toggle="lightbox"> <img
+                          class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/foyer/foyer 1-thumb.jpg"
+                          alt=""></a>
+                      <div class="subtitle-img p-4"></div>
                     </div>
-                    <div class="row margin-content mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
-                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h6>
-                        <p class="txt-grey">
-  
-                          Até 2096 convidados<br>
-                          Cadeiras (térreo) – 1.200 lugares<br>
-                          Poltronas (térreo) – 896 lugares<br>
-                          Camarotes (2º piso/ casa toda) - 282 lugares<br>
-                          Plateia superior (3º piso/ casa toda) – 1.650 lugares
-                        </p>
-                      </div>
-                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0"> Casa Toda</h6>
-                        <p class="txt-grey">
-  
-  
-                          Até 4.028 convidados
-                        </p>
-                      </div>
+                    <div class="item-carousel"><a href="imgs/carousel-unimed/foyer/foyer 2.jpg"
+                        data-gallery="galeria-foyer" data-type="image" data-toggle="lightbox"> <img
+                          class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/foyer/foyer 2-thumb.jpg"
+                          alt=""></a>
+                      <div class="subtitle-img p-4"></div>
                     </div>
+                    <div class="item-carousel"><a href="imgs/carousel-unimed/foyer/foyer 3.jpg"
+                        data-gallery="galeria-foyer" data-type="image" data-toggle="lightbox"> <img
+                          class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/foyer/foyer 3-thumb.jpg"
+                          alt=""></a>
+                      <div class="subtitle-img p-4"></div>
+                    </div>
+                    <div class="item-carousel"><a href="imgs/carousel-unimed/foyer/foyer 4.jpg"
+                        data-gallery="galeria-foyer" data-type="image" data-toggle="lightbox"> <img
+                          class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/foyer/foyer 4-thumb.jpg"
+                          alt=""></a>
+                      <div class="subtitle-img p-4"></div>
+                    </div>
+
                   </div>
+                  <div class="row margin-content2 mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-0">
+                      <h5 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Capacidade foyer:</h5>
+                      <p class="txt-grey">
+
+                        Até 900 convidados<br>
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
                 <!--AVANCE LOBBY-->
                 <div role="tabpanel" class="tab-pane" id="avance">
                   <div id="owl-example" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
@@ -431,48 +415,38 @@
                         data-gallery="galeria-avance" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/avance/avance 1-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">01 - Avance lobby</div>
+                      <div class="subtitle-img p-4"></div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/avance/avance 2.jpg"
                         data-gallery="galeria-avance" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/avance/avance 2-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">02 - Avance lobby</div>
+                      <div class="subtitle-img p-4"></div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/avance/avance 3.jpg"
                         data-gallery="galeria-avance" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/avance/avance 3-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">03 - Avance lobby</div>
+                      <div class="subtitle-img p-4"></div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/avance/avance 4.jpg"
                         data-gallery="galeria-avance" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/avance/avance 4-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img p-4">04 - Avance lobby</div>
+                      <div class="subtitle-img p-4"></div>
                     </div>
-                   
+                 
                   </div>
-                  <div class="row margin-content mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Casa Térrea</h6>
+                  <div class="row margin-content2 mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-0">
+                      <h5 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Capacidade avance do lobby:</h5>
                       <p class="txt-grey">
 
-                        Até 2096 convidados<br>
-                        Cadeiras (térreo) – 1.200 lugares<br>
-                        Poltronas (térreo) – 896 lugares<br>
-                        Camarotes (2º piso/ casa toda) - 282 lugares<br>
-                        Plateia superior (3º piso/ casa toda) – 1.650 lugares
+                        Até 2.000 convidados<br>
+
                       </p>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0"> Casa Toda</h6>
-                      <p class="txt-grey">
 
-
-                        Até 4.028 convidados
-                      </p>
-                    </div>
                   </div>
                 </div>
 
@@ -492,7 +466,7 @@
 
         <img class=" mb-3 " src="imgs/icon-dados.svg" alt="" data-aos="zoom-in">
         <h1 class="color-l-yellow h1-sections  max-width " data-aos="fade-right">DADOS TÉCNICOS</h1>
-        <p class="txt-grey  mt-0 " data-aos="fade-up" style="letter-spacing:2px;">UNIMED HALL - SP</p>
+        <p class="txt-grey  mt-0 " data-aos="fade-up" style="letter-spacing:2px;">UNIMEDHALL - SP</p>
 
       </div>
 
@@ -501,28 +475,28 @@
           <div class="mt-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-0 p-0">
             <h5 class="color-l-yellow font-weight-bold  max-width-dados" data-aos="fade-up">Foyer</h5>
             <p class="txt-grey" data-aos="fade-up">Térreo: área útil de 980 m²<br>
-                Capacidade: até 900 pessoas sem cenografia<br>
-                Bar de atendimento ao público<br>
-                Ambulatório<br>
-                Toilettes</p>
-            
+              Capacidade: até 900 pessoas sem cenografia<br>
+              Bar de atendimento ao público<br>
+              Ambulatório<br>
+              Toilettes</p>
+
             <!--BACKSTAGE TÉRREO-->
             <h5 class="color-l-yellow font-weight-bold mt-5 max-width-dados" data-aos="fade-up">Backstage térreo
 
             </h5>
             <p class="txt-grey max-width-dados" data-aos="fade-up"> Sala de produção<br>
-                Camarim Star 1: com hidromassagem e sala de estar (até 8 pessoas)<br>
-                Camarim Star 2: com sala de estar (até 6 pessoas)<br>
-                Camarins individuais 1, 2, 3 e 4: (até 6 pessoas)<br>
-                Camarim coletivo 1: (30 pessoas)</p>
+              Camarim Star 1: com hidromassagem e sala de estar (até 8 pessoas)<br>
+              Camarim Star 2: com sala de estar (até 6 pessoas)<br>
+              Camarins individuais 1, 2, 3 e 4: (até 6 pessoas)<br>
+              Camarim coletivo 1: (30 pessoas)</p>
 
             <!--BACKSTAGE 1 ANDAR-->
             <h5 class="color-l-yellow font-weight-bold mt-5 max-width-dados" data-aos="fade-up">Backstage 1º Andar
 
             </h5>
             <p class="txt-grey max-width-dados" data-aos="fade-up">Camarim coletivo 2: (até 40 pessoas)<br>
-                Camarim coletivo 3: (até 30 pessoas)<br>
-                *Camarins equipados com sofás, espelhos, araras, ar-condicionado, frigobar, mesa e toilette.
+              Camarim coletivo 3: (até 30 pessoas)<br>
+              *Camarins equipados com sofás, espelhos, araras, ar-condicionado, frigobar, mesa e toilette.
             </p>
 
 
@@ -532,43 +506,65 @@
             <h5 class="color-l-yellow font-weight-bold  max-width-dados" data-aos="fade-up">Palco
             </h5>
             <p class="txt-grey max-width-dados" data-aos="fade-up">
-                Extensão: 720m²<br>
-                Pé-direito: 35m<br>
-                Largura total da boca de cena: 20,87m<br>
-                Altura da boca de cena: 12,20m<br>
-                Profundidade total do palco (com proscênio): 19,60m<br>
-                Proscênio (até cortina de boca): 2,60m<br>
-                Profundidade do elevador de orquestra: 2,79m<br>
-                
-                 
-                Fosso para orquestra: 120 m² (80 músicos)<br>
-                Altura do palco em relação à plateia: 1,18m<br>
-                Do piso ao urdimento: 25,40m<br>
-                Profundidade urdimento: 18,10m<br>
-                Número de varas: 42 (26m de comp. e capacidade de 1.000kg)<br>
-                Distância do palco à housemix: 28,70m<br>
-                Distância do palco aos canhões: 37m<br>
-                Distância entre PAs: 25m<br>
-                Distância do palco ao truss de luz frontal: 6m<br>
-                Altura do truss de luz frontal: 11m<br>
-                Distância do palco à passarela frontal: 6m<br>
-                Altura da passarela frontal: 15,66m<br>
-                Varanda de manobras: altura 10m / largura 1,18m<br>
-                Passarela de dimmers: largura 2,48m / altura 10m<br>
-                Altura das docas: 1,27m<br>
-                Medida da porta das docas ao palco: 2,40 x 3m<br>
-                Sala de gravação e mixagem para áudio e vídeo<br>
-                1 Cortina corta fogo<br>
-                7 tapadeiras cada lado do palco (5m de largura, veludo preto)<br>
-                2 Rotundas de veludo preto<br>
-                140 m² de quarteladas
+              Extensão: 720m²<br>
+              Pé-direito: 35m<br>
+              Largura total da boca de cena: 20,87m<br>
+              Altura da boca de cena: 12,20m<br>
+              Profundidade total do palco (com proscênio): 19,60m<br>
+              Proscênio (até cortina de boca): 2,60m<br>
+              Profundidade do elevador de orquestra: 2,79m<br>
+
+
+              Fosso para orquestra: 120 m² (80 músicos)<br>
+              Altura do palco em relação à plateia: 1,18m<br>
+              Do piso ao urdimento: 25,40m<br>
+              Profundidade urdimento: 18,10m<br>
+              Número de varas: 42 (26m de comp. e capacidade de 1.000kg)<br>
+              Distância do palco à housemix: 28,70m<br>
+              Distância do palco aos canhões: 37m<br>
+              Distância entre PAs: 25m<br>
+              Distância do palco ao truss de luz frontal: 6m<br>
+              Altura do truss de luz frontal: 11m<br>
+              Distância do palco à passarela frontal: 6m<br>
+              Altura da passarela frontal: 15,66m<br>
+              Varanda de manobras: altura 10m / largura 1,18m<br>
+              Passarela de dimmers: largura 2,48m / altura 10m<br>
+              Altura das docas: 1,27m<br>
+              Medida da porta das docas ao palco: 2,40 x 3m<br>
+              Sala de gravação e mixagem para áudio e vídeo<br>
+              1 Cortina corta fogo<br>
+              7 tapadeiras cada lado do palco (5m de largura, veludo preto)<br>
+              2 Rotundas de veludo preto<br>
+              140 m² de quarteladas
             </p>
 
-          
+
           </div>
 
         </div>
       </div>
+
+
+      <section class="download mt-5  max-wrap">
+
+        <div class="conteiner-fluid ml-4 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+          <div class="row">
+            <i class="fas fa-download " data-aos="zoom-in"></i>
+            <p class="color-l-yellow font-weight-bold  pl-3 " data-aos="fade-up">MAPAS
+            </p>
+          </div>
+
+
+
+        </div>
+
+        <div data-aos="fade-up>">
+            <a class="btn btn-gradient2" href="imgs/Mapas Unimed Hall/Mapas-Unimed-Hall.zip" download="MAPAS UNIMED HALL.zip">DOWNLOAD</a>        </div>
+        </div>
+      </section>
+
+
+
       <!--FORNECEDORES EXCLUSIVOS-->
       <div class="fornecedores container-fluid mt-5 max-wrap">
         <div class="row">
@@ -590,25 +586,38 @@
                   <div class="card-body">
                     <div class="row">
                       <div id="owl-fornecedores" class="owl-carousel owl-theme owl-loaded owl-drag owl-lazy">
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/AUTOVAGAS-LOGO.jpg" alt="">
+                        <div> <img class="img-carousel-tab"
+                            src="imgs/carousel-unimed/UNIMED FORNECEDORES/AUTOVAGAS-LOGO.jpg" alt="">
                         </div>
-                        <div><img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/CIA-DA-TRUFA-LOGO.jpg" alt="">
+                        <div><img class="img-carousel-tab"
+                            src="imgs/carousel-unimed/UNIMED FORNECEDORES/CIA-DA-TRUFA-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/ESC-SEGURANÇA-LOGO.jpg" alt="">
+                        <div> <img class="img-carousel-tab"
+                            src="imgs/carousel-unimed/UNIMED FORNECEDORES/ESC-SEGURANÇA-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/MARIO-AZEVEDO-LOGO.jpg" alt="">
+                        <div> <img class="img-carousel-tab"
+                            src="imgs/carousel-unimed/UNIMED FORNECEDORES/MARIO-AZEVEDO-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/NA-EQUIPAMENTOS-LOGO.jpg" alt="">
+                        <div> <img class="img-carousel-tab"
+                            src="imgs/carousel-unimed/UNIMED FORNECEDORES/NA-EQUIPAMENTOS-LOGO.jpg" alt="">
                         </div>
-                        <div><img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/PONTO-MÍDIA-LOGO.jpg" alt="">
+                        <div><img class="img-carousel-tab"
+                            src="imgs/carousel-unimed/UNIMED FORNECEDORES/PONTO-MÍDIA-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/RP-LIGHTING-LOGO.jpg" alt="">
+                        <div> <img class="img-carousel-tab"
+                            src="imgs/carousel-unimed/UNIMED FORNECEDORES/RP-LIGHTING-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/SAPORE-LOGO.jpg" alt="">
+                        <div> <img class="img-carousel-tab"
+                            src="imgs/carousel-unimed/UNIMED FORNECEDORES/SAPORE-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/TANKER-LOGO.jpg" alt="">
+                        <div> <img class="img-carousel-tab"
+                          src="imgs/carousel-unimed/UNIMED FORNECEDORES/foco-video.jpg" alt="">
+                      </div>
+                        <div> <img class="img-carousel-tab"
+                            src="imgs/carousel-unimed/UNIMED FORNECEDORES/TANKER-LOGO.jpg" alt="">
                         </div>
-                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/gabisom.jpg" alt="">
+                        <div> <img class="img-carousel-tab" src="imgs/carousel-unimed/UNIMED FORNECEDORES/gabisom.jpg"
+                            alt="">
                         </div>
                       </div>
 
@@ -631,21 +640,21 @@
 
     <!--AÇÕES DE RELACIONAMENTO-->
 
-    <section id="item3"
-      class="açoes margin-content mt-2 mt-xl-1 mt-lg-1 mt-sm-5 mt-md-2 pb-5 pt-1 pt-sm-5 pt-md-5 pb-5 max-wrap">
+    <section id="item3" class="açoes margin-content mt-2 mt-xl-1 mt-lg-1 mt-sm-5 mt-md-2 pb-5 pt-1 pt-sm-5 pt-md-5 pb-5 max-wrap">
       <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
 
         <img class=" mb-3 " src="imgs/icon-açoes.svg" alt="" data-aos="zoom-in">
         <h1 class="color-l-yellow h1-sections  max-width " data-aos="fade-right">AÇÕES DE RELACIONAMENTO</h1>
-        <p class="txt-grey mb-5 max-width " data-aos="fade-right">Visando elevar a experiência do cliente, possuímos uma gama de serviços para você encantar seus convidados.<br>
-           
+        <p class="txt-grey mb-5 max-width " data-aos="fade-right">Visando elevar a experiência do cliente, possuímos uma
+          gama de serviços para você encantar seus convidados.<br>
+
 
 
       </div>
 
     </section>
     <!--CAROUSEL TAB-->
-    <section class="carousel tab">
+    <section class="carousel tab max-wrap">
       <div class="container-fluid tabs pl-4 pr-4 justify-content-center padding-content-casas">
         <div class="row">
           <div class="col-12 pl-0 pr-0 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
@@ -670,40 +679,40 @@
                         data-gallery="galeria-mezanino" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/mezanino/mezanino 1-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img2 p-4"> 01 - Mezanino </div>
+                      <div class="subtitle-img2 p-4"> </div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/mezanino/mezanino 2.jpg"
                         data-gallery="galeria-mezanino" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/mezanino/mezanino 2-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img2 p-4">02 - Mezanino </div>
+                      <div class="subtitle-img2 p-4"></div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/mezanino/mezanino 3.jpg"
                         data-gallery="galeria-mezanino" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/mezanino/mezanino 3-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img2 p-4">03 - Mezanino </div>
+                      <div class="subtitle-img2 p-4"></div>
                     </div>
                     <div class="item-carousel"><a href="imgs/carousel-unimed/mezanino/mezanino 4.jpg"
                         data-gallery="galeria-mezanino" data-type="image" data-toggle="lightbox"> <img
                           class="img-carousel-tab img-fluid" src="imgs/carousel-unimed/mezanino/mezanino 4-thumb.jpg"
                           alt=""></a>
-                      <div class="subtitle-img2 p-4">04 - Mezanino </div>
+                      <div class="subtitle-img2 p-4"></div>
                     </div>
 
 
 
                   </div>
-                  <div class="row margin-content mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                      <h6 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Informações:
-                      </h6>
+                  <div class="row margin-content2 mt-5 pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-0">
+                      <h5 class="color-l-yellow mt-4 mt-lg-0 mt-xl-0">Informações:
+                      </h5>
                       <p class="txt-grey">
-                
-                          • Serviço de alimentos e bebidas (Suítes Corporativas, Camarote e Mezanino)s<br>
-                          • Espaço exclusivo para receptivo<br>
-                          • Conforto e comodidade<br>
-                          • Vista privilegiada 
+
+                        • Serviço de alimentos e bebidas (Suítes Corporativas, Camarote e Mezaninos)<br>
+                        • Espaço exclusivo para receptivo<br>
+                        • Conforto e comodidade<br>
+                        • Vista privilegiada
                       </p>
                     </div>
 
@@ -731,21 +740,12 @@
       <div class="conteiner-fluid d-flex justify-content-center pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
         <div class="row w-100">
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pr-0 pl-0 ">
-            <!--   <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Q6FNgACdWfT-nyDc7hzULSq_ez_kXUtg" width="640" height="480"></iframe> -->
-            <div id="googleMap" style="width:100%;height:500px;"></div>
-
+            <iframe class="maps-frame" src="https://www.google.com/maps/d/embed?mid=1OxefF16j3GvKccAftj-0yXAh1Sauhgpn" width="100%" height="480"></iframe>
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  pr-0 pl-0 pl-lg-5 pl-xl-5">
 
             <h1 class="color-l-yellow mt-5 ppr-xl-1 h1-sections " data-aos="fade-down">COMO CHEGAR</h1>
-            <p class="txt-grey mt-3  pr-xl-1 max-width" data-aos="fade-up">O palco dos maiores espetáculos da Broadway
-              no
-              Brasil é um ícone de São Paulo. Tombado pelo patrimônio histórico, o Teatro Renault é um dos endereços
-              mais elegantes da cidade e oferece estrutura completa para todos os tamanhos de evento.
 
-              <hr class="style2 mt-4 mt-xl-3">
-
-            </p>
             <p class="color-l-yellow mt-4" data-aos="fade-up">
               Endereço: Av. das Nações Unidas, 17955 - Vila Almeida,<br> São Paulo - SP, 04795-100
             </p>
@@ -765,9 +765,9 @@
             <div class="cta bg-white p-5 mt-4">
               <h1 class="color-orange font-weight-bold">VENDA A GRUPOS</h1>
               <p class="color-dark-grey2">Nas compras acima de 15 ingressos, possuímos uma equipe altamente capacitada
-                para atender seu grupo corportaivo, agências, escolas e associações.</p>
+                para atender seu grupo corporativo, agências, escolas e associações.</p>
               <div data-aos="fade-up>">
-                <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3">ENTRE EM CONTATO</button>
+                <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3" onclick="window.location.href = 'contato.php';">ENTRE EM CONTATO</button>
               </div>
             </div>
           </div>
@@ -775,12 +775,12 @@
             data-aos="fade-up">
             <div class="cta bg-white p-5 mt-4">
               <h1 class="color-orange font-weight-bold">FAÇA SEU EVENTO CONOSCO!</h1>
-              <p class="color-dark-grey2">Para maiores informações, entre em contato e descubra todas possibilidades que
+              <p class="color-dark-grey2">Para maiores informações, entre em contato e descubra todas as possibilidades que
                 oferecemos em nossas casas.
 
               </p>
               <div data-aos="fade-up>">
-                <button class="btn btn-gradient btn-large mt-2 mt-sm-1 mt-xl-3">PEÇA UM ORÇAMENTO</button>
+                <button class="btn btn-gradient btn-large mt-2 mt-sm-1 mt-xl-3" onclick="window.location.href = 'contato.php';">PEÇA UM ORÇAMENTO</button>
               </div>
             </div>
           </div>
@@ -802,11 +802,11 @@
         class="conteiner-fluid  d-flex justify-content-center pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0 max-wrap">
         <div class="row mt-5 pt-2">
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
-              <img class="logo" src="imgs/logo-t4f.png" alt="logo T4F Eventos">
-            </div>
+            <img class="logo" src="imgs/logo-t4f.png" alt="logo T4F Eventos">
+          </div>
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
             <h6 class="text-white font-weight-bold mt-5 mt-5 mt-sm-0 mt-lg-0 mt-xl-0">CONTATO</h6>
-            <p class="text-white">t4feventos@t4f.com.br</p>
+            <p class="text-white">eventos@t4f.com.br</p>
           </div>
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
             <h6 class="text-white font-weight-bold">REDES SOCIAIS</h6>
@@ -845,53 +845,23 @@
   <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-  <script src="js/jquery.min.js"></script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script defer src="owlcarousel/owl.carousel.min.js"></script>
-  <script src="js/carousel-tab.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzffX0ILMed59yzCtgMksQovNc_zYOsLk"></script>
+        <script defer src="js/jquery.min.js"></script>
 
 
-  <script src="js/functions.js"></script>
-  <script src="js/script.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-  <script>
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-      event.preventDefault();
-      $(this).ekkoLightbox();
-    });
-  </script>
-
-  <script>
-    $(function () {
-      $('.btn-toggle').on('click', function () {
-        $('.nav-anchors').toggleClass('is-collapsed');
-        $('.btn-toggle').toggleClass('is-collapsed');
-        $('#toggle-icon').toggleClass('fa-chevron-right fa-chevron-left');
-        $('.toggle-arrow').toggleClass('is-collapsed');
-        $('.indice').toggleClass('is-collapsed');
-
-
-
-      });
-    });
-   
-  </script>
-   <script> $(window).on("load",function(){
-      $(".bg-loader").fadeOut("slow");
-    });</script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      
+        <script defer src="js/bootstrap.min.js"></script>  
+        <script defer src="js/owl.carousel.min.js"></script>
+       
+      
+      
+        <script defer src="js/carousel-tab.js"></script>
+        <script defer src="js/script.js"></script>
+      
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+        
+      
+      
 </body>
 
 </html>

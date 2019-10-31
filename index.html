@@ -14,14 +14,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/5e5f9fbe22.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link href="css/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/style.css">
 
 
@@ -58,20 +58,26 @@
           <a class="nav-item nav-link" href="sobre-t4f.html">SOBRE A T4F</a>
           <a class="nav-item nav-link" href="nossas-casas.html">CASAS</a>
           <a class="nav-item nav-link" href="venda-grupo.html">VENDA A GRUPOS</a>
-          <button class="btn btn-gradient navbar-btn" onclick="window.location.href = 'contato.html';">CONTATO</button>
+          <button class="btn btn-gradient navbar-btn" onclick="window.location.href = 'contato.php';">CONTATO</button>
         </div>
       </div>
     </nav>
   </header>
-  <div class="bg-loader" >
-      <div id="logocontainer" onclick=fill()>
-          <img id="pelogo" src="imgs/logo-t4f.png"></img>
-          <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite"></div>
-          <div class="loader" style="right:0; top:2vh; width:2vh; height:0; animation:slide2 1s linear forwards infinite; animation-delay:0.5s"></div>
-          <div class="loader" style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
-          <div class="loader" style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s"></div>
-        </div>
+  <div class="bg-loader">
+    <div id="logocontainer" onclick=fill()>
+      <img id="pelogo" src="imgs/logo-t4f.png"></img>
+      <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite">
       </div>
+      <div class="loader"
+        style="right:0; top:2vh; width:2vh; height:0; animation:slide2 1s linear forwards infinite; animation-delay:0.5s">
+      </div>
+      <div class="loader"
+        style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
+      <div class="loader"
+        style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s">
+      </div>
+    </div>
+  </div>
   <!--.SECTION BANNER-->
   <section class="banner-topo">
 
@@ -80,6 +86,7 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner ">
         <div class="carousel-item active">
@@ -100,26 +107,41 @@
         <div class="carousel-item">
           <div class="hero ">
             <hgroup class="animated fadeInLeft delay-1s color-l-yellow" style="position: fixed">
-                <h1>UM EVENTO DE SUCESSO</h1>
-                <h4> COMEÇA COM A ESCOLHA DO LOCAL IDEAL!</h4>
+              <h1>UM EVENTO DE SUCESSO</h1>
+              <h4> COMEÇA COM A ESCOLHA DO LOCAL IDEAL!</h4>
               <hr class="style1 animated fadeInLeft delay-0.5s">
             </hgroup>
 
           </div>
-          <picture class="d-block w-100 img-carousel slideimg1" alt="Second slide"></picture>
+          <picture class="d-block w-100 img-carousel slideimg2" alt="Second slide"></picture>
 
         </div>
         <div class="carousel-item ">
           <div class="hero ">
             <hgroup class="animated fadeInLeft delay-1s color-l-yellow" style="position: fixed">
-                <h1>UM EVENTO DE SUCESSO</h1>
-                <h4> COMEÇA COM A ESCOLHA DO LOCAL IDEAL!</h4>
+              <h1>UM EVENTO DE SUCESSO</h1>
+              <h4> COMEÇA COM A ESCOLHA DO LOCAL IDEAL!</h4>
               <hr class="style1 animated fadeInLeft delay-0.5s">
             </hgroup>
           </div>
 
 
-          <picture class="d-block w-100 img-carousel slideimg1" alt="Third slide"></picture>
+          <picture class="d-block w-100 img-carousel slideimg3" alt="Third slide"></picture>
+
+
+
+        </div>
+        <div class="carousel-item ">
+          <div class="hero ">
+            <hgroup class="animated fadeInLeft delay-1s color-l-yellow" style="position: fixed">
+              <h1>UM EVENTO DE SUCESSO</h1>
+              <h4> COMEÇA COM A ESCOLHA DO LOCAL IDEAL!</h4>
+              <hr class="style1 animated fadeInLeft delay-0.5s">
+            </hgroup>
+          </div>
+
+
+          <picture class="d-block w-100 img-carousel slideimg4" alt="Fourth slide"></picture>
 
 
 
@@ -145,18 +167,18 @@
             <h1 class="color-l-yellow mt-3 mt-xl-5 pl-4 pr-4 pr-xl-1 pl-xl-5 pt-1 pt-xl-2 ml-xl-4 h1-sections"
               data-aos="fade-down">
               O QUE FAZEMOS</h1>
-            <p class="txt-grey mt-3 pl-4 pr-4 pr-xl-1 pl-xl-5 pt-2 ml-xl-4" data-aos="fade-up">As empresas mais
-              importantes do país reconhecem nossas casas de espetáculos como espaços versáteis, completos e
-              tecnológicos, que oferecem toda a infraestrutura necessária para os mais diversos tipos e tamanhos de
-              eventos, como: lançamento de produtos, festas de final de ano, premiações e congressos.
+            <p class="txt-grey mt-3 pl-4 pr-4 pr-xl-1 pl-xl-5 pt-2 ml-xl-4" data-aos="fade-up">Trabalhamos com paixão e possuímos a filosofia de que não importa o tamanho do seu evento, somos o espaço ideal para ele.
 
-              <br> <br>Trabalhamos com uma equipe qualificada e os melhores fornecedores do mercado, prontos para
-              atender às expectativas de cada cliente e proporcionar momentos inesquecíveis.</p>
+              Prezamos pela excelência e estamos sempre inquietos para transformar a sua experiência em algo inesquecível.
+              
+              Honramos os detalhes! Somos éticos, transparentes, leais e aptos para auxiliá-lo em todos os aspectos necessários para a execução do seu evento.
+              
+              Atendemos a todos os formatos como: Convenções, Premiações, Lançamentos de produtos, Celebrações, Palestras, Colações de Grau.</p>
           </div>
           <div
             class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-7 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-2 p-0 p-xl-3">
 
-            <img class="w-100 p-0 img-mobile" src="imgs/sobre.svg" alt="" data-aos="zoom-in">
+            <img class="w-100 p-0 img-mobile" src="imgs/ilustra-home.svg" alt="" data-aos="zoom-in">
           </div>
 
         </div>
@@ -165,7 +187,7 @@
     <!--.SECTION NOSSAS CASAS-->
     <section class="nossas-casas max-wrap mt-5 ">
       <div class="conteiner-fluid  margin-content pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0 mb-4">
-        <img class=" mb-3  " src="imgs/casa.svg" alt="" data-aos="zoom-in">
+        <img class=" mb-3  " src="imgs/casa.svg" alt="icone-casa" data-aos="zoom-in">
         <h1 class="color-l-yellow  h1-sections " data-aos="fade-right">
           NOSSAS CASAS
         </h1>
@@ -173,34 +195,35 @@
 
       <!--UNIMED HALL-->
       <div class="conteiner bg-dark2 d-flex justify-content-center pt-4 pb-4">
-          <div class="row justify-content-center margin-content ">
-            <div
-              class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 mt-sm-5 mt-xl-0 p-0  ">
-              <img class="w-100" src="imgs/UNIMED.png" alt="KM DE VANTAGENS HALL - BH" data-aos="zoom-in">
-  
-            </div>
-            <div
-              class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2 p-0 p-xl-3 pl-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4 mt-xl-5">
-  
-              <h1 class="color-l-yellow mt-5 mt-sm-5 mt-md-4 mt-lg-4 mt-xl-4 pr-xl-1 h1-sections" data-aos="fade-down">UNIMED HALL
-              </h1>
-              <h4 class="color-l-yellow font-weight-light mt-0 " data-aos="fade-up">São Paulo - SP</h4>
-  
-  
-              <hr class="style2 mt-4 mt-xl-3">
-  
-  
-  
-              <div data-aos="fade-up>">
-                  <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3"
-                  onclick="window.location.href = 'casa-unimed-hall.html';">SAIBA MAIS</button>    
-                            </div>
-            </div>
-  
+        <div class="row justify-content-center margin-content ">
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 mt-sm-5 mt-xl-0 p-0  ">
+            <img class="w-100" src="imgs/UNIMED.png" alt="UnimedHall" data-aos="zoom-in">
+
           </div>
-  
+          <div
+            class="col-12 col-lg-10 col-md-12 col-sm-12 col-xl-6 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2 p-0 p-xl-3 pl-4 pl-4 pl-sm-5 pl-lg-5 pl-xl-5 pr-4 mt-xl-5">
+
+            <h1 class="color-l-yellow mt-5 mt-sm-5 mt-md-4 mt-lg-4 mt-xl-4 pr-xl-1 h1-sections" data-aos="fade-down">
+              UNIMEDHALL
+            </h1>
+            <h4 class="color-l-yellow font-weight-light mt-0 " data-aos="fade-up">São Paulo - SP</h4>
+
+
+            <hr class="style2 mt-4 mt-xl-3">
+
+
+
+            <div data-aos="fade-up>">
+              <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3"
+                onclick="window.location.href = 'casa-unimed-hall.html';">SAIBA MAIS</button>
+            </div>
+          </div>
+
         </div>
-      
+
+      </div>
+
 
       <!--TEATRO RENAULT-->
       <div class="spacer pt-5"></div>
@@ -252,9 +275,9 @@
 
 
             <div data-aos="fade-up>">
-                <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3"
-                onclick="window.location.href = 'casa-km-bh.html';">SAIBA MAIS</button>   
-                          </div>
+              <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3"
+                onclick="window.location.href = 'casa-km-bh.html';">SAIBA MAIS</button>
+            </div>
           </div>
 
         </div>
@@ -283,9 +306,9 @@
 
 
             <div data-aos="fade-up>">
-                <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3"
-                onclick="window.location.href = 'casa-km-rj.html';">SAIBA MAIS</button>   
-                          </div>
+              <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3"
+                onclick="window.location.href = 'casa-km-rj.html';">SAIBA MAIS</button>
+            </div>
           </div>
 
         </div>
@@ -299,10 +322,10 @@
     <div class="spacer pt-5"></div>
     <section class="depoimentos margin-content mb-5 pb-4 max-wrap">
       <div class="conteiner-fluid pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0">
-        <img class="mb-3" src="imgs/depoimento.svg" alt="" data-aos="zoom-in">
+        <img class="mb-3" src="imgs/depoimento.svg" alt="icone-depoimentos" data-aos="zoom-in">
         <h1 class="color-l-yellow  h1-sections " data-aos="fade-right">DEPOIMENTOS</h1>
         <p class="txt-grey  mb-5" data-aos="fade-right">Relatos de experiências de alguns clientes.</p>
-   </div>
+      </div>
 
       <div class="conteiner depoimentos">
         <div class="owl-carousel owl-theme owl-loaded owl-drag " data-aos="fade-right">
@@ -310,13 +333,17 @@
 
             <div class=" text-white d-flex flex-column justify-content-center">
               <blockquote class="bg-white text-dark blockquote  text-left ">
-                <div class="overflow-txt scroll-style" >
-                <p class="pr-4 pl-2">"No Km, eu tenho a segurança de contar com uma estrutura que me satisfaz e com instalações ótimas. Como se não bastasse, a equipe de atendimento faz um trabalho excelente, que eu considero ser o ponto chave. Me sinto segura e amparada desde o primeiro contato até a desmontagem do evento. Minha experiência com o Km é tão satisfatória que não se encerra. Ano a ano, nossa parceria nos proporciona momentos incríveis."</p>
-              </div>
+                <div class="overflow-txt scroll-style">
+                  <p class="pr-4 pl-2">"No Km, eu tenho a segurança de contar com uma estrutura que me satisfaz e com
+                    instalações ótimas. Como se não bastasse, a equipe de atendimento faz um trabalho excelente, que eu
+                    considero ser o ponto chave. Me sinto segura e amparada desde o primeiro contato até a desmontagem
+                    do evento. Minha experiência com o KM de Vantagens Hall RJ é tão satisfatória que não se encerra.
+                    Ano a ano, nossa
+                    parceria nos proporciona momentos incríveis."</p>
+                </div>
               </blockquote>
               <div class=" d-flex align-items-center ml-4 mt-3">
-                <img class="avatar rounded-circle mx-2"
-                  src="imgs/depoimentos/mariana.jpg">
+                <img class="avatar rounded-circle mx-2" src="imgs/depoimentos/mariana.jpg">
                 <p class="color-l-yellow font-weight-bold txt-depoimento">Mariana</p><br>
 
 
@@ -331,16 +358,18 @@
 
             <div class=" text-white d-flex flex-column justify-content-center">
               <blockquote class="bg-white text-dark blockquote text-left">
-                  <div class="overflow-txt scroll-style" >
-                <p class="pr-4 pl-2">"O Km tem excelente estrutura para realização de eventos. A equipe atenciosa e solícita, nos traz segurança e condições de trabalho.
+                <div class="overflow-txt scroll-style">
+                  <p class="pr-4 pl-2">"O Km tem excelente estrutura para realização de eventos. A equipe atenciosa e
+                    solícita, nos traz segurança e condições de trabalho.
 
-                    Quando fazemos eventos no KM já temos a certeza que boa parte do sucesso está garantido.
-                    
-                    Espero manter essa parceria por vários anos."</p></div>
+                    Quando fazemos eventos no KM de Vantagens Hall RJ já temos a certeza que boa parte do sucesso está
+                    garantido.
+
+                    Espero manter essa parceria por vários anos."</p>
+                </div>
               </blockquote>
               <div class=" d-flex align-items-center ml-4 mt-3">
-                <img class="avatar rounded-circle mx-2"
-                  src="imgs/depoimentos/frederico.jpg">
+                <img class="avatar rounded-circle mx-2" src="imgs/depoimentos/frederico.jpg">
                 <p class="color-l-yellow font-weight-bold txt-depoimento">Frederico</p><br>
 
 
@@ -355,20 +384,21 @@
 
             <div class=" text-white d-flex flex-column justify-content-center">
               <blockquote class="bg-white text-dark blockquote text-left ">
-                  <div class="overflow-txt scroll-style" >
-                <p class="pr-4 pl-2">"Adoramos trabalhar com a T4F. Já realizamos mais de 10 grandes evento no Credicard Hall e sempre podemos contar com uma equipe comercial “Boa de negocio” e um time de produção competente e envolvido que faz de tudo para o evento acontecer redondo"</p>
-                  </div>
+                <div class="overflow-txt scroll-style">
+                  <p class="pr-4 pl-2">"Adoramos trabalhar com a T4F. Já realizamos mais de 10 grandes eventos no Unimed
+                    Hall e sempre podemos contar com uma equipe comercial “Boa de negócio” e um time de produção
+                    competente e envolvido que faz de tudo para o evento acontecer redondo"</p>
+                </div>
               </blockquote>
               <div class=" d-flex align-items-center ml-4 mt-3">
-                <img class="avatar rounded-circle mx-2"
-                  src="imgs/depoimentos/andreas.jpg">
-                <p class="color-l-yellow font-weight-bold txt-depoimento">Andreas                  </p><br>
+                <img class="avatar rounded-circle mx-2" src="imgs/depoimentos/andreas.jpg">
+                <p class="color-l-yellow font-weight-bold txt-depoimento">Andreas </p><br>
 
 
               </div>
 
             </div>
-            <p class="justify-contetn-left txt-grey card-job-txt font-tiny">Gerente comercial na BMW</p>
+            <p class="justify-contetn-left txt-grey card-job-txt font-tiny">Sócio Administrador na 770w</p>
 
 
           </div>
@@ -377,21 +407,24 @@
 
             <div class=" text-white d-flex flex-column justify-content-center">
               <blockquote class="bg-white text-dark blockquote text-left">
-                  <div class="overflow-txt scroll-style" >
-                <p class="pr-4 pl-2">"Nós da América, temos imensa satisfação em ter o Credicard hall como parceiro para nossos Eventos. Equipe fantástica ,atendimento impecável,  agregam o resultado que nossos clientes esperam de Nós!
+                <div class="overflow-txt scroll-style">
+                  <p class="pr-4 pl-2">"Nós da América, temos imensa satisfação em ter o Unimed Hall como parceiro
+                    para nossos Eventos. Equipe fantástica ,atendimento impecável, agregam o resultado que nossos
+                    clientes esperam de Nós!
 
-                    A Casa, e essa junção de profissionalismo com certeza dá seu Show!!! GRATIDÃO sempre!!!!"</p></div>
+                    A Casa, e essa junção de profissionalismo com certeza dá seu Show!!! GRATIDÃO sempre!!!!"</p>
+                </div>
               </blockquote>
               <div class=" d-flex align-items-center ml-4 mt-3">
-                <img class="avatar rounded-circle mx-2"
-                  src="imgs/depoimentos/tania.jpg">
+                <img class="avatar rounded-circle mx-2" src="imgs/depoimentos/tania.jpg">
                 <p class="color-l-yellow font-weight-bold txt-depoimento">Tânia Ferraz</p><br>
 
 
               </div>
 
             </div>
-            <p class="justify-contetn-left txt-grey card-job-txt font-tiny">Proprietária da América Negócios Produções e Eventos.</p>
+            <p class="justify-contetn-left txt-grey card-job-txt font-tiny">Proprietária da América Negócios Produções e
+              Eventos.</p>
 
 
           </div>
@@ -400,16 +433,19 @@
 
             <div class=" text-white d-flex flex-column justify-content-center">
               <blockquote class="bg-white text-dark blockquote text-left ">
-                  <div class="overflow-txt scroll-style" >
-                <p class="pr-4 pl-2">"Há alguns anos consecutivos realizo a formatura do C.T. Bíblico Rhema no KMV Hall em BH. 
+                <div class="overflow-txt scroll-style">
+                  <p class="pr-4 pl-2">"Há alguns anos consecutivos realizo a formatura do C.T. Bíblico Rhema no KMV
+                    Hall em BH.
 
-                    Tenho certeza de que este é o melhor espaço da cidade, sendo atendida pelos melhores profissionais. Acredito que é garantia de um evento de excelência.
-                    
-                    Além disso, o atendimento é um diferencial de toda a equipe, sempre facilitando ao máximo todos os processos.."</p></div>
+                    Tenho certeza de que este é o melhor espaço da cidade, sendo atendida pelos melhores profissionais.
+                    Acredito que é garantia de um evento de excelência.
+
+                    Além disso, o atendimento é um diferencial de toda a equipe, sempre facilitando ao máximo todos os
+                    processos."</p>
+                </div>
               </blockquote>
               <div class=" d-flex align-items-center ml-4 mt-3">
-                <img class="avatar rounded-circle mx-2"
-                  src="imgs/depoimentos/jessica.jpg">
+                <img class="avatar rounded-circle mx-2" src="imgs/depoimentos/jessica.jpg">
                 <p class="color-l-yellow font-weight-bold txt-depoimento ">Jessica Biajo</p><br>
 
 
@@ -420,8 +456,50 @@
 
 
           </div>
+          <div class="item card card-img pb-3">
 
-          
+            <div class=" text-white d-flex flex-column justify-content-center">
+              <blockquote class="bg-white text-dark blockquote text-left ">
+                <div class="overflow-txt scroll-style">
+                  <p class="pr-4 pl-2">"É muito satisfatório realizar eventos no KM Hall. A equipe além de ser
+                    prestativa e organizada, estão sempre dispostos a nos atender. Agradeço a parceria de sempre."</p>
+                </div>
+              </blockquote>
+              <div class=" d-flex align-items-center ml-4 mt-3">
+                <img class="avatar rounded-circle mx-2" src="imgs/depoimentos/Thais.jpg">
+                <p class="color-l-yellow font-weight-bold txt-depoimento ">Thais Franco</p><br>
+
+
+              </div>
+
+            </div>
+            <p class="justify-contetn-left txt-grey card-job-txt font-tiny"> Unimed BH</p>
+
+
+          </div>
+          <div class="item card card-img pb-3">
+
+              <div class=" text-white d-flex flex-column justify-content-center">
+                <blockquote class="bg-white text-dark blockquote text-left ">
+                  <div class="overflow-txt scroll-style">
+                    <p class="pr-4 pl-2">"É sempre muito prazeroso trabalhar no KM de Vantagens Hall BH estrutura impecável equipe sempre muito solícita pronta a nos ajudar, quero que essa parceria dure pra sempre. Vocês também fazem parte do nosso sucesso.
+
+                        Juntos somos mais fortes!"</p>
+                  </div>
+                </blockquote>
+                <div class=" d-flex align-items-center ml-4 mt-3">
+                  <img class="avatar rounded-circle mx-2" src="imgs/depoimentos/luiz.jpg">
+                  <p class="color-l-yellow font-weight-bold txt-depoimento ">Luiz Araújo</p><br>
+  
+  
+                </div>
+  
+              </div>
+              <p class="justify-contetn-left txt-grey card-job-txt font-tiny"> Grupo Promove</p>
+  
+  
+            </div>
+
         </div>
 
 
@@ -440,9 +518,10 @@
             <div class="cta bg-white p-5 mt-4">
               <h1 class="color-orange font-weight-bold">VENDA A GRUPOS</h1>
               <p class="color-dark-grey2">Nas compras acima de 15 ingressos, possuímos uma equipe altamente capacitada
-                para atender seu grupo corportaivo, agências, escolas e associações.</p>
+                para atender seu grupo corporativo, agências, escolas e associações.</p>
               <div data-aos="fade-up>">
-                <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3">ENTRE EM CONTATO</button>
+                <button class="btn btn-gradient  mt-2 mt-sm-1 mt-xl-3"
+                  onclick="window.location.href = 'venda-grupo.html';">ENTRE EM CONTATO</button>
               </div>
             </div>
           </div>
@@ -450,12 +529,13 @@
             data-aos="fade-up">
             <div class="cta bg-white p-5 mt-4">
               <h1 class="color-orange font-weight-bold">FAÇA SEU EVENTO</h1>
-              <p class="color-dark-grey2">Para maiores informações, entre em contato e descubra todas possibilidades que
+              <p class="color-dark-grey2">Para maiores informações, entre em contato e descubra todas as possibilidades que
                 oferecemos em nossas casas.
 
               </p>
               <div data-aos="fade-up>">
-                <button class="btn btn-gradient btn-large mt-2 mt-sm-1 mt-xl-3">SOLICITE SEU ORÇAMENTO</button>
+                <button class="btn btn-gradient btn-large mt-2 mt-sm-1 mt-xl-3"
+                  onclick="window.location.href = 'contato.php';">SOLICITE SEU ORÇAMENTO</button>
               </div>
             </div>
           </div>
@@ -473,11 +553,11 @@
         class="conteiner-fluid  d-flex justify-content-center pl-4 pr-4 pr-lg-0 pl-lg-0 pr-xl-0 pl-xl-0 max-wrap">
         <div class="row mt-5 pt-2">
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
-            <img src="imgs/logo-t4f.png" alt="logo T4F Eventos">
+            <img class="logo" src="imgs/logo-t4f.png" alt="logo T4F Eventos">
           </div>
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
             <h6 class="text-white font-weight-bold mt-5 mt-5 mt-sm-0 mt-lg-0 mt-xl-0">CONTATO</h6>
-            <p class="text-white">t4feventos@t4f.com.br</p>
+            <p class="text-white">eventos@t4f.com.br</p>
           </div>
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pl-5 pr-5">
             <h6 class="text-white font-weight-bold">REDES SOCIAIS</h6>
@@ -516,24 +596,14 @@
   <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-  <script src="js/jquery.min.js"></script>
+  <script defer src="js/jquery.min.js"></script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script defer src="owlcarousel/owl.carousel.min.js"></script>
-  <script src="js/functions.js"></script>
-  <script> $(window).on("load",function(){
-      $(".bg-loader").fadeOut("slow");
-    });</script>
+ 
+<script defer src="js/bootstrap.min.js"></script>
+  <script defer src="js/owl.carousel.min.js"></script>
+  <script defer src="js/script.js"></script>
+  
 </body>
 
 </html>
